@@ -1,0 +1,3672 @@
+{
+  "Scope3": [
+{
+  "Category": "Purchased goods & services",
+  "SubCategories": [
+    {
+      "name": "Purchased goods",
+      "items": [
+
+      { "Product/Service": "Aggregates", "Unit": "tonnes", "EmissionFactor": 7.79306 },
+      { "Product/Service": "Average construction", "Unit": "tonnes", "EmissionFactor": 75.00675 },
+      { "Product/Service": "Asbestos", "Unit": "tonnes", "EmissionFactor": 27.00000 },
+      { "Product/Service": "Asphalt", "Unit": "tonnes", "EmissionFactor": 39.21249 },
+      { "Product/Service": "Bricks", "Unit": "tonnes", "EmissionFactor": 241.79306 },
+      { "Product/Service": "Concrete", "Unit": "tonnes", "EmissionFactor": 118.79306 },
+      { "Product/Service": "Insulation", "Unit": "tonnes", "EmissionFactor": 1861.79306 },
+      { "Product/Service": "Metals", "Unit": "tonnes", "EmissionFactor": 3824.09335 },
+      { "Product/Service": "Mineral oil", "Unit": "tonnes", "EmissionFactor": 1401.00000 },
+      { "Product/Service": "Plasterboard", "Unit": "tonnes", "EmissionFactor": 120.05000 },
+      { "Product/Service": "Tyres", "Unit": "tonnes", "EmissionFactor": 3335.57190 },
+      { "Product/Service": "Wood", "Unit": "tonnes", "EmissionFactor": 269.50416 },
+      { "Product/Service": "Electrical items - fridges and freezers", "Unit": "tonnes", "EmissionFactor": 4363.33333 },
+      { "Product/Service": "Electrical items - large", "Unit": "tonnes", "EmissionFactor": 3267.00000 },
+      { "Product/Service": "Electrical items - IT", "Unit": "tonnes", "EmissionFactor": 24865.47556 },
+      { "Product/Service": "Electrical items - small", "Unit": "tonnes", "EmissionFactor": 5647.94563 },
+      { "Product/Service": "Batteries - Alkaline", "Unit": "tonnes", "EmissionFactor": 4633.47826 },
+      { "Product/Service": "Batteries - Li ion", "Unit": "tonnes", "EmissionFactor": 6308.00000 },
+      { "Product/Service": "Batteries - NiMh", "Unit": "tonnes", "EmissionFactor": 28380.00000 },
+      { "Product/Service": "Metal: aluminium cans and foil (excl. forming)", "Unit": "tonnes", "EmissionFactor": 9115.90131 },
+      { "Product/Service": "Metal: mixed cans", "Unit": "tonnes", "EmissionFactor": 5114.62131 },
+      { "Product/Service": "Metal: scrap metal", "Unit": "tonnes", "EmissionFactor": 3473.11953 },
+      { "Product/Service": "Metal: steel cans", "Unit": "tonnes", "EmissionFactor": 2863.90131 },
+      { "Product/Service": "Plastics: average plastics", "Unit": "tonnes", "EmissionFactor": 3172.49932 },
+      { "Product/Service": "Plastics: average plastic film", "Unit": "tonnes", "EmissionFactor": 2916.50513 },
+      { "Product/Service": "Plastics: average plastic rigid", "Unit": "tonnes", "EmissionFactor": 3354.28062 },
+      { "Product/Service": "Plastics: HDPE (incl. forming)", "Unit": "tonnes", "EmissionFactor": 3095.15524 },
+      { "Product/Service": "Plastics: LDPE and LLDPE (incl. forming)", "Unit": "tonnes", "EmissionFactor": 2965.07790 },
+      { "Product/Service": "Plastics: PET (incl. forming)", "Unit": "tonnes", "EmissionFactor": 3863.90131 },
+      { "Product/Service": "Plastics: PP (incl. forming)", "Unit": "tonnes", "EmissionFactor": 2577.57172 },
+      { "Product/Service": "Plastics: PS (incl. forming)", "Unit": "tonnes", "EmissionFactor": 4376.80391 },
+      { "Product/Service": "Plastics: PVC", "Unit": "tonnes", "EmissionFactor": 2944.75615 },
+      { "Product/Service": "Paper and board: board", "Unit": "tonnes", "EmissionFactor": 1199.72542 },
+      { "Product/Service": "Paper and board: mixed", "Unit": "tonnes", "EmissionFactor": 1288.50358 },
+      { "Product/Service": "Paper and board: paper", "Unit": "tonnes", "EmissionFactor": 1345.07790 }
+      
+      ]},
+    {
+      "name": "Transportation & Logistics Services",
+      "items": [
+        { "Product": "Scheduled Passenger Air Transportation", "Unit": "USD", "EmissionFactor": 0.976 },
+        { "Product": "Scheduled Freight Air Transportation", "Unit": "USD", "EmissionFactor": 0.976 },
+        { "Product": "Nonscheduled Chartered Passenger Air Transportation", "Unit": "USD", "EmissionFactor": 0.976 },
+        { "Product": "Nonscheduled Chartered Freight Air Transportation", "Unit": "USD", "EmissionFactor": 0.976 },
+        { "Product": "Other Nonscheduled Air Transportation", "Unit": "USD", "EmissionFactor": 0.976 },
+
+        { "Product": "Line-Haul Railroads", "Unit": "USD", "EmissionFactor": 0.558 },
+        { "Product": "Short Line Railroads", "Unit": "USD", "EmissionFactor": 0.558 },
+
+        { "Product": "Deep Sea Freight Transportation", "Unit": "USD", "EmissionFactor": 0.618 },
+        { "Product": "Deep Sea Passenger Transportation", "Unit": "USD", "EmissionFactor": 0.618 },
+        { "Product": "Coastal and Great Lakes Freight Transportation", "Unit": "USD", "EmissionFactor": 0.618 },
+        { "Product": "Coastal and Great Lakes Passenger Transportation", "Unit": "USD", "EmissionFactor": 0.618 },
+        { "Product": "Inland Water Freight Transportation", "Unit": "USD", "EmissionFactor": 0.618 },
+        { "Product": "Inland Water Passenger Transportation", "Unit": "USD", "EmissionFactor": 0.618 },
+
+        { "Product": "General Freight Trucking, Local", "Unit": "USD", "EmissionFactor": 1.115 },
+        { "Product": "General Freight Trucking, Long-Distance, Truckload", "Unit": "USD", "EmissionFactor": 1.115 },
+        { "Product": "General Freight Trucking, Long-Distance, Less Than Truckload", "Unit": "USD", "EmissionFactor": 1.115 },
+        { "Product": "Used Household and Office Goods Moving", "Unit": "USD", "EmissionFactor": 1.115 },
+
+        { "Product": "Specialized Freight Trucking, Local", "Unit": "USD", "EmissionFactor": 1.115 },
+        { "Product": "Specialized Freight Trucking, Long-Distance", "Unit": "USD", "EmissionFactor": 1.115 },
+
+        { "Product": "Mixed Mode Transit Systems", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "Commuter Rail Systems", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "Bus and Other Motor Vehicle Transit Systems", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "Other Urban Transit Systems", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "Interurban and Rural Bus Transportation", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "Taxi Services", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "Limousine Services", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "School and Employee Bus Transportation", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "Charter Bus Industry", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "Special Needs Transportation", "Unit": "USD", "EmissionFactor": 0.499 },
+        { "Product": "All Other Transit and Ground Passenger Transportation", "Unit": "USD", "EmissionFactor": 0.499 },
+
+        { "Product": "Pipeline Transportation of Crude Oil", "Unit": "USD", "EmissionFactor": 1.558 },
+        { "Product": "Pipeline Transportation of Natural Gas", "Unit": "USD", "EmissionFactor": 1.558 },
+        { "Product": "Pipeline Transportation of Refined Petroleum Products", "Unit": "USD", "EmissionFactor": 1.558 },
+        { "Product": "All Other Pipeline Transportation", "Unit": "USD", "EmissionFactor": 1.558 },
+
+        { "Product": "Scenic and Sightseeing Transportation, Land", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Scenic and Sightseeing Transportation, Water", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Scenic and Sightseeing Transportation, Other", "Unit": "USD", "EmissionFactor": 0.208 },
+
+        { "Product": "Air Traffic Control", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Other Airport Operations", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Support Activities for Air Transportation", "Unit": "USD", "EmissionFactor": 0.208 },
+
+        { "Product": "Support Activities for Rail Transportation", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Port and Harbor Operations", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Marine Cargo Handling", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Navigational Services to Shipping", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Other Support Activities for Water Transportation", "Unit": "USD", "EmissionFactor": 0.208 },
+
+        { "Product": "Motor Vehicle Towing", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "Other Support Activities for Road Transportation", "Unit": "USD", "EmissionFactor": 0.208 },
+
+        { "Product": "Freight Transportation Arrangement", "Unit": "USD", "EmissionFactor": 0.208 },
+
+        { "Product": "Packing and Crating", "Unit": "USD", "EmissionFactor": 0.208 },
+        { "Product": "All Other Support Activities for Transportation", "Unit": "USD", "EmissionFactor": 0.208 },
+
+        { "Product": "Postal Services", "Unit": "USD", "EmissionFactor": 0.19 },
+        { "Product": "Couriers and Express Delivery Services", "Unit": "USD", "EmissionFactor": 0.257 },
+        { "Product": "Local Messengers and Local Delivery", "Unit": "USD", "EmissionFactor": 0.257 },
+
+        { "Product": "General Warehousing and Storage", "Unit": "USD", "EmissionFactor": 0.568 },
+        { "Product": "Refrigerated Warehousing and Storage", "Unit": "USD", "EmissionFactor": 0.568 },
+        { "Product": "Farm Product Warehousing and Storage", "Unit": "USD", "EmissionFactor": 0.568 },
+        { "Product": "Other Warehousing and Storage", "Unit": "USD", "EmissionFactor": 0.568 }
+      ]
+    },
+
+    {
+      "name": "Publishing Services",
+      "items": [
+        { "Product": "Newspaper Publishers", "Unit": "USD", "EmissionFactor": 0.131 },
+        { "Product": "Periodical Publishers", "Unit": "USD", "EmissionFactor": 0.136 },
+        { "Product": "Book Publishers", "Unit": "USD", "EmissionFactor": 0.125 },
+        { "Product": "Directory and Mailing List Publishers", "Unit": "USD", "EmissionFactor": 0.16 },
+        { "Product": "Greeting Card Publishers", "Unit": "USD", "EmissionFactor": 0.16 },
+        { "Product": "All Other Publishers", "Unit": "USD", "EmissionFactor": 0.16 },
+
+        { "Product": "Software Publishers", "Unit": "USD", "EmissionFactor": 0.097 },
+
+        { "Product": "Motion Picture and Video Production", "Unit": "USD", "EmissionFactor": 0.071 },
+        { "Product": "Motion Picture and Video Distribution", "Unit": "USD", "EmissionFactor": 0.071 },
+        { "Product": "Motion Picture Theaters", "Unit": "USD", "EmissionFactor": 0.071 },
+
+        { "Product": "Teleproduction Services", "Unit": "USD", "EmissionFactor": 0.071 },
+        { "Product": "Other Motion Picture and Video Industries", "Unit": "USD", "EmissionFactor": 0.071 },
+
+        { "Product": "Music Publishers", "Unit": "USD", "EmissionFactor": 0.068 },
+        { "Product": "Sound Recording Studios", "Unit": "USD", "EmissionFactor": 0.068 },
+        { "Product": "Record Production and Distribution", "Unit": "USD", "EmissionFactor": 0.068 },
+        { "Product": "Other Sound Recording Industries", "Unit": "USD", "EmissionFactor": 0.068 },
+
+        { "Product": "Radio Networks", "Unit": "USD", "EmissionFactor": 0.11 },
+        { "Product": "Radio Stations", "Unit": "USD", "EmissionFactor": 0.11 },
+        { "Product": "Television Broadcasting", "Unit": "USD", "EmissionFactor": 0.11 },
+        { "Product": "Cable and Subscription Programming", "Unit": "USD", "EmissionFactor": 0.146 },
+
+        { "Product": "Wired Telecommunications Carriers", "Unit": "USD", "EmissionFactor": 0.082 },
+        { "Product": "Wireless Telecommunications Carriers", "Unit": "USD", "EmissionFactor": 0.168 },
+        { "Product": "Satellite Telecommunications", "Unit": "USD", "EmissionFactor": 0.125 },
+        { "Product": "Telecommunications Resellers", "Unit": "USD", "EmissionFactor": 0.125 },
+        { "Product": "All Other Telecommunications", "Unit": "USD", "EmissionFactor": 0.125 },
+
+        { "Product": "Data Processing & Hosting Services", "Unit": "USD", "EmissionFactor": 0.148 },
+
+        { "Product": "News Syndicates", "Unit": "USD", "EmissionFactor": 0.107 },
+        { "Product": "Libraries and Archives", "Unit": "USD", "EmissionFactor": 0.107 },
+        { "Product": "Internet Publishing & Web Portals", "Unit": "USD", "EmissionFactor": 0.128 }
+      ]
+    },
+     {
+      "name": "Financial & Insurance Services",
+      "items": [
+        { "Product/Service": "All Other Information Product/Services", "Unit": "USD", "EmissionFactor": 0.107 },
+    {
+      "Product/Service": "Monetary Authorities-Central Bank",
+      "Unit": "USD",
+      "EmissionFactor": 0.048
+    },
+    {
+      "Product/Service": "Commercial Banking",
+      "Unit": "USD",
+      "EmissionFactor": 0.048
+    },
+    {
+      "Product/Service": "Savings Institutions",
+      "Unit": "USD",
+      "EmissionFactor": 0.048
+    },
+    {
+      "Product/Service": "Credit Unions",
+      "Unit": "USD",
+      "EmissionFactor": 0.048
+    },
+    {
+      "Product/Service": "Other Depository Credit Intermediation",
+      "Unit": "USD",
+      "EmissionFactor": 0.048
+    },
+    {
+      "Product/Service": "Credit Card Issuing",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "Sales Financing",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "Consumer Lending",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "Real Estate Credit",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "International Trade Financing",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "Secondary Market Financing",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "All Other Nondepository Credit Intermediation",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "Mortgage and Nonmortgage Loan Brokers",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "Financial Transactions Processing, Reserve, and Clearinghouse Activities",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "Other Activities Related to Credit Intermediation",
+      "Unit": "USD",
+      "EmissionFactor": 0.064
+    },
+    {
+      "Product/Service": "Investment Banking and Securities Dealing",
+      "Unit": "USD",
+      "EmissionFactor": 0.06
+    },
+    {
+      "Product/Service": "Securities Brokerage",
+      "Unit": "USD",
+      "EmissionFactor": 0.06
+    },
+    {
+      "Product/Service": "Commodity Contracts Dealing",
+      "Unit": "USD",
+      "EmissionFactor": 0.06
+    },
+    {
+      "Product/Service": "Commodity Contracts Brokerage",
+      "Unit": "USD",
+      "EmissionFactor": 0.06
+    },
+    {
+      "Product/Service": "Securities and Commodity Exchanges",
+      "Unit": "USD",
+      "EmissionFactor": 0.06
+    },
+    {
+      "Product/Service": "Miscellaneous Intermediation",
+      "Unit": "USD",
+      "EmissionFactor": 0.062
+    },
+    {
+      "Product/Service": "Portfolio Management",
+      "Unit": "USD",
+      "EmissionFactor": 0.062
+    },
+    {
+      "Product/Service": "Investment Advice",
+      "Unit": "USD",
+      "EmissionFactor": 0.062
+    },
+    {
+      "Product/Service": "Trust, Fiduciary, and Custody Activities",
+      "Unit": "USD",
+      "EmissionFactor": 0.062
+    },
+    {
+      "Product/Service": "Miscellaneous Financial Investment Activities",
+      "Unit": "USD",
+      "EmissionFactor": 0.062
+    },
+    {
+      "Product/Service": "Direct Life Insurance Carriers",
+      "Unit": "USD",
+      "EmissionFactor": 0.03
+    },
+    {
+      "Product/Service": "Direct Health and Medical Insurance Carriers",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "Direct Property and Casualty Insurance Carriers",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "Direct Title Insurance Carriers",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "Other Direct Insurance (except Life, Health, and Medical) Carriers",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "Reinsurance Carriers",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "Insurance Agencies and Brokerages",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "Claims Adjusting",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "Third Party Administration of Insurance and Pension Funds",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "All Other Insurance Related Activities",
+      "Unit": "USD",
+      "EmissionFactor": 0.034
+    },
+    {
+      "Product/Service": "Pension Funds",
+      "Unit": "USD",
+      "EmissionFactor": 0.166
+    },
+    {
+      "Product/Service": "Health and Welfare Funds",
+      "Unit": "USD",
+      "EmissionFactor": 0.166
+    },
+    {
+      "Product/Service": "Other Insurance Funds",
+      "Unit": "USD",
+      "EmissionFactor": 0.166
+    },
+    {
+      "Product/Service": "Open-End Investment Funds",
+      "Unit": "USD",
+      "EmissionFactor": 0.166
+    },
+    {
+      "Product/Service": "Trusts, Estates, and Agency Accounts",
+      "Unit": "USD",
+      "EmissionFactor": 0.166
+    },
+    {
+      "Product/Service": "Other Financial Vehicles",
+      "Unit": "USD",
+      "EmissionFactor": 0.166
+    }
+
+  ]},
+
+   {
+      "name": "Real Estate & Leasing Services",
+      "items": [
+        {
+      "Product/Service": "Lessors of Residential Buildings and Dwellings",
+      "Unit": "USD",
+      "EmissionFactor": 0.019
+    },
+    {
+      "Product/Service": "Lessors of Nonresidential Buildings (except Miniwarehouses)",
+      "Unit": "USD",
+      "EmissionFactor": 0.351
+    },
+    {
+      "Product/Service": "Lessors of Miniwarehouses and Self-Storage Units",
+      "Unit": "USD",
+      "EmissionFactor": 0.351
+    },
+    {
+      "Product/Service": "Lessors of Other Real Estate Property",
+      "Unit": "USD",
+      "EmissionFactor": 0.351
+    },
+    {
+      "Product/Service": "Offices of Real Estate Agents and Brokers",
+      "Unit": "USD",
+      "EmissionFactor": 0.351
+    },
+    {
+      "Product/Service": "Residential Property Managers",
+      "Unit": "USD",
+      "EmissionFactor": 0.351
+    },
+    {
+      "Product/Service": "Nonresidential Property Managers",
+      "Unit": "USD",
+      "EmissionFactor": 0.351
+    },
+    {
+      "Product/Service": "Offices of Real Estate Appraisers",
+      "Unit": "USD",
+      "EmissionFactor": 0.351
+    },
+    {
+      "Product/Service": "Other Activities Related to Real Estate",
+      "Unit": "USD",
+      "EmissionFactor": 0.351
+    },
+    {
+      "Product/Service": "Passenger Car Rental",
+      "Unit": "USD",
+      "EmissionFactor": 0.143
+    },
+    {
+      "Product/Service": "Passenger Car Leasing",
+      "Unit": "USD",
+      "EmissionFactor": 0.143
+    },
+    {
+      "Product/Service": "Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing",
+      "Unit": "USD",
+      "EmissionFactor": 0.143
+    },
+    {
+      "Product/Service": "Consumer Electronics and Appliances Rental",
+      "Unit": "USD",
+      "EmissionFactor": 0.134
+    },
+    {
+      "Product/Service": "Formal Wear and Costume Rental",
+      "Unit": "USD",
+      "EmissionFactor": 0.134
+    },
+    {
+      "Product/Service": "Video Tape and Disc Rental",
+      "Unit": "USD",
+      "EmissionFactor": 0.134
+    },
+    {
+      "Product/Service": "Home Health Equipment Rental",
+      "Unit": "USD",
+      "EmissionFactor": 0.134
+    },
+    {
+      "Product/Service": "Recreational Goods Rental",
+      "Unit": "USD",
+      "EmissionFactor": 0.134
+    },
+    {
+      "Product/Service": "All Other Consumer Goods Rental",
+      "Unit": "USD",
+      "EmissionFactor": 0.134
+    },
+    {
+      "Product/Service": "General Rental Centers",
+      "Unit": "USD",
+      "EmissionFactor": 0.134
+    },
+    {
+      "Product/Service": "Commercial Air, Rail, and Water Transportation Equipment Rental and Leasing",
+      "Unit": "USD",
+      "EmissionFactor": 0.14
+    },
+    {
+      "Product/Service": "Construction, Mining, and Forestry Machinery and Equipment Rental and Leasing",
+      "Unit": "USD",
+      "EmissionFactor": 0.14
+    },
+    {
+      "Product/Service": "Office Machinery and Equipment Rental and Leasing",
+      "Unit": "USD",
+      "EmissionFactor": 0.14
+    },
+    {
+      "Product/Service": "Other Commercial and Industrial Machinery and Equipment Rental and Leasing",
+      "Unit": "USD",
+      "EmissionFactor": 0.14
+    },
+    {
+      "Product/Service": "Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)",
+      "Unit": "USD",
+      "EmissionFactor": 0.058
+    }
+      ]},
+       {
+      "name": "Professional, Scientific & Technical Services",
+      "items": [
+        {
+      "Product/Service": "Offices of Lawyers",
+      "Unit": "USD",
+      "EmissionFactor": 0.054
+    },
+    {
+      "Product/Service": "Offices of Notaries",
+      "Unit": "USD",
+      "EmissionFactor": 0.054
+    },
+    {
+      "Product/Service": "Title Abstract and Settlement Offices",
+      "Unit": "USD",
+      "EmissionFactor": 0.054
+    },
+    {
+      "Product/Service": "All Other Legal Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.054
+    },
+    {
+      "Product/Service": "Offices of Certified Public Accountants",
+      "Unit": "USD",
+      "EmissionFactor": 0.05
+    },
+    {
+      "Product/Service": "Tax Preparation Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.05
+    },
+    {
+      "Product/Service": "Payroll Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.05
+    },
+    {
+      "Product/Service": "Other Accounting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.05
+    },
+    {
+      "Product/Service": "Architectural Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.125
+    },
+    {
+      "Product/Service": "Landscape Architectural Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.125
+    },
+    {
+      "Product/Service": "Engineering Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.125
+    },
+    {
+      "Product/Service": "Drafting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.125
+    },
+    {
+      "Product/Service": "Building Inspection Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.125
+    },
+    {
+      "Product/Service": "Geophysical Surveying and Mapping Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.125
+    },
+    {
+      "Product/Service": "Surveying and Mapping (except Geophysical) Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.125
+    },
+    {
+      "Product/Service": "Testing Laboratories",
+      "Unit": "USD",
+      "EmissionFactor": 0.125
+    },
+    {
+      "Product/Service": "Interior Design Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.088
+    },
+    {
+      "Product/Service": "Industrial Design Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.088
+    },
+    {
+      "Product/Service": "Graphic Design Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.088
+    },
+    {
+      "Product/Service": "Other Specialized Design Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.088
+    },
+    {
+      "Product/Service": "Custom Computer Programming Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.097
+    },
+    {
+      "Product/Service": "Computer Systems Design Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.077
+    },
+    {
+      "Product/Service": "Computer Facilities Management Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.087
+    },
+    {
+      "Product/Service": "Other Computer Related Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.087
+    },
+    {
+      "Product/Service": "Administrative Management and General Management Consulting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.084
+    },
+    {
+      "Product/Service": "Human Resources Consulting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.084
+    },
+    {
+      "Product/Service": "Marketing Consulting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.084
+    },
+    {
+      "Product/Service": "Process, Physical Distribution, and Logistics Consulting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.084
+    },
+    {
+      "Product/Service": "Other Management Consulting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.084
+    },
+    {
+      "Product/Service": "Environmental Consulting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.079
+    },
+    {
+      "Product/Service": "Other Scientific and Technical Consulting Product/Services",
+      "Unit": "USD",
+      "EmissionFactor": 0.079
+    },
+    {
+      "Product/Service": "Research and Development in Nanotechnology",
+      "Unit": "USD",
+      "EmissionFactor": 0.174
+    },
+    {
+      "Product/Service": "Research and Development in Biotechnology (except Nanobiotechnology)",
+      "Unit": "USD",
+      "EmissionFactor": 0.174
+    },
+    {
+      "Product/Service": "Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",
+      "Unit": "USD",
+      "EmissionFactor": 0.174
+    },
+    
+  {
+    "Product/Service": "Research and Development in the Social Sciences and Humanities",
+    "Unit": "USD",
+    "EmissionFactor": 0.174
+  },
+  {
+    "Product/Service": "Advertising Agencies",
+    "Unit": "USD",
+    "EmissionFactor": 0.129
+  },
+  {
+    "Product/Service": "Public Relations Agencies",
+    "Unit": "USD",
+    "EmissionFactor": 0.129
+  },
+  {
+    "Product/Service": "Media Buying Agencies",
+    "Unit": "USD",
+    "EmissionFactor": 0.129
+  },
+  {
+    "Product/Service": "Media Representatives",
+    "Unit": "USD",
+    "EmissionFactor": 0.129
+  },
+  {
+    "Product/Service": "Outdoor Advertising",
+    "Unit": "USD",
+    "EmissionFactor": 0.129
+  },
+  {
+    "Product/Service": "Direct Mail Advertising",
+    "Unit": "USD",
+    "EmissionFactor": 0.129
+  },
+  {
+    "Product/Service": "Advertising Material Distribution Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.129
+  },
+  {
+    "Product/Service": "Other Product/Services Related to Advertising",
+    "Unit": "USD",
+    "EmissionFactor": 0.129
+  },
+  {
+    "Product/Service": "Marketing Research and Public Opinion Polling",
+    "Unit": "USD",
+    "EmissionFactor": 0.075
+  },
+  {
+    "Product/Service": "Photography Studios, Portrait",
+    "Unit": "USD",
+    "EmissionFactor": 0.122
+  },
+  {
+    "Product/Service": "Commercial Photography",
+    "Unit": "USD",
+    "EmissionFactor": 0.122
+  },
+  {
+    "Product/Service": "Translation and Interpretation Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.075
+  },
+  {
+    "Product/Service": "Veterinary Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.139
+  },
+  {
+    "Product/Service": "All Other Professional, Scientific, and Technical Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.075
+  }
+      ]},
+
+       {
+      "name": "Business Support & Administrative Services",
+      "items": [
+        {
+    "Product/Service": "Offices of Bank Holding Companies",
+    "Unit": "USD",
+    "EmissionFactor": 0.13
+  },
+  {
+    "Product/Service": "Offices of Other Holding Companies",
+    "Unit": "USD",
+    "EmissionFactor": 0.13
+  },
+  {
+    "Product/Service": "Corporate, Subsidiary, and Regional Managing Offices",
+    "Unit": "USD",
+    "EmissionFactor": 0.13
+  },
+  {
+    "Product/Service": "Office Administrative Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.105
+  },
+  {
+    "Product/Service": "Facilities Support Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.213
+  },
+  {
+    "Product/Service": "Employment Placement Agencies",
+    "Unit": "USD",
+    "EmissionFactor": 0.033
+  },
+  {
+    "Product/Service": "Executive Search Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.033
+  },
+  {
+    "Product/Service": "Temporary Help Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.033
+  },
+  {
+    "Product/Service": "Professional Employer Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.033
+  },
+  {
+    "Product/Service": "Document Preparation Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Telephone Answering Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Telemarketing Bureaus and Other Contact Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Private Mail Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Other Business Product/Service Centers (including Copy Shops)",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Collection Agencies",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Credit Bureaus",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Repossession Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Court Reporting and Stenotype Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "All Other Business Support Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Travel Agencies",
+    "Unit": "USD",
+    "EmissionFactor": 0.103
+  },
+  {
+    "Product/Service": "Tour Operators",
+    "Unit": "USD",
+    "EmissionFactor": 0.103
+  },
+  {
+    "Product/Service": "Convention and Visitors Bureaus",
+    "Unit": "USD",
+    "EmissionFactor": 0.103
+  },
+  {
+    "Product/Service": "All Other Travel Arrangement and Reservation Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.103
+  },
+  {
+    "Product/Service": "Investigation Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.08
+  },
+  {
+    "Product/Service": "Security Guards and Patrol Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.08
+  },
+  {
+    "Product/Service": "Armored Car Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.08
+  },
+  {
+    "Product/Service": "Security Systems Product/Services (except Locksmiths)",
+    "Unit": "USD",
+    "EmissionFactor": 0.08
+  },
+  {
+    "Product/Service": "Locksmiths",
+    "Unit": "USD",
+    "EmissionFactor": 0.08
+  },
+  {
+    "Product/Service": "Exterminating and Pest Control Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.167
+  },
+  {
+    "Product/Service": "Janitorial Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.167
+  },
+  {
+    "Product/Service": "Landscaping Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.167
+  },
+  {
+    "Product/Service": "Carpet and Upholstery Cleaning Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.167
+  },
+  {
+    "Product/Service": "Other Services to Buildings and Dwellings",
+    "Unit": "USD",
+    "EmissionFactor": 0.167
+  },
+  {
+    "Product/Service": "Packaging and Labeling Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.121
+  },
+  {
+    "Product/Service": "Convention and Trade Show Organizers",
+    "Unit": "USD",
+    "EmissionFactor": 0.121
+  },
+  {
+    "Product/Service": "All Other Support Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.121
+  }
+
+      ]},
+
+       {
+      "name": "Waste Management & Remediation Services",
+      "items": [
+        {
+    "Product/Service": "Solid Waste Collection",
+    "Unit": "USD",
+    "EmissionFactor": 0.197
+  },
+  {
+    "Product/Service": "Hazardous Waste Collection",
+    "Unit": "USD",
+    "EmissionFactor": 1.777
+  },
+  {
+    "Product/Service": "Other Waste Collection",
+    "Unit": "USD",
+    "EmissionFactor": 0.632
+  },
+  {
+    "Product/Service": "Hazardous Waste Treatment and Disposal",
+    "Unit": "USD",
+    "EmissionFactor": 1.777
+  },
+  {
+    "Product/Service": "Solid Waste Landfill",
+    "Unit": "USD",
+    "EmissionFactor": 10.989
+  },
+  {
+    "Product/Service": "Solid Waste Combustors and Incinerators",
+    "Unit": "USD",
+    "EmissionFactor": 2.166
+  },
+  {
+    "Product/Service": "Other Nonhazardous Waste Treatment and Disposal",
+    "Unit": "USD",
+    "EmissionFactor": 0.632
+  },
+  {
+    "Product/Service": "Remediation Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Materials Recovery Facilities",
+    "Unit": "USD",
+    "EmissionFactor": 0.158
+  },
+  {
+    "Product/Service": "Septic Tank and Related Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.632
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Waste Management Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.632
+  }
+  
+      ]},
+
+      
+       {
+      "name": "Educational Services",
+      "items": [
+        {
+    "Product/Service": "Elementary and Secondary Schools",
+    "Unit": "USD",
+    "EmissionFactor": 0.137
+  },
+  {
+    "Product/Service": "Junior Colleges",
+    "Unit": "USD",
+    "EmissionFactor": 0.168
+  },
+  {
+    "Product/Service": "Colleges, Universities, and Professional Schools",
+    "Unit": "USD",
+    "EmissionFactor": 0.168
+  },
+  {
+    "Product/Service": "Business and Secretarial Schools",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Computer Training",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Professional and Management Development Training",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Cosmetology and Barber Schools",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Flight Training",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Apprenticeship Training",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Other Technical and Trade Schools",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Fine Arts Schools",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Sports and Recreation Instruction",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Language Schools",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Exam Preparation and Tutoring",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Automobile Driving Schools",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Schools and Instruction",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  },
+  {
+    "Product/Service": "Educational Support Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.125
+  }
+
+      ]},
+      
+       {
+      "name": "Healthcare & Social Assistance Services",
+      "items": [
+        {
+    "Product/Service": "Offices of Physicians (except Mental Health Specialists)",
+    "Unit": "USD",
+    "EmissionFactor": 0.086
+  },
+  {
+    "Product/Service": "Offices of Physicians, Mental Health Specialists",
+    "Unit": "USD",
+    "EmissionFactor": 0.086
+  },
+  {
+    "Product/Service": "Offices of Dentists",
+    "Unit": "USD",
+    "EmissionFactor": 0.09
+  },
+  {
+    "Product/Service": "Offices of Chiropractors",
+    "Unit": "USD",
+    "EmissionFactor": 0.12
+  },
+  {
+    "Product/Service": "Offices of Optometrists",
+    "Unit": "USD",
+    "EmissionFactor": 0.12
+  },
+  {
+    "Product/Service": "Offices of Mental Health Practitioners (except Physicians)",
+    "Unit": "USD",
+    "EmissionFactor": 0.12
+  },
+  {
+    "Product/Service": "Offices of Physical, Occupational and Speech Therapists, and Audiologists",
+    "Unit": "USD",
+    "EmissionFactor": 0.12
+  },
+  
+  {
+    "Product/Service": "Offices of Podiatrists",
+    "Unit": "USD",
+    "EmissionFactor": 0.12
+  },
+  {
+    "Product/Service": "Offices of All Other Miscellaneous Health Practitioners",
+    "Unit": "USD",
+    "EmissionFactor": 0.12
+  },
+  {
+    "Product/Service": "Family Planning Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.116
+  },
+  {
+    "Product/Service": "Outpatient Mental Health and Substance Abuse Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.116
+  },
+  {
+    "Product/Service": "HMO Medical Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.116
+  },
+  {
+    "Product/Service": "Kidney Dialysis Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.116
+  },
+  {
+    "Product/Service": "Freestanding Ambulatory Surgical and Emergency Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.116
+  },
+  {
+    "Product/Service": "All Other Outpatient Care Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.116
+  },
+  {
+    "Product/Service": "Medical Laboratories",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Diagnostic Imaging Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Home Health Care Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.112
+  },
+  {
+    "Product/Service": "Ambulance Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.181
+  },
+  {
+    "Product/Service": "Blood and Organ Banks",
+    "Unit": "USD",
+    "EmissionFactor": 0.181
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Ambulatory Health Care Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.181
+  },
+  {
+    "Product/Service": "General Medical and Surgical Hospitals",
+    "Unit": "USD",
+    "EmissionFactor": 0.157
+  },
+  {
+    "Product/Service": "Psychiatric and Substance Abuse Hospitals",
+    "Unit": "USD",
+    "EmissionFactor": 0.157
+  },
+  {
+    "Product/Service": "Specialty (except Psychiatric and Substance Abuse) Hospitals",
+    "Unit": "USD",
+    "EmissionFactor": 0.157
+  },
+  {
+    "Product/Service": "Nursing Care Facilities (Skilled Nursing Facilities)",
+    "Unit": "USD",
+    "EmissionFactor": 0.157
+  },
+  {
+    "Product/Service": "Residential Intellectual and Developmental Disability Facilities",
+    "Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Residential Mental Health and Substance Abuse Facilities",
+    "Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Continuing Care Retirement CommUnities",
+    "Unit": "USD",
+    "EmissionFactor": 0.157
+  },
+  {
+    "Product/Service": "Assisted Living Facilities for the Elderly",
+    "Unit": "USD",
+    "EmissionFactor": 0.157
+  },
+  {
+    "Product/Service": "Other Residential Care Facilities",
+    "Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Child and Youth Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Services for the Elderly and Persons with Disabilities",
+    "Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Other Individual and Family Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Community Food Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.248
+  },
+  {
+    "Product/Service": "Temporary Shelters",
+    "Unit": "USD",
+    "EmissionFactor": 0.248
+  },
+  {
+    "Product/Service": "Other CommUnity Housing Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.248
+  },
+  {
+    "Product/Service": "Emergency and Other Relief Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.248
+  },
+  {
+    "Product/Service": "Vocational Rehabilitation Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.248
+  },
+  {
+    "Product/Service": "Child Day Care Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.166
+  }
+      ]},
+      
+       {
+      "name": "Arts, Entertainment & Recreation Services",
+      "items": [{
+    "Product/Service": "Theater Companies and Dinner Theaters",
+    "Unit": "USD",
+    "EmissionFactor": 0.084
+  },
+  {
+    "Product/Service": "Dance Companies",
+    "Unit": "USD",
+    "EmissionFactor": 0.084
+  },
+  {
+    "Product/Service": "Musical Groups and Artists",
+    "Unit": "USD",
+    "EmissionFactor": 0.084
+  },
+  {
+    "Product/Service": "Other Performing Arts Companies",
+    "Unit": "USD",
+    "EmissionFactor": 0.084
+  },
+  {
+    "Product/Service": "Sports Teams and Clubs",
+    "Unit": "USD",
+    "EmissionFactor": 0.072
+  },
+  {
+    "Product/Service": "Racetracks",
+    "Unit": "USD",
+    "EmissionFactor": 0.072
+  },
+  {
+    "Product/Service": "Other Spectator Sports",
+    "Unit": "USD",
+    "EmissionFactor": 0.072
+  },
+  {
+    "Product/Service": "Promoters of Performing Arts, Sports, and Similar Events with Facilities",
+    "Unit": "USD",
+    "EmissionFactor": 0.083
+  },
+  {
+    "Product/Service": "Promoters of Performing Arts, Sports, and Similar Events without Facilities",
+    "Unit": "USD",
+    "EmissionFactor": 0.083
+  },
+  {
+    "Product/Service": "Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures",
+    "Unit": "USD",
+    "EmissionFactor": 0.083
+  },
+  {
+    "Product/Service": "Independent Artists, Writers, and Performers",
+    "Unit": "USD",
+    "EmissionFactor": 0.013
+  },
+  {
+    "Product/Service": "Museums",
+    "Unit": "USD",
+    "EmissionFactor": 0.156
+  },
+  {
+    "Product/Service": "Historical Sites",
+    "Unit": "USD",
+    "EmissionFactor": 0.156
+  },
+  {
+    "Product/Service": "Zoos and Botanical Gardens",
+    "Unit": "USD",
+    "EmissionFactor": 0.156
+  },
+  {
+    "Product/Service": "Nature Parks and Other Similar Institutions",
+    "Unit": "USD",
+    "EmissionFactor": 0.156
+  },
+  {
+    "Product/Service": "Amusement and Theme Parks",
+    "Unit": "USD",
+    "EmissionFactor": 0.138
+  },
+  {
+    "Product/Service": "Amusement Arcades",
+    "Unit": "USD",
+    "EmissionFactor": 0.138
+  },
+  {
+    "Product/Service": "Casinos (except Casino Hotels)",
+    "Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Other Gambling Industries",
+    "Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Golf Courses and Country Clubs",
+    "Unit": "USD",
+    "EmissionFactor": 0.312
+  },
+  {
+    "Product/Service": "Skiing Facilities",
+    "Unit": "USD",
+    "EmissionFactor": 0.312
+  },
+  {
+    "Product/Service": "Marinas",
+    "Unit": "USD",
+    "EmissionFactor": 0.312
+  },
+  {
+    "Product/Service": "Fitness and Recreational Sports Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.312
+  },
+  {
+    "Product/Service": "Bowling Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.312
+  },
+  {
+    "Product/Service": "All Other Amusement and Recreation Industries",
+    "Unit": "USD",
+    "EmissionFactor": 0.312
+  }]},
+
+  
+       {
+      "name": "Accommodation & Food Services",
+      "items": [
+        {
+    "Product/Service": "Hotels (except Casino Hotels) and Motels",
+    "Unit": "USD",
+    "EmissionFactor": 0.183
+  },
+  {
+    "Product/Service": "Casino Hotels",
+    "Unit": "USD",
+    "EmissionFactor": 0.183
+  },
+  {
+    "Product/Service": "Bed-and-Breakfast Inns",
+    "Unit": "USD",
+    "EmissionFactor": 0.183
+  },
+  {
+    "Product/Service": "All Other Traveler Accommodation",
+    "Unit": "USD",
+    "EmissionFactor": 0.183
+  },
+  {
+    "Product/Service": "RV (Recreational Vehicle) Parks and Campgrounds",
+    "Unit": "USD",
+    "EmissionFactor": 0.183
+  },
+  {
+    "Product/Service": "Recreational and Vacation Camps (except Campgrounds)",
+    "Unit": "USD",
+    "EmissionFactor": 0.183
+  },
+  {
+    "Product/Service": "Rooming and Boarding Houses, Dormitories, and Workers' Camps",
+    "Unit": "USD",
+    "EmissionFactor": 0.183
+  },
+  {
+    "Product/Service": "Food Product/Service Contractors",
+    "Unit": "USD",
+    "EmissionFactor": 0.155
+  },
+  {
+    "Product/Service": "Caterers",
+    "Unit": "USD",
+    "EmissionFactor": 0.155
+  },
+  {
+    "Product/Service": "Mobile Food Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.155
+  },
+  
+  {
+    "Product/Service": "Drinking Places (Alcoholic Beverages)",
+    "Unit": "USD",
+    "EmissionFactor": 0.155
+  },
+  {
+    "Product/Service": "Full-Product/Service Restaurants",
+    "Unit": "USD",
+    "EmissionFactor": 0.218
+  },
+  {
+    "Product/Service": "Limited-Product/Service Restaurants",
+    "Unit": "USD",
+    "EmissionFactor": 0.287
+  },
+  {
+    "Product/Service": "Cafeterias, Grill Buffets, and Buffets",
+    "Unit": "USD",
+    "EmissionFactor": 0.155
+  },
+  {
+    "Product/Service": "Snack and Nonalcoholic Beverage Bars",
+    "Unit": "USD",
+    "EmissionFactor": 0.155
+  }
+
+      ]},
+      
+       {
+      "name": "Repair & Maintenance Services",
+      "items": [
+        {
+    "Product/Service": "General Automotive Repair",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Automotive Exhaust System Repair",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Automotive Transmission Repair",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Other Automotive Mechanical and Electrical Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Automotive Body, Paint, and Interior Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Automotive Glass Replacement Shops",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Automotive Oil Change and Lubrication Shops",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Car Washes",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "All Other Automotive Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.127
+  },
+  {
+    "Product/Service": "Consumer Electronics Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.09
+  },
+  {
+    "Product/Service": "Computer and Office Machine Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.09
+  },
+  {
+    "Product/Service": "Communication Equipment Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.09
+  },
+  {
+    "Product/Service": "Other Electronic and Precision Equipment Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.09
+  },
+  {
+    "Product/Service": "Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.14
+  },
+  {
+    "Product/Service": "Home and Garden Equipment Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.086
+  },
+  {
+    "Product/Service": "Appliance Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.086
+  },
+  {
+    "Product/Service": "Reupholstery and Furniture Repair",
+    "Unit": "USD",
+    "EmissionFactor": 0.086
+  },
+  {
+    "Product/Service": "Footwear and Leather Goods Repair",
+    "Unit": "USD",
+    "EmissionFactor": 0.086
+  },
+  {
+    "Product/Service": "Other Personal and Household Goods Repair and Maintenance",
+    "Unit": "USD",
+    "EmissionFactor": 0.086
+  }
+      ]},
+
+      
+       {
+      "name": "Personal Care & Other Personal Services",
+      "items": [
+       {
+    "Product/Service": "Barber Shops",
+    "Unit": "USD",
+    "EmissionFactor": 0.109
+  },
+  {
+    "Product/Service": "Beauty Salons",
+    "Unit": "USD",
+    "EmissionFactor": 0.109
+  },
+  {
+    "Product/Service": "Nail Salons",
+    "Unit": "USD",
+    "EmissionFactor": 0.109
+  },
+  {
+    "Product/Service": "Diet and Weight Reducing Centers",
+    "Unit": "USD",
+    "EmissionFactor": 0.109
+  },
+  {
+    "Product/Service": "Other Personal Care Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.109
+  },
+  {
+    "Product/Service": "Funeral Homes and Funeral Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.034
+  },
+  {
+    "Product/Service": "Cemeteries and Crematories",
+    "Unit": "USD",
+    "EmissionFactor": 0.034
+  },
+  {
+    "Product/Service": "Coin-Operated Laundries and Drycleaners",
+    "Unit": "USD",
+    "EmissionFactor": 0.162
+  },
+  {
+    "Product/Service": "Drycleaning and Laundry Product/Services (except Coin-Operated)",
+    "Unit": "USD",
+    "EmissionFactor": 0.162
+  },
+  {
+    "Product/Service": "Linen Supply",
+    "Unit": "USD",
+    "EmissionFactor": 0.162
+  },
+  {
+    "Product/Service": "Industrial Launderers",
+    "Unit": "USD",
+    "EmissionFactor": 0.162
+  },
+  {
+    "Product/Service": "Pet Care (except Veterinary) Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.099
+  },
+  {
+    "Product/Service": "Photofinishing Laboratories (except One-Hour)",
+    "Unit": "USD",
+    "EmissionFactor": 0.099
+  },
+  {
+    "Product/Service": "One-Hour Photofinishing",
+    "Unit": "USD",
+    "EmissionFactor": 0.099
+  },
+  {
+    "Product/Service": "Parking Lots and Garages",
+    "Unit": "USD",
+    "EmissionFactor": 0.099
+  },
+  {
+    "Product/Service": "All Other Personal Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.099
+  }
+
+      ]},
+
+      
+       {
+      "name": "Membership Organizations & Associations",
+      "items": [
+        {
+    "Product/Service": "Religious Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.197
+  },
+  {
+    "Product/Service": "Grantmaking Foundations",
+    "Unit": "USD",
+    "EmissionFactor": 0.065
+  },
+  {
+    "Product/Service": "Voluntary Health Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.065
+  },
+  {
+    "Product/Service": "Other Grantmaking and Giving Product/Services",
+    "Unit": "USD",
+    "EmissionFactor": 0.065
+  },
+  {
+    "Product/Service": "Human Rights Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.065
+  },
+  {
+    "Product/Service": "Environment, Conservation and Wildlife Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.065
+  },
+  {
+    "Product/Service": "Other Social Advocacy Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.065
+  },
+  {
+    "Product/Service": "Civic and Social Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.136
+  },
+  {
+    "Product/Service": "Business Associations",
+    "Unit": "USD",
+    "EmissionFactor": 0.136
+  },
+  {
+    "Product/Service": "Professional Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.136
+  },
+  {
+    "Product/Service": "Labor Unions and Similar Labor Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.136
+  },
+  {
+    "Product/Service": "Political Organizations",
+    "Unit": "USD",
+    "EmissionFactor": 0.136
+  },
+  {
+    "Product/Service": "Other Similar Organizations (except Business, Professional, Labor, and Political Organizations)",
+    "Unit": "USD",
+    "EmissionFactor": 0.136
+  }
+
+      ]}
+  ]
+}
+,
+  {
+    "Category": "Capital Goods",
+    "Capital Goods": [
+    {"Product/Service": "Soybean Farming","Unit": "USD","EmissionFactor": 1.326},
+    {"Product/Service": "Oilseed (except Soybean) Farming","Unit": "USD", "EmissionFactor": 1.326},
+    {"Product/Service": "Dry Pea and Bean Farming","Unit": "USD", "EmissionFactor": 3.007},
+    {"Product/Service": "Wheat Farming","Unit": "USD", "EmissionFactor": 3.007},
+    {"Product/Service": "Corn Farming", "Unit": "USD","EmissionFactor": 3.007},
+    {"Product/Service": "Rice Farming", "Unit": "USD","EmissionFactor": 3.007},
+    {"Product/Service": "Oilseed and Grain Combination Farming", "Unit": "USD","EmissionFactor": 3.007},
+    {"Product/Service": "All Other Grain Farming","Unit": "USD", "EmissionFactor": 3.007},
+    {"Product/Service": "Potato Farming","Unit": "USD", "EmissionFactor": 0.588},
+    {"Product/Service": "Other Vegetable (except Potato) and Melon Farming", "Unit": "USD", "EmissionFactor": 0.588},
+    {"Product/Service": "Orange Groves", "Unit": "USD","EmissionFactor": 0.5},
+    {"Product/Service": "Citrus (except Orange) Groves","Unit": "USD", "EmissionFactor": 0.5},
+    {"Product/Service": "Apple Orchards", "Unit": "USD","EmissionFactor": 0.5},
+    {"Product/Service": "Grape Vineyards", "Unit": "USD","EmissionFactor": 0.5},
+    {"Product/Service": "Strawberry Farming", "Unit": "USD","EmissionFactor": 0.5},
+    {"Product/Service": "Berry (except Strawberry) Farming","Unit": "USD", "EmissionFactor": 0.5},
+    {"Product/Service": "Tree Nut Farming", "Unit": "USD","EmissionFactor": 0.5},
+    {"Product/Service": "Fruit and Tree Nut Combination Farming", "Unit": "USD","EmissionFactor": 0.5},
+    {"Product/Service": "Other Noncitrus Fruit Farming", "Unit": "USD","EmissionFactor": 0.5},
+    {"Product/Service": "Mushroom Production", "Unit": "USD","EmissionFactor": 1.043},
+    {"Product/Service": "Other Food Crops Grown Under Cover", "Unit": "USD","EmissionFactor": 1.043},
+    {"Product/Service": "Nursery and Tree Production", "Unit": "USD","EmissionFactor": 1.043},
+    {"Product/Service": "Floriculture Production","Unit": "USD", "EmissionFactor": 1.043},
+    {"Product/Service": "Tobacco Farming", "Unit": "USD","EmissionFactor": 1.431},
+    {"Product/Service": "Cotton Farming","Unit": "USD", "EmissionFactor": 1.431},
+    {"Product/Service": "Sugarcane Farming","Unit": "USD", "EmissionFactor": 1.431},
+    {"Product/Service": "Hay Farming","Unit": "USD", "EmissionFactor": 1.431},
+    {"Product/Service": "Sugar Beet Farming","Unit": "USD", "EmissionFactor": 1.431},
+    {"Product/Service": "Peanut Farming","Unit": "USD", "EmissionFactor": 1.431},
+    {"Product/Service": "All Other Miscellaneous Crop Farming","Unit": "USD", "EmissionFactor": 1.431},
+    {"Product/Service": "Beef Cattle Ranching and Farming","Unit": "USD", "EmissionFactor": 3.298},
+    {"Product/Service": "Cattle Feedlots", "Unit": "USD","EmissionFactor": 3.298},
+    {"Product/Service": "Dairy Cattle and Milk Production", "Unit": "USD","EmissionFactor": 2.578},
+    {"Product/Service": "Dual-Purpose Cattle Ranching and Farming","Unit": "USD", "EmissionFactor": 3.298},
+    {"Product/Service": "Hog and Pig Farming","Unit": "USD", "EmissionFactor": 1.375},
+    {"Product/Service": "Chicken Egg Production", "Unit": "USD","EmissionFactor": 1.171},
+    {"Product/Service": "Broilers and Other Meat Type Chicken Production", "Unit": "USD","EmissionFactor": 1.171},
+    {"Product/Service": "Turkey Production","Unit": "USD", "EmissionFactor": 1.171},
+    {"Product/Service": "Poultry Hatcheries", "Unit": "USD","EmissionFactor": 1.171},
+    {"Product/Service": "Other Poultry Production","Unit": "USD", "EmissionFactor": 1.171},
+    {"Product/Service": "Sheep Farming","Unit": "USD", "EmissionFactor": 1.375},
+    {"Product/Service": "Goat Farming","Unit": "USD", "EmissionFactor": 1.375},
+    {"Product/Service": "Finfish Farming and Fish Hatcheries","Unit": "USD", "EmissionFactor": 1.375},
+    {"Product/Service": "Shellfish Farming", "Unit": "USD","EmissionFactor": 1.375},
+    {"Product/Service": "Other Aquaculture", "Unit": "USD","EmissionFactor": 1.375},
+    {"Product/Service": "Apiculture","Unit": "USD", "EmissionFactor": 1.375},
+    {"Product/Service": "Horses and Other Equine Production","Unit": "USD", "EmissionFactor": 1.375},
+    {"Product/Service": "Fur-Bearing Animal and Rabbit Production","Unit": "USD", "EmissionFactor": 1.375},
+    {"Product/Service": "All Other Animal Production","Unit": "USD", "EmissionFactor": 1.375},
+    {"Product/Service": "Timber Tract Operations","Unit": "USD", "EmissionFactor": 0.301},
+    {"Product/Service": "Forest Nurseries and Gathering of Forest Products","Unit": "USD", "EmissionFactor": 0.301},
+    {"Product/Service": "Logging", "Unit": "USD","EmissionFactor": 0.301},
+    {"Product/Service": "Finfish Fishing", "Unit": "USD","EmissionFactor": 0.267},
+    {"Product/Service": "Shellfish Fishing", "Unit": "USD","EmissionFactor": 0.267},
+    {"Product/Service": "Other Marine Fishing","Unit": "USD", "EmissionFactor": 0.267},
+    {"Product/Service": "Hunting and Trapping","Unit": "USD", "EmissionFactor": 0.267},
+    {"Product/Service": "Cotton Ginning","Unit": "USD", "EmissionFactor": 0.591},
+    {"Product/Service": "Soil Preparation, Planting, and Cultivating","Unit": "USD", "EmissionFactor": 0.591},
+    {"Product/Service": "Crop Harvesting, Primarily by Machine", "Unit": "USD","EmissionFactor": 0.591},
+    {"Product/Service": "Postharvest Crop Activities (except Cotton Ginning)","Unit": "USD", "EmissionFactor": 0.591},
+    {"Product/Service": "Farm Labor Contractors and Crew Leaders","Unit": "USD", "EmissionFactor": 0.591},
+    {"Product/Service": "Farm Management Services","Unit": "USD", "EmissionFactor": 0.591},
+    {"Product/Service": "Support Activities for Animal Production","Unit": "USD", "EmissionFactor": 0.591},
+    {"Product/Service": "Support Activities for Forestry","Unit": "USD", "EmissionFactor": 0.591},
+    {"Product/Service": "Crude Petroleum Extraction", "Unit": "USD","EmissionFactor": 0.83},
+    {"Product/Service": "Natural Gas Extraction","Unit": "USD", "EmissionFactor": 0.83},
+    {"Product/Service": "Bituminous Coal and Lignite Surface Mining","Unit": "USD", "EmissionFactor": 2.016},
+    {"Product/Service": "Bituminous Coal Underground Mining","Unit": "USD", "EmissionFactor": 2.016},
+    {"Product/Service": "Anthracite Mining", "Unit": "USD","EmissionFactor": 2.016},
+    {"Product/Service": "Iron Ore Mining", "Unit": "USD","EmissionFactor": 1.233},
+    {"Product/Service": "Gold Ore Mining","Unit": "USD", "EmissionFactor": 1.233},
+    {"Product/Service": "Silver Ore Mining","Unit": "USD", "EmissionFactor": 1.233},
+    {"Product/Service": "Copper, Nickel, Lead, and Zinc Mining","Unit": "USD", "EmissionFactor": 1.165},
+    {"Product/Service": "Uranium-Radium-Vanadium Ore Mining","Unit": "USD", "EmissionFactor": 1.233},
+    {"Product/Service": "All Other Metal Ore Mining", "Unit": "USD","EmissionFactor": 1.233},
+    {"Product/Service": "Dimension Stone Mining and Quarrying","Unit": "USD", "EmissionFactor": 0.323},
+    {"Product/Service": "Crushed and Broken Limestone Mining and Quarrying", "Unit": "USD","EmissionFactor": 0.323},
+    {"Product/Service": "Crushed and Broken Granite Mining and Quarrying","Unit": "USD", "EmissionFactor": 0.323},
+    {"Product/Service": "Other Crushed and Broken Stone Mining and Quarrying","Unit": "USD", "EmissionFactor": 0.323},
+    {"Product/Service": "Construction Sand and Gravel Mining", "Unit": "USD","EmissionFactor": 0.692},
+    {"Product/Service": "Industrial Sand Mining", "Unit": "USD","EmissionFactor": 0.692},
+    {"Product/Service": "Kaolin and Ball Clay Mining","Unit": "USD", "EmissionFactor": 0.692},
+    {"Product/Service": "Clay and Ceramic and Refractory Minerals Mining","Unit": "USD", "EmissionFactor": 0.692},
+    {"Product/Service": "Potash, Soda, and Borate Mineral Mining","Unit": "USD", "EmissionFactor": 0.692},
+    {"Product/Service": "Phosphate Rock Mining", "Unit": "USD","EmissionFactor": 0.692},
+    {"Product/Service": "Other Chemical and Fertilizer Mineral Mining","Unit": "USD", "EmissionFactor": 0.692},
+    {"Product/Service": "All Other Nonmetallic Mineral Mining","Unit": "USD", "EmissionFactor": 0.692},
+    {"Product/Service": "Drilling Oil and Gas Wells","Unit": "USD", "EmissionFactor": 0.519},
+    {"Product/Service": "Support Activities for Oil and Gas Operations", "Unit": "USD","EmissionFactor": 0.51},
+    {"Product/Service": "Support Activities for Coal Mining","Unit": "USD", "EmissionFactor": 0.51},
+    {"Product/Service": "Support Activities for Metal Mining", "Unit": "USD","EmissionFactor": 0.51},
+    {"Product/Service": "Support Activities for Nonmetallic Minerals (except Fuels) Mining", "Unit": "USD","EmissionFactor": 0.51},
+    {"Product/Service": "Natural Gas Distribution", "Unit": "USD","EmissionFactor": 0.627},
+    {"Product/Service": "Water Supply and Irrigation Systems", "Unit": "USD","EmissionFactor": 0.652},
+    {"Product/Service": "Sewage Treatment Facilities", "Unit": "USD","EmissionFactor": 0.652},
+    {"Product/Service": "Steam and Air-Conditioning Supply","Unit": "USD", "EmissionFactor": 0.652},
+    {"Product/Service": "New Single-Family Housing Construction (except For-Sale Builders)","Unit": "USD", "EmissionFactor": 0.166},
+    {"Product/Service": "New Multifamily Housing Construction (except For-Sale Builders)", "Unit": "USD","EmissionFactor": 0.116},
+    {"Product/Service": "New Housing For-Sale Builders","Unit": "USD", "EmissionFactor": 0.195},
+    {"Product/Service": "Residential Remodelers","Unit": "USD", "EmissionFactor": 0.277},
+    {"Product/Service": "Industrial Building Construction","Unit": "USD", "EmissionFactor": 0.31},
+    {"Product/Service": "Commercial and Institutional Building Construction","Unit": "USD", "EmissionFactor": 0.256},
+    {"Product/Service": "Water and Sewer Line and Related Structures Construction", "Unit": "USD","EmissionFactor": 0.354},
+    {"Product/Service": "Oil and Gas Pipeline and Related Structures Construction", "Unit": "USD","EmissionFactor": 0.354},
+    {"Product/Service": "Power and Communication Line and Related Structures Construction","Unit": "USD", "EmissionFactor": 0.354},
+    {"Product/Service": "Land Subdivision", "Unit": "USD","EmissionFactor": 0.239},
+    {"Product/Service": "Highway, Street, and Bridge Construction", "Unit": "USD","EmissionFactor": 0.297},
+    {"Product/Service": "Other Heavy and Civil Engineering Construction","Unit": "USD", "EmissionFactor": 0.27},
+    {"Product/Service": "Poured Concrete Foundation and Structure Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "Structural Steel and Precast Concrete Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Framing Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Masonry Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "Glass and Glazing Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "Roofing Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "Siding Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Other Foundation, Structure, and Building Exterior Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Electrical Contractors and Other Wiring Installation Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Plumbing, Heating, and Air-Conditioning Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "Other Building Equipment Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "Drywall and Insulation Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Painting and Wall Covering Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "Flooring Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Tile and Terrazzo Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Finish Carpentry Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "Other Building Finishing Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Site Preparation Contractors", "Unit": "USD","EmissionFactor": 0.245},
+    {"Product/Service": "All Other Specialty Trade Contractors","Unit": "USD", "EmissionFactor": 0.245},
+    {"Product/Service": "Dog and Cat Food Manufacturing","Unit": "USD", "EmissionFactor": 0.478},
+    {"Product/Service": "Other Animal Food Manufacturing", "Unit": "USD","EmissionFactor": 0.809},
+    {"Product/Service": "Flour Milling","Unit": "USD", "EmissionFactor": 1.448},
+    {"Product/Service": "Rice Milling","Unit": "USD", "EmissionFactor": 1.448},
+    {"Product/Service": "Malt Manufacturing", "Unit": "USD","EmissionFactor": 1.448},
+    {"Product/Service": "Wet Corn Milling", "Unit": "USD","EmissionFactor": 1.637},
+    {"Product/Service": "Soybean and Other Oilseed Processing","Unit": "USD", "EmissionFactor": 1.09},
+    {"Product/Service": "Fats and Oils Refining and Blending", "Unit": "USD","EmissionFactor": 0.756},
+    {"Product/Service": "Breakfast Cereal Manufacturing","Unit": "USD", "EmissionFactor": 0.485},
+    {"Product/Service": "Beet Sugar Manufacturing", "Unit": "USD","EmissionFactor": 0.543},
+    {"Product/Service": "Cane Sugar Manufacturing", "Unit": "USD","EmissionFactor": 0.543},
+    {"Product/Service": "Nonchocolate Confectionery Manufacturing", "Unit": "USD","EmissionFactor": 0.543},
+    {"Product/Service": "Chocolate and Confectionery Manufacturing from Cacao Beans","Unit": "USD", "EmissionFactor": 0.543},
+    {"Product/Service": "Confectionery Manufacturing from Purchased Chocolate", "Unit": "USD","EmissionFactor": 0.543},
+    {"Product/Service": "Frozen Fruit, Juice, and Vegetable Manufacturing", "Unit": "USD","EmissionFactor": 0.718},
+    {"Product/Service": "Frozen Specialty Food Manufacturing", "Unit": "USD","EmissionFactor": 0.718},
+    {"Product/Service": "Fruit and Vegetable Canning", "Unit": "USD","EmissionFactor": 0.518},
+    {"Product/Service": "Specialty Canning","Unit": "USD", "EmissionFactor": 0.518},
+    {"Product/Service": "Dried and Dehydrated Food Manufacturing", "Unit": "USD","EmissionFactor": 0.518},
+    {"Product/Service": "Fluid Milk Manufacturing", "Unit": "USD","EmissionFactor": 1.039},
+  {
+    "Product/Service": "Creamery Butter Manufacturing", "Unit": "USD",
+    "EmissionFactor": 1.039
+  },
+  {
+    "Product/Service": "Cheese Manufacturing", "Unit": "USD",
+    "EmissionFactor": 1.259
+  },
+  {
+    "Product/Service": "Dry, Condensed, and Evaporated Dairy Product Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.946
+  },
+  {
+    "Product/Service": "Ice Cream and Frozen Dessert Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.637
+  },
+  {
+    "Product/Service": "Animal (except Poultry) Slaughtering", "Unit": "USD",
+    "EmissionFactor": 1.279
+  },
+  {
+    "Product/Service": "Meat Processed from Carcasses", "Unit": "USD",
+    "EmissionFactor": 1.279
+  },
+  {
+    "Product/Service": "Rendering and Meat Byproduct Processing", "Unit": "USD",
+    "EmissionFactor": 1.279
+  },
+  {
+    "Product/Service": "Poultry Processing", "Unit": "USD",
+    "EmissionFactor": 0.64
+  },
+  {
+    "Product/Service": "Seafood Product Preparation and Packaging", "Unit": "USD",
+    "EmissionFactor": 0.376
+  },
+  {
+    "Product/Service": "Retail Bakeries", "Unit": "USD",
+    "EmissionFactor": 0.314
+  },
+  {
+    "Product/Service": "Commercial Bakeries", "Unit": "USD",
+    "EmissionFactor": 0.314
+  },
+  {
+    "Product/Service": "Frozen Cakes, Pies, and Other Pastries Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.314
+  },
+  {
+    "Product/Service": "Cookie and Cracker Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.548
+  },
+  {
+    "Product/Service": "Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour", "Unit": "USD",
+    "EmissionFactor": 0.548
+  },
+  {
+    "Product/Service": "Tortilla Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.548
+  },
+  {
+    "Product/Service": "Roasted Nuts and Peanut Butter Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.501
+  },
+  {
+    "Product/Service": "Other Snack Food Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.501
+  },
+  {
+    "Product/Service": "Coffee and Tea Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.549
+  },
+  {
+    "Product/Service": "Flavoring Syrup and Concentrate Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.448
+  },
+  {
+    "Product/Service": "Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.449
+  },
+  {
+    "Product/Service": "Spice and Extract Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.449
+  },
+  {
+    "Product/Service": "Perishable Prepared Food Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.603
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Food Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.603
+  },
+  {
+    "Product/Service": "Soft Drink Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.378
+  },
+  {
+    "Product/Service": "Bottled Water Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.378
+  },
+  {
+    "Product/Service": "Ice Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.378
+  },
+  {
+    "Product/Service": "Breweries", "Unit": "USD",
+    "EmissionFactor": 0.377
+  },
+  {
+    "Product/Service": "Wineries", "Unit": "USD",
+    "EmissionFactor": 0.21
+  },
+  {
+    "Product/Service": "Distilleries", "Unit": "USD",
+    "EmissionFactor": 0.446
+  },
+  {
+    "Product/Service": "Tobacco Manufacturing", "Unit": "USD",
+    "EmissionFactor": 0.118
+  },
+  {
+    "Product/Service": "Fiber, Yarn, and Thread Mills","Unit": "USD",
+    "EmissionFactor": 0.837
+  },
+  {
+    "Product/Service": "Broadwoven Fabric Mills","Unit": "USD",
+    "EmissionFactor": 0.525
+  },
+  {
+    "Product/Service": "Narrow Fabric Mills and Schiffli Machine Embroidery","Unit": "USD",
+    "EmissionFactor": 0.525
+  },
+  {
+    "Product/Service": "Nonwoven Fabric Mills","Unit": "USD",
+    "EmissionFactor": 0.525
+  },
+  {
+    "Product/Service": "Knit Fabric Mills","Unit": "USD",
+    "EmissionFactor": 0.525
+  },
+  {
+    "Product/Service": "Textile and Fabric Finishing Mills","Unit": "USD",
+    "EmissionFactor": 0.452
+  },
+  {
+    "Product/Service": "Fabric Coating Mills","Unit": "USD",
+    "EmissionFactor": 0.452
+  },
+  {
+    "Product/Service": "Carpet and Rug Mills","Unit": "USD",
+    "EmissionFactor": 0.308
+  },
+  {
+    "Product/Service": "Curtain and Linen Mills","Unit": "USD",
+    "EmissionFactor": 0.22
+  },
+  {
+    "Product/Service": "Textile Bag and Canvas Mills","Unit": "USD",
+    "EmissionFactor": 0.263
+  },
+  {
+    "Product/Service": "Rope, Cordage, Twine, Tire Cord, and Tire Fabric Mills","Unit": "USD",
+    "EmissionFactor": 0.263
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Textile Product Mills","Unit": "USD",
+    "EmissionFactor": 0.263
+  },
+  {
+    "Product/Service": "Hosiery and Sock Mills","Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Other Apparel Knitting Mills","Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Cut and Sew Apparel Contractors","Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Men's and Boys' Cut and Sew Apparel Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Women's, Girls', and Infants' Cut and Sew Apparel Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Other Cut and Sew Apparel Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Apparel Accessories and Other Apparel Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.145
+  },
+  {
+    "Product/Service": "Leather and Hide Tanning and Finishing","Unit": "USD",
+    "EmissionFactor": 0.256
+  },
+  {
+    "Product/Service": "Footwear Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.256
+  },
+  {
+    "Product/Service": "Women's Handbag and Purse Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.256
+  },
+  {
+    "Product/Service": "All Other Leather Good and Allied Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.256
+  },
+  {
+    "Product/Service": "Sawmills","Unit": "USD",
+    "EmissionFactor": 0.274
+  },
+  {
+    "Product/Service": "Wood Preservation","Unit": "USD",
+    "EmissionFactor": 0.274
+  },
+  {
+    "Product/Service": "Hardwood Veneer and Plywood Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.218
+  },
+  {
+    "Product/Service": "Softwood Veneer and Plywood Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.218
+  },
+  {
+    "Product/Service": "Engineered Wood Member (except Truss) Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.218
+  },
+  {
+    "Product/Service": "Truss Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.218
+  },
+  {
+    "Product/Service": "Reconstituted Wood Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.218
+  },
+  {
+    "Product/Service": "Wood Window and Door Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.187
+  },
+  {
+    "Product/Service": "Cut Stock, Resawing Lumber, and Planing","Unit": "USD",
+    "EmissionFactor": 0.187
+  },
+  {
+    "Product/Service": "Other Millwork (including Flooring)","Unit": "USD",
+    "EmissionFactor": 0.187
+  },
+  {
+    "Product/Service": "Wood Container and Pallet Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.2
+  },
+  {
+    "Product/Service": "Manufactured Home (Mobile Home) Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.2
+  },
+  {
+    "Product/Service": "Prefabricated Wood Building Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.2
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Wood Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.2
+  },
+  {
+    "Product/Service": "Pulp Mills","Unit": "USD",
+    "EmissionFactor": 0.957
+  },
+  {
+    "Product/Service": "Paper (except Newsprint) Mills","Unit": "USD",
+    "EmissionFactor": 0.737
+  },
+  {
+    "Product/Service": "Newsprint Mills","Unit": "USD",
+    "EmissionFactor": 0.737
+  },
+  {
+    "Product/Service": "Paperboard Mills","Unit": "USD",
+    "EmissionFactor": 0.803
+  },
+  {
+    "Product/Service": "Corrugated and Solid Fiber Box Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.49
+  },
+  {
+    "Product/Service": "Folding Paperboard Box Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.49
+  },
+  {
+    "Product/Service": "Other Paperboard Container Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.49
+  },
+  {
+    "Product/Service": "Paper Bag and Coated and Treated Paper Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.522
+  },
+  {
+    "Product/Service": "Stationery Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.418
+  },
+  {
+    "Product/Service": "Sanitary Paper Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.411
+  },
+  {
+    "Product/Service": "All Other Converted Paper Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.463
+  },
+  {
+    "Product/Service": "Commercial Printing (except Screen and Books)","Unit": "USD",
+    "EmissionFactor": 0.347
+  },
+  {
+    "Product/Service": "Commercial Screen Printing","Unit": "USD",
+    "EmissionFactor": 0.347
+  },
+  {
+    "Product/Service": "Books Printing","Unit": "USD",
+    "EmissionFactor": 0.347
+  },
+  {
+    "Product/Service": "Support Activites for Printing","Unit": "USD",
+    "EmissionFactor": 0.286
+  },
+  {
+    "Product/Service": "Petroleum Refineries","Unit": "USD",
+    "EmissionFactor": 0.859
+  },
+  {
+    "Product/Service": "Asphalt Paving Mixture and Block Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.318
+  },
+  {
+    "Product/Service": "Asphalt Shingle and Coating Materials Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.916
+  },
+  {
+    "Product/Service": "Petroleum Lubricating Oil and Grease Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.848
+  },
+  {
+    "Product/Service": "All Other Petroleum and Coal Products Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.848
+  },
+  {
+    "Product/Service": "Petrochemical Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.197
+  },
+  {
+    "Product/Service": "Industrial Gas Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.45
+  },
+  {
+    "Product/Service": "Synthetic Dye and Pigment Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.382
+  },
+  {
+    "Product/Service": "Other Basic Inorganic Chemical Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.117
+  },
+  {
+    "Product/Service": "Ethyl Alcohol Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.51
+  },
+  {
+    "Product/Service": "Cyclic Crude, Intermediate, and Gum and Wood Chemical Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.51
+  },
+  {
+    "Product/Service": "All Other Basic Organic Chemical Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.51
+  },
+  {
+    "Product/Service": "Plastics Material and Resin Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.076
+  },
+  {
+    "Product/Service": "Synthetic Rubber Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.136
+  },
+  {
+    "Product/Service": "Artificial and Synthetic Fibers and Filaments Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.136
+  },
+  {
+    "Product/Service": "Nitrogenous Fertilizer Manufacturing","Unit": "USD",
+    "EmissionFactor": 2.115
+  },
+  {
+    "Product/Service": "Phosphatic Fertilizer Manufacturing","Unit": "USD",
+    "EmissionFactor": 2.115
+  },
+  {
+    "Product/Service": "Fertilizer (Mixing Only) Manufacturing","Unit": "USD",
+    "EmissionFactor": 2.115
+  },
+  {
+    "Product/Service": "Pesticide and Other Agricultural Chemical Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.547
+  },
+  {
+    "Product/Service": "Medicinal and Botanical Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.26
+  },
+  {
+    "Product/Service": "Pharmaceutical Preparation Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.107
+  },
+  {
+    "Product/Service": "In-Vitro Diagnostic Substance Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.143
+  },
+  {
+    "Product/Service": "Biological Product (except Diagnostic) Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.085
+  },
+  {
+    "Product/Service": "Paint and Coating Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.469
+  },
+  {
+    "Product/Service": "Adhesive Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.714
+  },
+  {
+    "Product/Service": "Soap and Other Detergent Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.405
+  },
+  {
+    "Product/Service": "Polish and Other Sanitation Good Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.405
+  },
+  {
+    "Product/Service": "Surface Active Agent Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.405
+  },
+  {
+    "Product/Service": "Toilet Preparation Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.199
+  },
+  {
+    "Product/Service": "Printing Ink Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.784
+  },
+  {
+    "Product/Service": "Explosives Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.567
+  },
+  {
+    "Product/Service": "Custom Compounding of Purchased Resins","Unit": "USD",
+    "EmissionFactor": 0.567
+  },
+  {
+    "Product/Service": "Photographic Film, Paper, Plate, and Chemical Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.567
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Chemical Product and Preparation Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.567
+  },
+  {
+    "Product/Service": "Plastics Bag and Pouch Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.608
+  },
+  {
+    "Product/Service": "Plastics Packaging Film and Sheet (including Laminated) Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.608
+  },
+  {
+    "Product/Service": "Unlaminated Plastics Film and Sheet (except Packaging) Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.608
+  },
+  {
+    "Product/Service": "Unlaminated Plastics Profile Shape Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.434
+  },
+  {
+    "Product/Service": "Plastics Pipe and Pipe Fitting Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.434
+  },
+  {
+    "Product/Service": "Laminated Plastics Plate, Sheet (except Packaging), and Shape Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.497
+  },
+  {
+    "Product/Service": "Polystyrene Foam Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.347
+  },
+  {
+    "Product/Service": "Urethane and Other Foam Product (except Polystyrene) Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.399
+  },
+  {
+    "Product/Service": "Plastics Bottle Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.783
+  },
+  {
+    "Product/Service": "Plastics Plumbing Fixture Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.403
+  },
+  {
+    "Product/Service": "All Other Plastics Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.403
+  },
+  {
+    "Product/Service": "Tire Manufacturing (except Retreading)","Unit": "USD",
+    "EmissionFactor": 0.43
+  },
+  {
+    "Product/Service": "Tire Retreading","Unit": "USD",
+    "EmissionFactor": 0.43
+  },
+  {
+    "Product/Service": "Rubber and Plastics Hoses and Belting Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.335
+  },
+  {
+    "Product/Service": "Rubber Product Manufacturing for Mechanical Use","Unit": "USD",
+    "EmissionFactor": 0.471
+  },
+  {
+    "Product/Service": "All Other Rubber Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.471
+  },
+  {
+    "Product/Service": "Pottery, Ceramics, and Plumbing Fixture Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.398
+  },
+  {
+    "Product/Service": "Clay Building Material and Refractories Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.398
+  },
+  {
+    "Product/Service": "Flat Glass Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.49
+  },
+  {
+    "Product/Service": "Other Pressed and Blown Glass and Glassware Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.49
+  },
+  {
+    "Product/Service": "Glass Container Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.49
+  },
+  {
+    "Product/Service": "Glass Product Manufacturing Made of Purchased Glass","Unit": "USD",
+    "EmissionFactor": 0.49
+  },
+  {
+    "Product/Service": "Cement Manufacturing","Unit": "USD",
+    "EmissionFactor": 3.858
+  },
+  {
+    "Product/Service": "Ready-Mix Concrete Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.687
+  },
+  {
+    "Product/Service": "Concrete Block and Brick Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.371
+  },
+  {
+    "Product/Service": "Concrete Pipe Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.371
+  },
+  {
+    "Product/Service": "Other Concrete Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.365
+  },
+  {
+    "Product/Service": "Lime Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.714
+  },
+  {
+    "Product/Service": "Gypsum Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 1.714
+  },
+  {
+    "Product/Service": "Abrasive Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.244
+  },
+  {
+    "Product/Service": "Cut Stone and Stone Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.296
+  },
+  {
+    "Product/Service": "Ground or Treated Mineral and Earth Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.496
+  },
+  {
+    "Product/Service": "Mineral Wool Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.45
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Nonmetallic Mineral Product Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.644
+  },
+  {
+    "Product/Service": "Iron and Steel Mills and Ferroalloy Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.979
+  },
+  {
+    "Product/Service": "Iron and Steel Pipe and Tube Manufacturing from Purchased Steel","Unit": "USD",
+    "EmissionFactor": 0.549
+  },
+  {
+    "Product/Service": "Rolled Steel Shape Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.549
+  },
+  {
+    "Product/Service": "Steel Wire Drawing","Unit": "USD",
+    "EmissionFactor": 0.549
+  },
+  {
+    "Product/Service": "Alumina Refining and Primary Aluminum Production","Unit": "USD",
+    "EmissionFactor": 1.41
+  },
+  {
+    "Product/Service": "Aluminum Sheet, Plate, and Foil Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.869
+  },
+  {
+    "Product/Service": "Other Aluminum Rolling, Drawing, and Extruding","Unit": "USD",
+    "EmissionFactor": 0.869
+  },
+  {
+    "Product/Service": "Nonferrous Metal (except Aluminum) Smelting and Refining","Unit": "USD",
+    "EmissionFactor": 0.695
+  },
+  {
+    "Product/Service": "Copper Rolling, Drawing, Extruding, and Alloying","Unit": "USD",
+    "EmissionFactor": 0.537
+  },
+  {
+    "Product/Service": "Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding","Unit": "USD",
+    "EmissionFactor": 0.64
+  },
+  {
+    "Product/Service": "Secondary Smelting, Refining, and Alloying of Nonferrous Metal (except Copper and Aluminum)","Unit": "USD",
+    "EmissionFactor": 0.64
+  },
+  {
+    "Product/Service": "Iron Foundries","Unit": "USD",
+    "EmissionFactor": 0.446
+  },
+  {
+    "Product/Service": "Steel Investment Foundries","Unit": "USD",
+    "EmissionFactor": 0.446
+  },
+  {
+    "Product/Service": "Steel Foundries (except Investment)","Unit": "USD",
+    "EmissionFactor": 0.446
+  },
+  {
+    "Product/Service": "Nonferrous Metal Die-Casting Foundries","Unit": "USD",
+    "EmissionFactor": 0.619
+  },
+  {
+    "Product/Service": "Aluminum Foundries (except Die-Casting)","Unit": "USD",
+    "EmissionFactor": 0.619
+  },
+  {
+    "Product/Service": "Other Nonferrous Metal Foundries (except Die-Casting)","Unit": "USD",
+    "EmissionFactor": 0.619
+  },
+  {
+    "Product/Service": "Iron and Steel Forging","Unit": "USD",
+    "EmissionFactor": 0.641
+  },
+  {
+    "Product/Service": "Nonferrous Forging","Unit": "USD",
+    "EmissionFactor": 0.641
+  },
+  {
+    "Product/Service": "Custom Roll Forming","Unit": "USD",
+    "EmissionFactor": 0.673
+  },
+  {
+    "Product/Service": "Powder Metallurgy Part Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.641
+  },
+  {
+    "Product/Service": "Metal Crown, Closure, and Other Metal Stamping (except Automotive)","Unit": "USD",
+    "EmissionFactor": 0.406
+  },
+  {
+    "Product/Service": "Metal Kitchen Cookware, Utensil, Cutlery, and Flatware (except Precious) Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.24
+  },
+  {
+    "Product/Service": "Saw Blade and Handtool Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.24
+  },
+  {
+    "Product/Service": "Prefabricated Metal Building and Component Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.35
+  },
+  {
+    "Product/Service": "Fabricated Structural Metal Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.35
+  },
+  {
+    "Product/Service": "Plate Work Manufacturing","Unit": "USD",
+    "EmissionFactor": 0.35
+  },
+  {"Product/Service": "Metal Window and Door Manufacturing", "Unit": "USD","EmissionFactor": 0.284},
+  {"Product/Service": "Sheet Metal Work Manufacturing", "Unit": "USD","EmissionFactor": 0.284},
+  {"Product/Service": "OrProduct/Servicental and Architectural Metal Work Manufacturing","Unit": "USD", "EmissionFactor": 0.284},
+  {"Product/Service": "Power Boiler and Heat Exchanger Manufacturing", "Unit": "USD","EmissionFactor": 0.234},
+  {"Product/Service": "Metal Tank (Heavy Gauge) Manufacturing", "Unit": "USD","EmissionFactor": 0.417},
+  {"Product/Service": "Metal Can Manufacturing", "Unit": "USD","EmissionFactor": 0.632},
+  {"Product/Service": "Other Metal Container Manufacturing", "Unit": "USD","EmissionFactor": 0.632},
+  {"Product/Service": "Hardware Manufacturing","Unit": "USD", "EmissionFactor": 0.22},
+  {"Product/Service": "Spring Manufacturing", "Unit": "USD","EmissionFactor": 0.372},
+  {"Product/Service": "Other Fabricated Wire Product Manufacturing","Unit": "USD", "EmissionFactor": 0.372},
+  {"Product/Service": "Machine Shops", "Unit": "USD","EmissionFactor": 0.314},
+  {"Product/Service": "Precision Turned Product Manufacturing", "Unit": "USD","EmissionFactor": 0.332},
+  {"Product/Service": "Bolt, Nut, Screw, Rivet, and Washer Manufacturing","Unit": "USD", "EmissionFactor": 0.332},
+  {"Product/Service": "Metal Heat Treating", "Unit": "USD","EmissionFactor": 0.526},
+  {"Product/Service": "Metal Coating, Engraving (except Jewelry and Silverware), and Allied Services to Manufacturers","Unit": "USD", "EmissionFactor": 0.526},
+  {"Product/Service": "Electroplating, Plating, Polishing, Anodizing, and Coloring","Unit": "USD", "EmissionFactor": 0.526},
+  {"Product/Service": "Industrial Valve Manufacturing", "Unit": "USD","EmissionFactor": 0.24},
+  {"Product/Service": "Fluid Power Valve and Hose Fitting Manufacturing", "Unit": "USD","EmissionFactor": 0.24},
+  {"Product/Service": "Plumbing Fixture Fitting and Trim Manufacturing", "Unit": "USD","EmissionFactor": 0.193},
+  {"Product/Service": "Other Metal Valve and Pipe Fitting Manufacturing", "Unit": "USD","EmissionFactor": 0.24},
+  {"Product/Service": "Ball and Roller Bearing Manufacturing", "Unit": "USD","EmissionFactor": 0.277},
+  {"Product/Service": "Small Arms Ammunition Manufacturing", "Unit": "USD","EmissionFactor": 0.194},
+  {"Product/Service": "Ammunition (except Small Arms) Manufacturing","Unit": "USD", "EmissionFactor": 0.194},
+  {"Product/Service": "Small Arms, Ordnance, and Ordnance Accessories Manufacturing", "Unit": "USD","EmissionFactor": 0.194},
+  {"Product/Service": "Fabricated Pipe and Pipe Fitting Manufacturing", "Unit": "USD","EmissionFactor": 0.365},
+  {"Product/Service": "All Other Miscellaneous Fabricated Metal Product Manufacturing", "Unit": "USD","EmissionFactor": 0.32},
+  {"Product/Service": "Farm Machinery and Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.271},
+  {"Product/Service": "Lawn and Garden Tractor and Home Lawn and Garden Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.192},
+  {"Product/Service": "Construction Machinery Manufacturing", "Unit": "USD","EmissionFactor": 0.246},
+  {"Product/Service": "Mining Machinery and Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.302},
+  {"Product/Service": "Oil and Gas Field Machinery and Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.302},
+  {"Product/Service": "Food Product Machinery Manufacturing","Unit": "USD", "EmissionFactor": 0.21},
+  {"Product/Service": "Semiconductor Machinery Manufacturing", "Unit": "USD","EmissionFactor": 0.217},
+  {"Product/Service": "Sawmill, Woodworking, and Paper Machinery Manufacturing", "Unit": "USD","EmissionFactor": 0.21},
+  {"Product/Service": "Printing Machinery and Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.21},
+  {"Product/Service": "Other Industrial Machinery Manufacturing", "Unit": "USD","EmissionFactor": 0.21},
+  {"Product/Service": "Optical Instrument and Lens Manufacturing", "Unit": "USD","EmissionFactor": 0.178},
+  {"Product/Service": "Photographic and Photocopying Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.179},
+  {"Product/Service": "Other Commercial and Service Industry Machinery Manufacturing","Unit": "USD", "EmissionFactor": 0.244},
+  {"Product/Service": "Industrial and Commercial Fan and Blower and Air Purification Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.242},
+  {"Product/Service": "Heating Equipment (except Warm Air Furnaces) Manufacturing","Unit": "USD", "EmissionFactor": 0.207},
+  {"Product/Service": "Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.236},
+  {"Product/Service": "Industrial Mold Manufacturing","Unit": "USD", "EmissionFactor": 0.368},
+  {"Product/Service": "Special Die and Tool, Die Set, Jig, and Fixture Manufacturing","Unit": "USD", "EmissionFactor": 0.263},
+  {"Product/Service": "Cutting Tool and Machine Tool Accessory Manufacturing", "Unit": "USD","EmissionFactor": 0.266},
+  {"Product/Service": "Machine Tool Manufacturing","Unit": "USD", "EmissionFactor": 0.263},
+  {"Product/Service": "Rolling Mill and Other Metalworking Machinery Manufacturing", "Unit": "USD","EmissionFactor": 0.266},
+  {"Product/Service": "Turbine and Turbine Generator Set Units Manufacturing", "Unit": "USD","EmissionFactor": 0.263},
+  {"Product/Service": "Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing","Unit": "USD", "EmissionFactor": 0.233},
+  {"Product/Service": "Mechanical Power Transmission Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.251},
+  {"Product/Service": "Other Engine Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.318},
+  {"Product/Service": "Air and Gas Compressor Manufacturing", "Unit": "USD","EmissionFactor": 0.218},
+  {"Product/Service": "Measuring, Dispensing, and Other Pumping Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.202},
+  {"Product/Service": "Elevator and Moving Stairway Manufacturing","Unit": "USD", "EmissionFactor": 0.296},
+  {"Product/Service": "Conveyor and Conveying Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.296},
+  {"Product/Service": "Overhead Traveling Crane, Hoist, and Monorail System Manufacturing", "Unit": "USD","EmissionFactor": 0.296},
+  {"Product/Service": "Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing","Unit": "USD", "EmissionFactor": 0.296},
+  {"Product/Service": "Power-Driven Handtool Manufacturing", "Unit": "USD","EmissionFactor": 0.165},
+  {"Product/Service": "Welding and Soldering Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.26},
+  {"Product/Service": "Packaging Machinery Manufacturing","Unit": "USD", "EmissionFactor": 0.186},
+  {"Product/Service": "Industrial Process Furnace and Oven Manufacturing", "Unit": "USD","EmissionFactor": 0.226},
+  {"Product/Service": "Fluid Power Cylinder and Actuator Manufacturing", "Unit": "USD","EmissionFactor": 0.274},
+  {"Product/Service": "Fluid Power Pump and Motor Manufacturing","Unit": "USD", "EmissionFactor": 0.274},
+  {"Product/Service": "Scale and Balance Manufacturing","Unit": "USD", "EmissionFactor": 0.26},
+  {"Product/Service": "All Other Miscellaneous General Purpose Machinery Manufacturing", "Unit": "USD","EmissionFactor": 0.26},
+  {"Product/Service": "Electronic Computer Manufacturing","Unit": "USD", "EmissionFactor": 0.112},
+  {"Product/Service": "Computer Storage Device Manufacturing", "Unit": "USD","EmissionFactor": 0.136},
+  {"Product/Service": "Computer Terminal and Other Computer Peripheral Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.183},
+  {"Product/Service": "Telephone Apparatus Manufacturing", "Unit": "USD","EmissionFactor": 0.201},
+  {"Product/Service": "Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.215},
+  {"Product/Service": "Other Communications Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.114},
+  {"Product/Service": "Audio and Video Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.124},
+  {"Product/Service": "Bare Printed Circuit Board Manufacturing", "Unit": "USD","EmissionFactor": 0.167},
+  {"Product/Service": "Semiconductor and Related Device Manufacturing","Unit": "USD", "EmissionFactor": 0.269},
+  {"Product/Service": "Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing", "Unit": "USD","EmissionFactor": 0.167},
+  {"Product/Service": "Electronic Connector Manufacturing","Unit": "USD", "EmissionFactor": 0.167},
+  {"Product/Service": "Printed Circuit Assembly (Electronic Assembly) Manufacturing", "Unit": "USD","EmissionFactor": 0.158},
+  {"Product/Service": "Other Electronic Component Manufacturing", "Unit": "USD","EmissionFactor": 0.167},
+  {"Product/Service": "Electromedical and Electrotherapeutic Apparatus Manufacturing","Unit": "USD", "EmissionFactor": 0.142},
+  {"Product/Service": "Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing","Unit": "USD", "EmissionFactor": 0.06},
+  {"Product/Service": "Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use","Unit": "USD", "EmissionFactor": 0.137},
+  {"Product/Service": "Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables", "Unit": "USD","EmissionFactor": 0.115},
+  {"Product/Service": "Totalizing Fluid Meter and Counting Device Manufacturing", "Unit": "USD","EmissionFactor": 0.072},
+  {"Product/Service": "Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals","Unit": "USD", "EmissionFactor": 0.116},
+  {"Product/Service": "Analytical Laboratory Instrument Manufacturing", "Unit": "USD","EmissionFactor": 0.093},
+  {"Product/Service": "Irradiation Apparatus Manufacturing","Unit": "USD", "EmissionFactor": 0.197},
+  {"Product/Service": "Other Measuring and Controlling Device Manufacturing","Unit": "USD", "EmissionFactor": 0.1},
+  {"Product/Service": "Blank Magnetic and Optical Recording Media Manufacturing", "Unit": "USD","EmissionFactor": 0.134},
+  {"Product/Service": "Software and Other Prerecorded Compact Disc, Tape, and Record Reproducing","Unit": "USD", "EmissionFactor": 0.134},
+  {"Product/Service": "Electric Lamp Bulb and Part Manufacturing", "Unit": "USD","EmissionFactor": 0.435},
+  {"Product/Service": "Residential Electric Lighting Fixture Manufacturing","Unit": "USD", "EmissionFactor": 0.25},
+  {"Product/Service": "Commercial, Industrial, and Institutional Electric Lighting Fixture Manufacturing", "Unit": "USD","EmissionFactor": 0.25},
+  {"Product/Service": "Other Lighting Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.25},
+  {"Product/Service": "Small Electrical Appliance Manufacturing","Unit": "USD", "EmissionFactor": 0.3},
+  {"Product/Service": "Major Household Appliance Manufacturing", "Unit": "USD","EmissionFactor": 0.228},
+  {"Product/Service": "Power, Distribution, and Specialty Transformer Manufacturing", "Unit": "USD","EmissionFactor": 0.28},
+  {"Product/Service": "Motor and Generator Manufacturing","Unit": "USD", "EmissionFactor": 0.229},
+  {"Product/Service": "Switchgear and Switchboard Apparatus Manufacturing", "Unit": "USD","EmissionFactor": 0.24},
+  {"Product/Service": "Relay and Industrial Control Manufacturing", "Unit": "USD","EmissionFactor": 0.153},
+  {"Product/Service": "Storage Battery Manufacturing","Unit": "USD", "EmissionFactor": 0.314},
+  {"Product/Service": "Primary Battery Manufacturing", "Unit": "USD","EmissionFactor": 0.227},
+  {"Product/Service": "Fiber Optic Cable Manufacturing", "Unit": "USD","EmissionFactor": 0.359},
+  {"Product/Service": "Other Communication and Energy Wire Manufacturing", "Unit": "USD","EmissionFactor": 0.359},
+  {"Product/Service": "Current-Carrying Wiring Device Manufacturing","Unit": "USD", "EmissionFactor": 0.261},
+  {"Product/Service": "Noncurrent-Carrying Wiring Device Manufacturing","Unit": "USD", "EmissionFactor": 0.261},
+  {"Product/Service": "Carbon and Graphite Product Manufacturing", "Unit": "USD","EmissionFactor": 0.495},
+  {"Product/Service": "All Other Miscellaneous Electrical Equipment and Component Manufacturing","Unit": "USD", "EmissionFactor": 0.176},
+  {"Product/Service": "Automobile Manufacturing", "Unit": "USD","EmissionFactor": 0.279},
+  {"Product/Service": "Light Truck and Utility Vehicle Manufacturing", "Unit": "USD","EmissionFactor": 0.322},
+  {"Product/Service": "Heavy Duty Truck Manufacturing", "Unit": "USD","EmissionFactor": 0.307},
+  {"Product/Service": "Motor Vehicle Body Manufacturing", "Unit": "USD","EmissionFactor": 0.247},
+  { "Product/Service": "Truck Trailer Manufacturing","Unit": "USD", "EmissionFactor": 0.262 },
+  { "Product/Service": "Motor Home Manufacturing","Unit": "USD", "EmissionFactor": 0.202 },
+  { "Product/Service": "Travel Trailer and Camper Manufacturing", "Unit": "USD","EmissionFactor": 0.257 },
+  { "Product/Service": "Motor Vehicle Gasoline Engine and Engine Parts Manufacturing", "Unit": "USD","EmissionFactor": 0.346 },
+  { "Product/Service": "Motor Vehicle Electrical and Electronic Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.285 },
+  { "Product/Service": "Motor Vehicle Steering and Suspension Components (except Spring) Manufacturing", "Unit": "USD","EmissionFactor": 0.392 },
+  { "Product/Service": "Motor Vehicle Brake System Manufacturing","Unit": "USD", "EmissionFactor": 0.392 },
+  { "Product/Service": "Motor Vehicle Transmission and Power Train Parts Manufacturing","Unit": "USD", "EmissionFactor": 0.391 },
+  { "Product/Service": "Motor Vehicle Seating and Interior Trim Manufacturing", "Unit": "USD","EmissionFactor": 0.394 },
+  { "Product/Service": "Motor Vehicle Metal Stamping","Unit": "USD", "EmissionFactor": 0.708 },
+  { "Product/Service": "Other Motor Vehicle Parts Manufacturing", "Unit": "USD","EmissionFactor": 0.395 },
+  { "Product/Service": "Aircraft Manufacturing", "Unit": "USD","EmissionFactor": 0.15 },
+  { "Product/Service": "Aircraft Engine and Engine Parts Manufacturing", "Unit": "USD","EmissionFactor": 0.114 },
+  { "Product/Service": "Other Aircraft Parts and Auxiliary Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.215 },
+  { "Product/Service": "Guided Missile and Space Vehicle Manufacturing", "Unit": "USD","EmissionFactor": 0.164 },
+  { "Product/Service": "Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing","Unit": "USD", "EmissionFactor": 0.146 },
+  { "Product/Service": "Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing","Unit": "USD", "EmissionFactor": 0.146 },
+  { "Product/Service": "Railroad Rolling Stock Manufacturing","Unit": "USD", "EmissionFactor": 0.415 },
+  { "Product/Service": "Ship Building and Repairing","Unit": "USD", "EmissionFactor": 0.245 },
+  { "Product/Service": "Boat Building","Unit": "USD", "EmissionFactor": 0.166 },
+  { "Product/Service": "Motorcycle, Bicycle, and Parts Manufacturing","Unit": "USD", "EmissionFactor": 0.229 },
+  { "Product/Service": "Military Armored Vehicle, Tank, and Tank Component Manufacturing", "Unit": "USD","EmissionFactor": 0.396 },
+  { "Product/Service": "All Other Transportation Equipment Manufacturing", "Unit": "USD","EmissionFactor": 0.291 },
+  { "Product/Service": "Wood Kitchen Cabinet and Countertop Manufacturing", "Unit": "USD","EmissionFactor": 0.196 },
+  { "Product/Service": "Upholstered Household Furniture Manufacturing", "Unit": "USD","EmissionFactor": 0.249 },
+  { "Product/Service": "Nonupholstered Wood Household Furniture Manufacturing","Unit": "USD", "EmissionFactor": 0.213 },
+  { "Product/Service": "Metal Household Furniture Manufacturing","Unit": "USD", "EmissionFactor": 0.294 },
+  { "Product/Service": "Household Furniture (except Wood and Metal) Manufacturing","Unit": "USD", "EmissionFactor": 0.294 },
+  { "Product/Service": "Institutional Furniture Manufacturing", "Unit": "USD","EmissionFactor": 0.299 },
+  { "Product/Service": "Wood Office Furniture Manufacturing", "Unit": "USD","EmissionFactor": 0.305 },
+  { "Product/Service": "Custom Architectural Woodwork and Millwork Manufacturing", "Unit": "USD","EmissionFactor": 0.305 },
+  { "Product/Service": "Office Furniture (except Wood) Manufacturing", "Unit": "USD","EmissionFactor": 0.305 },
+  { "Product/Service": "Showcase, Partition, Shelving, and Locker Manufacturing", "Unit": "USD","EmissionFactor": 0.339 },
+  { "Product/Service": "Mattress Manufacturing", "Unit": "USD","EmissionFactor": 0.225 },
+  { "Product/Service": "Blind and Shade Manufacturing", "Unit": "USD","EmissionFactor": 0.225 },
+  { "Product/Service": "Surgical and Medical Instrument Manufacturing","Unit": "USD", "EmissionFactor": 0.19 },
+  { "Product/Service": "Surgical Appliance and Supplies Manufacturing", "Unit": "USD","EmissionFactor": 0.17 },
+  { "Product/Service": "Dental Equipment and Supplies Manufacturing", "Unit": "USD","EmissionFactor": 0.17 },
+  { "Product/Service": "Ophthalmic Goods Manufacturing","Unit": "USD", "EmissionFactor": 0.138 },
+  { "Product/Service": "Dental Laboratories","Unit": "USD", "EmissionFactor": 0.104 },
+  { "Product/Service": "Jewelry and Silverware Manufacturing", "Unit": "USD","EmissionFactor": 0.156 },
+  { "Product/Service": "Sporting and Athletic Goods Manufacturing","Unit": "USD", "EmissionFactor": 0.228 },
+  { "Product/Service": "Doll, Toy, and Game Manufacturing","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Office Supplies (except Paper) Manufacturing","Unit": "USD", "EmissionFactor": 0.292 },
+  { "Product/Service": "Sign Manufacturing", "Unit": "USD","EmissionFactor": 0.32 },
+  { "Product/Service": "Gasket, Packing, and Sealing Device Manufacturing", "Unit": "USD","EmissionFactor": 0.225 },
+  { "Product/Service": "Musical Instrument Manufacturing","Unit": "USD", "EmissionFactor": 0.225 },
+  { "Product/Service": "Fastener, Button, Needle, and Pin Manufacturing", "Unit": "USD","EmissionFactor": 0.225 },
+  { "Product/Service": "Broom, Brush, and Mop Manufacturing", "Unit": "USD","EmissionFactor": 0.225 },
+  { "Product/Service": "Burial Casket Manufacturing", "Unit": "USD","EmissionFactor": 0.225 },
+  { "Product/Service": "All Other Miscellaneous Manufacturing","Unit": "USD", "EmissionFactor": 0.225 },
+  { "Product/Service": "Automobile and Other Motor Vehicle Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.149 },
+  { "Product/Service": "Motor Vehicle Supplies and New Parts Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.149 },
+  { "Product/Service": "Tire and Tube Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.149 },
+  { "Product/Service": "Motor Vehicle Parts (Used) Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.149 },
+  { "Product/Service": "Furniture Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+  { "Product/Service": "Home Furnishing Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+  { "Product/Service": "Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+  { "Product/Service": "Brick, Stone, and Related Construction Material Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.147 },
+  { "Product/Service": "Roofing, Siding, and Insulation Material Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.147 },
+  { "Product/Service": "Other Construction Material Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+  { "Product/Service": "Photographic Equipment and Supplies Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.085 },
+  { "Product/Service": "Office Equipment Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.085 },
+  { "Product/Service": "Computer and Computer Peripheral Equipment and Software Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.085 },
+  { "Product/Service": "Other Commercial Equipment Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.085 },
+  { "Product/Service": "Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.085 },
+  { "Product/Service": "Ophthalmic Goods Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.085 },
+  { "Product/Service": "Other Professional Equipment and Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.085 },
+  { "Product/Service": "Metal Service Centers and Other Metal Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+  { "Product/Service": "Coal and Other Mineral and Ore Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.147 },
+  { "Product/Service": "Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.109 },
+  { "Product/Service": "Household Appliances, Electric Housewares, and Consumer Electronics Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.109 },
+  { "Product/Service": "Other Electronic Parts and Equipment Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.109 },
+  { "Product/Service": "Hardware Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.147 },
+  { "Product/Service": "Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.147 },
+  { "Product/Service": "Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+  { "Product/Service": "Refrigeration Equipment and Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+  { "Product/Service": "Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.117 },
+  { "Product/Service": "Farm and Garden Machinery and Equipment Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.117 },
+  { "Product/Service": "Industrial Machinery and Equipment Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.117 },
+  { "Product/Service": "Industrial Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.117 },
+  { "Product/Service": "Service Establishment Equipment and Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.117 },
+  { "Product/Service": "Transportation Equipment and Supplies (except Motor Vehicle) Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.117 },
+  { "Product/Service": "Sporting and Recreational Goods and Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+  { "Product/Service": "Toy and Hobby Goods and Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.147 },
+
+  { "Product/Service": "Recyclable Material Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.147 },
+  { "Product/Service": "Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.147 },
+  { "Product/Service": "Other Miscellaneous Durable Goods Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.147 },
+  { "Product/Service": "Printing and Writing Paper Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Stationery and Office Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Industrial and Personal Service Paper Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Drugs and Druggists' Sundries Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.131 },
+  { "Product/Service": "Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Men's and Boys' Clothing and Furnishings Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Women's, Children's, and Infants' Clothing and Accessories Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Footwear Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "General Line Grocery Merchant Wholesalers","Unit": "USD","EmissionFactor": 0.235 },
+  { "Product/Service": "Packaged Frozen Food Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.235 },
+  { "Product/Service": "Dairy Product (except Dried or Canned) Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.235 },
+  { "Product/Service": "Poultry and Poultry Product Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.235 },
+  { "Product/Service": "Confectionery Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.235 },
+  { "Product/Service": "Fish and Seafood Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.235 },
+  { "Product/Service": "Meat and Meat Product Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.235 },
+  { "Product/Service": "Fresh Fruit and Vegetable Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.235 },
+  { "Product/Service": "Other Grocery and Related Products Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.235 },
+  { "Product/Service": "Grain and Field Bean Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Livestock Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Other Farm Product Raw Material Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Plastics Materials and Basic Forms and Shapes Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Other Chemical and Allied Products Merchant Wholesalers","Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Petroleum Bulk Stations and Terminals", "Unit": "USD","EmissionFactor": 0.078 },
+  { "Product/Service": "Petroleum and Petroleum Products Merchant Wholesalers (except Bulk Stations and Terminals)","Unit": "USD", "EmissionFactor": 0.078 },
+  { "Product/Service": "Beer and Ale Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Wine and Distilled Alcoholic Beverage Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Farm Supplies Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Book, Periodical, and Newspaper Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Tobacco and Tobacco Product Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Paint, Varnish, and Supplies Merchant Wholesalers","Unit": "USD", "EmissionFactor": 0.187 },
+  { "Product/Service": "Other Miscellaneous Nondurable Goods Merchant Wholesalers", "Unit": "USD","EmissionFactor": 0.187 },
+  { "Product/Service": "Business to Business Electronic Markets","Unit": "USD", "EmissionFactor": 0.051 },
+  { "Product/Service": "Wholesale Trade Agents and Brokers", "Unit": "USD","EmissionFactor": 0.051 },
+  { "Product/Service": "New Car Dealers", "Unit": "USD","EmissionFactor": 0.104 },
+  { "Product/Service": "Used Car Dealers", "Unit": "USD","EmissionFactor": 0.104 },
+  { "Product/Service": "Recreational Vehicle Dealers","Unit": "USD", "EmissionFactor": 0.104 },
+  { "Product/Service": "Boat Dealers", "Unit": "USD","EmissionFactor": 0.104 },
+  { "Product/Service": "Motorcycle, ATV, and All Other Motor Vehicle Dealers","Unit": "USD", "EmissionFactor": 0.104 },
+  { "Product/Service": "Automotive Parts and Accessories Stores","Unit": "USD", "EmissionFactor": 0.104 },
+  { "Product/Service": "Tire Dealers", "Unit": "USD","EmissionFactor": 0.104 },
+  { "Product/Service": "Furniture Stores","Unit": "USD", "EmissionFactor": 0.163 },
+  { "Product/Service": "Floor Covering Stores","Unit": "USD", "EmissionFactor": 0.163 },
+  { "Product/Service": "Window Treatment Stores","Unit": "USD", "EmissionFactor": 0.163 },
+  { "Product/Service": "All Other Home Furnishings Stores", "Unit": "USD","EmissionFactor": 0.163 },
+  { "Product/Service": "Household Appliance Stores", "Unit": "USD","EmissionFactor": 0.163 },
+  { "Product/Service": "Electronics Stores", "Unit": "USD","EmissionFactor": 0.163 },
+  { "Product/Service": "Home Centers","Unit": "USD", "EmissionFactor": 0.101 },
+  { "Product/Service": "Paint and Wallpaper Stores", "Unit": "USD","EmissionFactor": 0.101 },
+  { "Product/Service": "Hardware Stores","Unit": "USD", "EmissionFactor": 0.101 },
+  { "Product/Service": "Other Building Material Dealers", "Unit": "USD","EmissionFactor": 0.101 },
+  { "Product/Service": "Outdoor Power Equipment Stores","Unit": "USD", "EmissionFactor": 0.101 },
+  { "Product/Service": "Nursery, Garden Center, and Farm Supply Stores","Unit": "USD", "EmissionFactor": 0.101 },
+  { "Product/Service": "Supermarkets and Other Grocery (except Convenience) Stores", "Unit": "USD","EmissionFactor": 0.238 },
+  { "Product/Service": "Convenience Stores","Unit": "USD", "EmissionFactor": 0.238 },
+  { "Product/Service": "Meat Markets","Unit": "USD", "EmissionFactor": 0.238 },
+  { "Product/Service": "Fish and Seafood Markets","Unit": "USD", "EmissionFactor": 0.238 },
+  { "Product/Service": "Fruit and Vegetable Markets","Unit": "USD", "EmissionFactor": 0.238 },
+  { "Product/Service": "Baked Goods Stores", "Unit": "USD","EmissionFactor": 0.238 },
+  { "Product/Service": "Confectionery and Nut Stores", "Unit": "USD","EmissionFactor": 0.238 },
+  { "Product/Service": "All Other Specialty Food Stores","Unit": "USD", "EmissionFactor": 0.238 },
+  { "Product/Service": "Beer, Wine, and Liquor Stores","Unit": "USD", "EmissionFactor": 0.238 },
+  { "Product/Service": "Pharmacies and Drug Stores","Unit": "USD", "EmissionFactor": 0.151 },
+  { "Product/Service": "Cosmetics, Beauty Supplies, and Perfume Stores", "Unit": "USD","EmissionFactor": 0.151 },
+  { "Product/Service": "Optical Goods Stores","Unit": "USD", "EmissionFactor": 0.151 },
+  { "Product/Service": "Food (Health) Supplement Stores", "Unit": "USD","EmissionFactor": 0.151 },
+  { "Product/Service": "All Other Health and Personal Care Stores","Unit": "USD", "EmissionFactor": 0.151 },
+  {
+    "Product/Service": "Gasoline Stations with Convenience Stores","Unit": "USD",
+    "EmissionFactor": 0.196
+  },
+  {
+    "Product/Service": "Other Gasoline Stations","Unit": "USD",
+    "EmissionFactor": 0.196
+  },
+  {
+    "Product/Service": "Men's Clothing Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Women's Clothing Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Children's and Infants' Clothing Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Family Clothing Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Clothing Accessories Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Other Clothing Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Shoe Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Jewelry Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Luggage and Leather Goods Stores","Unit": "USD",
+    "EmissionFactor": 0.204
+  },
+  {
+    "Product/Service": "Sporting Goods Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Hobby, Toy, and Game Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Sewing, Needlework, and Piece Goods Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Musical Instrument and Supplies Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Book Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "News Dealers and Newsstands","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Department Stores","Unit": "USD",
+    "EmissionFactor": 0.194
+  },
+  {
+    "Product/Service": "Warehouse Clubs and Supercenters","Unit": "USD",
+    "EmissionFactor": 0.194
+  },
+  {
+    "Product/Service": "All Other General Merchandise Stores","Unit": "USD",
+    "EmissionFactor": 0.194
+  },
+  {
+    "Product/Service": "Florists","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Office Supplies and Stationery Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Gift, Novelty, and Souvenir Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Used Merchandise Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Pet and Pet Supplies Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Art Dealers","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Manufactured (Mobile) Home Dealers","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Tobacco Stores","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "All Other Miscellaneous Store Retailers (except Tobacco Stores)","Unit": "USD",
+    "EmissionFactor": 0.163
+  },
+  {
+    "Product/Service": "Electronic Shopping and Mail-Order Houses","Unit": "USD",
+    "EmissionFactor": 0.091
+  },
+  {
+    "Product/Service": "Vending Machine Operators","Unit": "USD",
+    "EmissionFactor": 0.091
+  },
+  {
+    "Product/Service": "Fuel Dealers","Unit": "USD",
+    "EmissionFactor": 0.091
+  },
+  {
+    "Product/Service": "Other Direct Selling Establishments","Unit": "USD",
+    "EmissionFactor": 0.091
+  }
+
+  ]
+},
+
+{
+  "Category": "Fuel- and energy-related activities",
+  "Fuel- and energy-related activities": [
+    {
+      "Fuel": "Butane - S3.03",
+      "EmissionFactors": {
+        "tonnes": 344.30947,
+        "litres": 0.19765,
+        "kWh (Net CV)": 0.02736,
+        "kWh (Gross CV)": 0.02524
+      }
+    },
+    {
+      "Fuel": "CNG - S3.03",
+      "EmissionFactors": {
+        "tonnes": 530.77887,
+        "litres": 0.09289,
+        "kWh (Net CV)": 0.04,
+        "kWh (Gross CV)": 0.04
+      }
+    },
+    {
+      "Fuel": "LNG - S3.03",
+      "EmissionFactors": {
+        "tonnes": 912.23,
+        "litres": 0.41277,
+        "kWh (Net CV)": 0.07,
+        "kWh (Gross CV)": 0.06512
+      }
+    },
+    {
+      "Fuel": "LPG - S3.03",
+      "EmissionFactors": {
+        "tonnes": 349.29,
+        "litres": 0.19,
+        "kWh (Net CV)": 0.03,
+        "kWh (Gross CV)": 0.03
+      }
+    },
+    {
+      "Fuel": "Natural gas - S3.03",
+      "EmissionFactors": {
+        "tonnes": 423.16,
+        "cubic metres": 0.34,
+        "kWh (Net CV)": 0.03,
+        "kWh (Gross CV)": 0.03021
+      }
+    },
+    {
+      "Fuel": "Natural gas (100% mineral blend) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 423.16,
+        "cubic metres": 0.34,
+        "kWh (Net CV)": 0.03,
+        "kWh (Gross CV)": 0.03
+      }
+    },
+    {
+      "Fuel": "Other petroleum gas - S3.03",
+      "EmissionFactors": {
+        "tonnes": 302.95,
+        "litres": 0.11,
+        "kWh (Net CV)": 0.02,
+        "kWh (Gross CV)": 0.02
+      }
+    },
+    {
+      "Fuel": "Propane - S3.03",
+      "EmissionFactors": {
+        "tonnes": 352.67,
+        "litres": 0.18,
+        "kWh (Net CV)": 0.03,
+        "kWh (Gross CV)": 0.03
+      }
+    },
+    {
+      "Fuel": "Aviation spirit - S3.03",
+      "EmissionFactors": {
+        "tonnes": 813.26,
+        "litres": 0.61425,
+        "kWh (Net CV)": 0.06582,
+        "kWh (Gross CV)": 0.06253
+      }
+    },
+    {
+      "Fuel": "Aviation turbine fuel - S3.03",
+      "EmissionFactors": {
+        "tonnes": 661.79468,
+        "litres": 0.52817,
+        "kWh (Net CV)": 0.05424,
+        "kWh (Gross CV)": 0.05153
+      }
+    },
+    {
+      "Fuel": "Burning oil - S3.03",
+      "EmissionFactors": {
+        "tonnes": 660.82605,
+        "litres": 0.53078,
+        "kWh (Net CV)": 0.05424,
+        "kWh (Gross CV)": 0.05153
+      }
+    },
+    {
+      "Fuel": "Diesel (average biofuel blend) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 733.64436,
+        "litres": 0.61101,
+        "kWh (Net CV)": 0.06181,
+        "kWh (Gross CV)": 0.05816
+      }
+    },
+    {
+      "Fuel": "Diesel (100% mineral diesel) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 752.0276,
+        "litres": 0.62409,
+        "kWh (Net CV)": 0.06291,
+        "kWh (Gross CV)": 0.05913
+      }
+    },
+    {
+      "Fuel": "Fuel oil - S3.03",
+      "EmissionFactors": {
+        "tonnes": 714.86545,
+        "litres": 0.69539,
+        "kWh (Net CV)": 0.06291,
+        "kWh (Gross CV)": 0.05913
+      }
+    },
+    {
+      "Fuel": "Gas oil - S3.03",
+      "EmissionFactors": {
+        "tonnes": 743.83524,
+        "litres": 0.62665,
+        "kWh (Net CV)": 0.06291,
+        "kWh (Gross CV)": 0.05913
+      }
+    },
+    {
+      "Fuel": "Lubricants - S3.03",
+      "EmissionFactors": {
+        "tonnes": 1116.83712,
+        "kWh (Net CV)": 0.09828,
+        "kWh (Gross CV)": 0.09238
+      }
+    },
+    {
+      "Fuel": "Naphtha - S3.03",
+      "EmissionFactors": {
+        "tonnes": 640.41464,
+        "kWh (Net CV)": 0.05076,
+        "kWh (Gross CV)": 0.04822
+      }
+    },
+    {
+      "Fuel": "Petrol (average biofuel blend) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 777.33392,
+        "litres": 0.58094,
+        "kWh (Net CV)": 0.0648,
+        "kWh (Gross CV)": 0.0614
+      }
+    },
+    {
+      "Fuel": "Petrol (100% mineral petrol) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 815.93523,
+        "litres": 0.60664,
+        "kWh (Net CV)": 0.06582,
+        "kWh (Gross CV)": 0.06253
+      }
+    },
+    {
+      "Fuel": "Processed fuel oils - residual oil - S3.03",
+      "EmissionFactors": {
+        "tonnes": 1132.08149,
+        "litres": 1.10125,
+        "kWh (Net CV)": 0.09962,
+        "kWh (Gross CV)": 0.09364
+      }
+    },
+    {
+      "Fuel": "Processed fuel oils - distillate oil - S3.03",
+      "EmissionFactors": {
+        "tonnes": 1123.49881,
+        "litres": 0.9465,
+        "kWh (Net CV)": 0.09501,
+        "kWh (Gross CV)": 0.08931
+      }
+    },
+    {
+      "Fuel": "Refinery miscellaneous - S3.03",
+      "EmissionFactors": {
+        "tonnes": 348.98258,
+        "kWh (Net CV)": 0.03077,
+        "kWh (Gross CV)": 0.02923
+      }
+    },
+    {
+      "Fuel": "Waste oils - S3.03",
+      "EmissionFactors": {
+        "tonnes": 1116.83712,
+        "kWh (Net CV)": 0.09526,
+        "kWh (Gross CV)": 0.08895
+      }
+    },
+    {
+      "Fuel": "Marine gas oil - S3.03",
+      "EmissionFactors": {
+        "tonnes": 743.83524,
+        "litres": 0.62665,
+        "kWh (Net CV)": 0.06291,
+        "kWh (Gross CV)": 0.05913
+      }
+    },
+    {
+      "Fuel": "Marine fuel oil - S3.03",
+      "EmissionFactors": {
+        "tonnes": 714.86545,
+        "litres": 0.69539,
+        "kWh (Net CV)": 0.06291,
+        "kWh (Gross CV)": 0.05913
+      }
+    },
+    {
+      "Fuel": "Coal (industrial) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 418.14964,
+        "kWh (Net CV)": 0.05925,
+        "kWh (Gross CV)": 0.05629
+      }
+    },
+    {
+      "Fuel": "Coal (electricity generation) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 390.06647,
+        "kWh (Net CV)": 0.05925,
+        "kWh (Gross CV)": 0.05629
+      }
+    },
+    {
+      "Fuel": "Coal (domestic) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 470.95724,
+        "kWh (Net CV)": 0.05925,
+        "kWh (Gross CV)": 0.05629
+      }
+    },
+    {
+      "Fuel": "Coking coal - S3.03",
+      "EmissionFactors": {
+        "tonnes": 497.73658,
+        "kWh (Net CV)": 0.05925,
+        "kWh (Gross CV)": 0.05629
+      }
+    },
+    {
+      "Fuel": "Petroleum coke - S3.03",
+      "EmissionFactors": {
+        "tonnes": 402.62468,
+        "kWh (Net CV)": 0.04267,
+        "kWh (Gross CV)": 0.04053
+      }
+    },
+    {
+      "Fuel": "Coal (electricity generation - home produced coal only) - S3.03",
+      "EmissionFactors": {
+        "tonnes": 389.45704,
+        "kWh (Net CV)": 0.05925,
+        "kWh (Gross CV)": 0.05629
+      }
+    }
+  ]
+},
+
+{
+  "Category": "Upstream transportation and distribution",
+  "Description": "Upstream transportation and distribution refer to the emissions generated from the transportation and handling of products, materials, or services purchased by a company. This includes the shipping of raw materials, components, or finished goods from suppliers to the company’s facilities, warehouses, or distribution centers.",
+  "InputFields": ["Product/Service", "Unit", "Quantity"],
+  "Upstream transportation and distribution": [
+    {
+      "Product/Service": "Medium- and Heavy-Duty Truck - S3.04",
+      "Unit": "km",
+      "EmissionFactor": 0.85
+    },
+    {
+      "Product/Service": "Passenger Car - S3.04",
+      "Unit": "km",
+      "EmissionFactor": 0.16725
+    },
+    {
+      "Product/Service": "Light-Duty Truck - S3.04",
+      "Unit": "km",
+      "EmissionFactor": 0.253125
+    },
+    {
+      "Product/Service": "Medium- and Heavy-Duty Truck - S3.04",
+      "Unit": "tonne-km",
+      "EmissionFactor": 0.113015866
+    },
+    {
+      "Product/Service": "Rail - S3.04",
+      "Unit": "tonne-km",
+      "EmissionFactor": 0.02779
+    },
+    {
+      "Product/Service": "Waterborne Craft - S3.04",
+      "Unit": "tonne-km",
+      "EmissionFactor": 0.056165461
+    },
+    {
+      "Product/Service": "Aircraft - S3.04",
+      "Unit": "tonne-km",
+      "EmissionFactor": 0.61
+    }
+  ]
+},
+
+{
+  "Category": "Waste generated in operations",
+  "Description": "Waste generated in operations refers to the emissions resulting from the disposal and treatment of waste produced by a company's day-to-day activities.",
+  "InputFields": ["Product/Service", "Unit", "Quantity"],
+  "Waste generated in operations": [
+    { "Product/Service": "Aluminum Cans - S3.05", "Unit": "kg", "EmissionFactor": 0.0165 },
+    { "Product/Service": "Aluminum Ingot - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Steel Cans - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Copper Wire - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Glass - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "HDPE - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "LDPE - S3.05", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "PET - S3.05", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "LLDPE - S3.05", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "PP - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "PS - S3.05", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "PVC - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "PLA - S3.05", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "Corrugated Containers - S3.05", "Unit": "kg", "EmissionFactor": 0.91 },
+    { "Product/Service": "Magazines/Third-class mail - S3.05", "Unit": "kg", "EmissionFactor": 0.42 },
+    { "Product/Service": "Newspaper - S3.05", "Unit": "kg", "EmissionFactor": 0.35 },
+    { "Product/Service": "Office Paper - S3.05", "Unit": "kg", "EmissionFactor": 1.28 },
+    { "Product/Service": "Phonebooks - S3.05", "Unit": "kg", "EmissionFactor": 0.35 },
+    { "Product/Service": "Textbooks - S3.05", "Unit": "kg", "EmissionFactor": 1.28 },
+    { "Product/Service": "Dimensional Lumber - S3.05", "Unit": "kg", "EmissionFactor": 0.1543 },
+    { "Product/Service": "Medium-density Fiberboard - S3.05", "Unit": "kg", "EmissionFactor": 0.06 },
+    { "Product/Service": "Food Waste (non-meat) - S3.05", "Unit": "kg", "EmissionFactor": 0.61 },
+    { "Product/Service": "Food Waste (meat only) - S3.05", "Unit": "kg", "EmissionFactor": 0.63 },
+    { "Product/Service": "Beef - S3.05", "Unit": "kg", "EmissionFactor": 0.58 },
+    { "Product/Service": "Poultry - S3.05", "Unit": "kg", "EmissionFactor": 0.66 },
+    { "Product/Service": "Grains - S3.05", "Unit": "kg", "EmissionFactor": 1.87 },
+    { "Product/Service": "Bread - S3.05", "Unit": "kg", "EmissionFactor": 1.35 },
+    { "Product/Service": "Fruits and Vegetables - S3.05", "Unit": "kg", "EmissionFactor": 0.25 },
+    { "Product/Service": "Dairy Products - S3.05", "Unit": "kg", "EmissionFactor": 0.65 },
+    { "Product/Service": "Yard Trimmings - S3.05", "Unit": "kg", "EmissionFactor": 0.33 },
+    { "Product/Service": "Grass - S3.05", "Unit": "kg", "EmissionFactor": 0.25 },
+    { "Product/Service": "Leaves - S3.05", "Unit": "kg", "EmissionFactor": 0.25 },
+    { "Product/Service": "Branches - S3.05", "Unit": "kg", "EmissionFactor": 0.53 },
+    { "Product/Service": "Mixed Paper (general) - S3.05", "Unit": "kg", "EmissionFactor": 0.8076 },
+    { "Product/Service": "Mixed Paper (primarily residential) - S3.05", "Unit": "kg", "EmissionFactor": 0.7804 },
+    { "Product/Service": "Mixed Paper (primarily from offices) - S3.05", "Unit": "kg", "EmissionFactor": 0.7623 },
+    { "Product/Service": "Mixed Metals - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Mixed Plastics - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Mixed Recyclables - S3.05", "Unit": "kg", "EmissionFactor": 0.6806 },
+    { "Product/Service": "Food Waste - S3.05", "Unit": "kg", "EmissionFactor": 0.6171 },
+    { "Product/Service": "Mixed Organics - S3.05", "Unit": "kg", "EmissionFactor": 0.49 },
+    { "Product/Service": "Mixed MSW - S3.05", "Unit": "kg", "EmissionFactor": 0.5263 },
+    { "Product/Service": "Carpet - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Desktop CPUs - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Portable Electronic Devices - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Flat-panel Displays - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "CRT Displays - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Electronic Peripherals - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Hard-copy Devices - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Mixed Electronics - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Clay Bricks - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Concrete - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Fly Ash - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Tires - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Asphalt Concrete - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Asphalt Shingles - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Drywall - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Fiberglass Insulation - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Structural Steel - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Vinyl Flooring - S3.05", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Wood Flooring - S3.05", "Unit": "kg", "EmissionFactor": 0.1633 }
+  ]
+},
+
+
+{
+  "Category": "Business Travel",
+  "description": "Business travel refers to the emissions generated from employee travel for work purposes, such as flights, car rentals, and hotel stays. Employee commuting refers to the emissions from employees traveling between their homes and the workplace, typically using personal vehicles or public transportation.",
+  "input_fields": ["Product/Service", "Unit", "Quantity"],
+  "Business Travel": [
+    { "Product/Service": "Passenger Car - S3.06", "Unit": "km", "EmissionFactor": 0.192625 },
+    { "Product/Service": "Light-Duty Truck - S3.06", "Unit": "km", "EmissionFactor": 0.2585625 },
+    { "Product/Service": "Motorcycle - S3.06", "Unit": "km", "EmissionFactor": 0.29725 },
+    { "Product/Service": "Intercity Rail - National Average - S3.06", "Unit": "passenger-km", "EmissionFactor": 0.06625 },
+    { "Product/Service": "Commuter Rail - S3.06", "Unit": "passenger-km", "EmissionFactor": 0.09 },
+    { "Product/Service": "Transit Rail (i.e. Subway, Tram) - S3.06", "Unit": "passenger-km", "EmissionFactor": 0.06 },
+    { "Product/Service": "Bus - S3.06", "Unit": "passenger-km", "EmissionFactor": 0.05 },
+    { "Product/Service": "Air Travel - Short Haul (< 300 miles) - S3.06", "Unit": "passenger-km", "EmissionFactor": 0.1375 },
+    { "Product/Service": "Air Travel - Medium Haul (>= 300 miles, < 2300 miles) - S3.06", "Unit": "passenger-km", "EmissionFactor": 0.08 },
+    { "Product/Service": "Air Travel - Long Haul (>= 2300 miles) - S3.06", "Unit": "passenger-km", "EmissionFactor": 0.1055 }
+  ]
+},
+{
+  "Category": "Employee Commuting",
+  "description": "Business travel refers to the emissions generated from employee travel for work purposes, such as flights, car rentals, and hotel stays. Employee commuting refers to the emissions from employees traveling between their homes and the workplace, typically using personal vehicles or public transportation.",
+  "input_fields": ["Product/Service", "Unit", "Quantity"],
+  "Employee Commuting": [
+    { "Product/Service": "Passenger Car - S3.07", "Unit": "km", "EmissionFactor": 0.192625 },
+    { "Product/Service": "Light-Duty Truck - S3.07", "Unit": "km", "EmissionFactor": 0.2585625 },
+    { "Product/Service": "Motorcycle - S3.07", "Unit": "km", "EmissionFactor": 0.29725 },
+    { "Product/Service": "Intercity Rail - National Average - S3.07", "Unit": "passenger-km", "EmissionFactor": 0.06625 },
+    { "Product/Service": "Commuter Rail - S3.07", "Unit": "passenger-km", "EmissionFactor": 0.09 },
+    { "Product/Service": "Transit Rail (i.e. Subway, Tram) - S3.07", "Unit": "passenger-km", "EmissionFactor": 0.06 },
+    { "Product/Service": "Bus - S3.07", "Unit": "passenger-km", "EmissionFactor": 0.05 },
+    { "Product/Service": "Air Travel - Short Haul (< 300 miles) - S3.07", "Unit": "passenger-km", "EmissionFactor": 0.1375 },
+    { "Product/Service": "Air Travel - Medium Haul (>= 300 miles, < 2300 miles) - S3.07", "Unit": "passenger-km", "EmissionFactor": 0.08 },
+    { "Product/Service": "Air Travel - Long Haul (>= 2300 miles) - S3.07", "Unit": "passenger-km", "EmissionFactor": 0.1055 }
+  ]
+},
+{
+  "Category": "Upstream Leased Assets",
+  "description": "Formula: Emissions = Floor Area (m²) × Emission Factor (kgCO₂e/m²/year) ÷ 1000 ",
+  "input_fields": ["Product/Service", "Unit", "Quantity"],
+  "Upstream Leased Assets": [
+    { "Product/Service": "Office Building - S3.08", "Unit": "kgCO₂e/m²/yr", "EmissionFactor": 103.2 },
+    { "Product/Service": "Retail Space  - S3.08", "Unit": "kgCO₂e/m²/yr", "EmissionFactor": 129 },
+    { "Product/Service": "Warehouse - S3.08", "Unit": "kgCO₂e/m²/yr", "EmissionFactor": 64.5 },
+    { "Product/Service": "Industrial Facility  - S3.08", "Unit": "kgCO₂e/m²/yr", "EmissionFactor": 172 } 
+  ]
+},
+{
+  "Category": "Downstream Transportation and Distribution",
+  "description": "Downstream transportation and distribution refer to the emissions generated from the transportation, storage, and distribution of a company’s products after they have been sold.",
+  "input_fields": ["Product/Service", "Unit", "Quantity"],
+  "Downstream Transportation and Distribution": [
+    { "Product/Service": "Medium- and Heavy-Duty Truck - S3.09", "Unit": "km", "EmissionFactor": 0.85 },
+    { "Product/Service": "Passenger Car - S3.09", "Unit": "km", "EmissionFactor": 0.16725 },
+    { "Product/Service": "Light-Duty Truck - S3.09", "Unit": "km", "EmissionFactor": 0.253125 },
+    { "Product/Service": "Medium- and Heavy-Duty Truck - S3.09", "Unit": "tonne-km", "EmissionFactor": 0.113015866 },
+    { "Product/Service": "Rail  - S3.09", "Unit": "tonne-km", "EmissionFactor": 0.02779 },
+    { "Product/Service": "Waterborne Craft - S3.09", "Unit": "tonne-km", "EmissionFactor": 0.056165461 },
+    { "Product/Service": "Aircraft - S3.09", "Unit": "tonne-km", "EmissionFactor": 0.61 }
+  ]
+},
+
+
+{
+  "Category": "Processing of Sold Products",
+  "description": "Formula: Emissions = Quantity of Products Sold (tonnes) × Processing Emission Factor (kgCO₂e/tonne) ÷ 1000 ",
+  "input_fields": ["Product/Service", "Unit", "Quantity"],
+  "Processing of Sold Products": [
+    { "Product/Service": "Chemical Processing - S3.10", "Unit": "(kgCO₂e/tonne) ", "EmissionFactor": 750 },
+    { "Product/Service": "Manufacturing/Assembly  - S3.10", "Unit": "(kgCO₂e/tonne) ", "EmissionFactor": 380 },
+    { "Product/Service": "Refining  - S3.10", "Unit": "(kgCO₂e/tonne) ", "EmissionFactor": 550 },
+    { "Product/Service": "Packaging  - S3.10", "Unit": "(kgCO₂e/tonne) ", "EmissionFactor": 150 }
+  ]
+},
+
+{
+    "Category": "Use of Sold Products",
+    "Use of Sold Products": [
+        {
+            "Asset Type": "Grid Electricity (Global Average 2025) - S3.11",
+            "Unit": "kgCO₂e/kWh",
+            "EmissionFactor": 0.43
+        },
+        {
+            "Asset Type": "Refrigerator - S3.11",
+            "Unit": "kgCO₂e/kWh",
+            "EmissionFactor": 0.43
+        },
+        {
+            "Asset Type": "Air Conditioner - S3.11",
+            "Unit": "kgCO₂e/kWh",
+            "EmissionFactor": 0.43
+        },
+        {
+            "Asset Type": "Computer/Laptop - S3.11",
+            "Unit": "kgCO₂e/kWh",
+            "EmissionFactor": 0.43
+        }
+    ]
+},
+
+
+  
+
+{
+  "Category": "End-of-life Treatment of Sold Products",
+  "Description": "End-of-life treatment of sold products refers to the emissions generated from the disposal, recycling, or treatment of products after they have been used by consumers.",
+  "InputFields": ["Product/Service", "Unit", "Quantity"],
+  "End-of-life Treatment of Sold Products": [
+    { "Product/Service": "Aluminum Cans - S3.12", "Unit": "kg", "EmissionFactor": 0.0165 },
+    { "Product/Service": "Aluminum Ingot - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Steel Cans - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Copper Wire - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Glass - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "HDPE - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "LDPE - S3.12", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "PET - S3.12", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "LLDPE - S3.12", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "PP - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "PS - S3.12", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "PVC - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "PLA - S3.12", "Unit": "kg", "EmissionFactor": 0.02 },
+    { "Product/Service": "Corrugated Containers - S3.12", "Unit": "kg", "EmissionFactor": 0.91 },
+    { "Product/Service": "Magazines/Third-class mail - S3.12", "Unit": "kg", "EmissionFactor": 0.42 },
+    { "Product/Service": "Newspaper - S3.12", "Unit": "kg", "EmissionFactor": 0.35 },
+    { "Product/Service": "Office Paper - S3.12", "Unit": "kg", "EmissionFactor": 1.28 },
+    { "Product/Service": "Phonebooks - S3.12", "Unit": "kg", "EmissionFactor": 0.35 },
+    { "Product/Service": "Textbooks - S3.12", "Unit": "kg", "EmissionFactor": 1.28 },
+    { "Product/Service": "Dimensional Lumber - S3.12", "Unit": "kg", "EmissionFactor": 0.1543 },
+    { "Product/Service": "Medium-density Fiberboard - S3.12", "Unit": "kg", "EmissionFactor": 0.06 },
+    { "Product/Service": "Food Waste (non-meat) - S3.12", "Unit": "kg", "EmissionFactor": 0.61 },
+    { "Product/Service": "Food Waste (meat only) - S3.12", "Unit": "kg", "EmissionFactor": 0.63 },
+    { "Product/Service": "Beef - S3.12", "Unit": "kg", "EmissionFactor": 0.58 },
+    { "Product/Service": "Poultry - S3.12", "Unit": "kg", "EmissionFactor": 0.66 },
+    { "Product/Service": "Grains - S3.12", "Unit": "kg", "EmissionFactor": 1.87 },
+    { "Product/Service": "Bread - S3.12", "Unit": "kg", "EmissionFactor": 1.35 },
+    { "Product/Service": "Fruits and Vegetables - S3.12", "Unit": "kg", "EmissionFactor": 0.25 },
+    { "Product/Service": "Dairy Products - S3.12", "Unit": "kg", "EmissionFactor": 0.65 },
+    { "Product/Service": "Yard Trimmings - S3.12", "Unit": "kg", "EmissionFactor": 0.33 },
+    { "Product/Service": "Grass - S3.12", "Unit": "kg", "EmissionFactor": 0.25 },
+    { "Product/Service": "Leaves - S3.12", "Unit": "kg", "EmissionFactor": 0.25 },
+    { "Product/Service": "Branches - S3.12", "Unit": "kg", "EmissionFactor": 0.53 },
+    { "Product/Service": "Mixed Paper (general) - S3.12", "Unit": "kg", "EmissionFactor": 0.8076 },
+    { "Product/Service": "Mixed Paper (primarily residential) - S3.12", "Unit": "kg", "EmissionFactor": 0.7804 },
+    { "Product/Service": "Mixed Paper (primarily from offices) - S3.12", "Unit": "kg", "EmissionFactor": 0.7623 },
+    { "Product/Service": "Mixed Metals - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Mixed Plastics - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Mixed Recyclables - S3.12", "Unit": "kg", "EmissionFactor": 0.6806 },
+    { "Product/Service": "Food Waste - S3.12", "Unit": "kg", "EmissionFactor": 0.6171 },
+    { "Product/Service": "Mixed Organics - S3.12", "Unit": "kg", "EmissionFactor": 0.49 },
+    { "Product/Service": "Mixed MSW - S3.12", "Unit": "kg", "EmissionFactor": 0.5263 },
+    { "Product/Service": "Carpet - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Desktop CPUs - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Portable Electronic Devices - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Flat-panel Displays - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "CRT Displays - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Electronic Peripherals - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Hard-copy Devices - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Mixed Electronics - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Clay Bricks - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Concrete - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Fly Ash - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Tires - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Asphalt Concrete - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Asphalt Shingles - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Drywall - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Fiberglass Insulation - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Structural Steel - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Vinyl Flooring - S3.12", "Unit": "kg", "EmissionFactor": 0.0181 },
+    { "Product/Service": "Wood Flooring - S3.12", "Unit": "kg", "EmissionFactor": 0.1633 }
+  ]
+},
+{
+    "Category": "Downstream Leased Assets",
+    "description": "Emissions from operation of assets owned by the reporting company but leased to other entities.",
+    "input_fields": ["Product/Service", "Unit", "Quantity"],
+    "Downstream Leased Assets": [
+      { "Product/Service": "Office Building - S3.13", "Unit": "kgCO₂e/m²/yr", "EmissionFactor": 103.2 },
+      { "Product/Service": "Retail Space - S3.13", "Unit": "kgCO₂e/m²/yr", "EmissionFactor": 129 },
+      { "Product/Service": "Warehouse - S3.13", "Unit": "kgCO₂e/m²/yr", "EmissionFactor": 64.5 },
+      { "Product/Service": "Industrial Facility - S3.13", "Unit": "kgCO₂e/m²/yr", "EmissionFactor": 172 }
+    ]
+  },
+
+  {
+      "Category": "Franchises",
+      "description": "Emissions from the operation of franchises not included in Scope 1 or 2. Examples: franchised restaurants, retail stores, fuel stations.",
+      "input_fields": ["Franchise Name", "Average Emissions per Site (tCO₂e)", "Number of Sites"],
+      "calculation_method": "average",
+      "formula": "Total Emissions = Average Emissions per Site × Number of Sites",
+      "Franchises": [
+        {
+          "input_type": "custom",
+          "fields": {
+            "franchise_name": "string",
+            "avg_emissions_per_site": "number",
+            "number_of_sites": "number"
+          },
+          "Unit": "tCO₂e per site",
+          "EmissionFactor": 1
+        }
+      ]
+    },
+
+
+    {
+      "Category": "Investments",
+      "description": "Scope 3 emissions from investments (equity, debt, project finance, managed investments).",
+      "input_fields": ["Investment Value (USD)", "Industry Sector", "Equity Share (%)"],
+      "formula": "Emissions (tCO₂e) = Investment Value × Sector Intensity × Equity Share %",
+      "Investments": [
+        {
+          "Sector": "Technology & Software",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 45
+        },
+        {
+          "Sector": "Manufacturing & Industrial",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 280
+        },
+        {
+          "Sector": "Energy & Utilities",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 850
+        },
+        {
+          "Sector": "Oil & Gas",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 900
+        },
+        {
+          "Sector": "Real Estate & Construction",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 120
+        },
+        {
+          "Sector": "Transportation & Logistics",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 420
+        },
+        {
+          "Sector": "Retail & Consumer Goods",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 95
+        },
+        {
+          "Sector": "Healthcare & Pharmaceuticals",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 165
+        },
+        {
+          "Sector": "Agriculture & Food",
+          "Unit": "tCO₂e/Million USD",
+          "EmissionFactor": 340
+        }
+      ]
+    }
+
+]
+}

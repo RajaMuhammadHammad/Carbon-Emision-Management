@@ -1,0 +1,488 @@
+{
+  "scope1": [
+    {
+  "category": "Stationary Combustion",
+  "description": "The combustion of fuels such as diesel, natural gas in stationary sources contributes to greenhouse gas emissions, primarily carbon dioxide (CO₂).",
+  "fuels": [
+    {
+      "name": "Butane",
+      "units": {
+        "tonnes": 3033.38067,
+        "litres": 1.74533,
+        "kWh (Net CV)": 0.24107,
+        "kWh (Gross CV)": 0.22241
+      }
+    },
+    {
+      "name": "CNG",
+      "units": {
+        "tonnes": 2575.46441,
+        "litres": 0.45070,
+        "kWh (Net CV)": 0.20270,
+        "kWh (Gross CV)": 0.18296
+      }
+    },
+    {
+      "name": "LNG",
+      "units": {
+        "tonnes": 2603.30441,
+        "litres": 1.17797,
+        "kWh (Net CV)": 0.20489,
+        "kWh (Gross CV)": 0.18494
+      }
+    },
+    {
+      "name": "LPG",
+      "units": {
+        "tonnes": 2939.36095,
+        "litres": 1.55713,
+        "kWh (Net CV)": 0.23032,
+        "kWh (Gross CV)": 0.21450
+      }
+    },
+    {
+      "name": "Natural gas",
+      "units": {
+        "tonnes": 2575.46441,
+        "cubic metres": 2.06672,
+        "kWh (Net CV)": 0.20270,
+        "kWh (Gross CV)": 0.18296
+      }
+    },
+    {
+      "name": "Natural gas (100% mineral blend)",
+      "units": {
+        "tonnes": 2603.30441,
+        "cubic metres": 2.08906,
+        "kWh (Net CV)": 0.20489,
+        "kWh (Gross CV)": 0.18494
+      }
+    },
+    {
+      "name": "Other petroleum gas",
+      "units": {
+        "tonnes": 2578.24647,
+        "litres": 0.94442,
+        "kWh (Net CV)": 0.19917,
+        "kWh (Gross CV)": 0.18323
+      }
+    },
+    {
+      "name": "Propane",
+      "units": {
+        "tonnes": 2997.63233,
+        "litres": 1.54358,
+        "kWh (Net CV)": 0.23258,
+        "kWh (Gross CV)": 0.21410
+      }
+    },
+    {
+      "name": "Aviation spirit",
+      "units": {
+        "tonnes": 3193.69480,
+        "litres": 2.33116,
+        "kWh (Net CV)": 0.25666,
+        "kWh (Gross CV)": 0.24382
+      }
+    },
+    {
+      "name": "Aviation turbine fuel",
+      "units": {
+        "tonnes": 3178.36520,
+        "litres": 2.54269,
+        "kWh (Net CV)": 0.26061,
+        "kWh (Gross CV)": 0.24758
+      }
+    },
+    {
+      "name": "Burning oil",
+      "units": {
+        "tonnes": 3165.04181,
+        "litres": 2.54016,
+        "kWh (Net CV)": 0.25975,
+        "kWh (Gross CV)": 0.24677
+      }
+    },
+    {
+      "name": "Diesel (average biofuel blend)",
+      "units": {
+        "tonnes": 3087.94462,
+        "litres": 2.57082,
+        "kWh (Net CV)": 0.25953,
+        "kWh (Gross CV)": 0.24411
+      }
+    },
+    {
+      "name": "Diesel (100% mineral diesel)",
+      "units": {
+        "tonnes": 3203.91143,
+        "litres": 2.66155,
+        "kWh (Net CV)": 0.26808,
+        "kWh (Gross CV)": 0.25199
+      }
+    },
+    {
+      "name": "Fuel oil",
+      "units": {
+        "tonnes": 3228.89019,
+        "litres": 3.17492,
+        "kWh (Net CV)": 0.28523,
+        "kWh (Gross CV)": 0.26813
+      }
+    },
+    {
+      "name": "Gas oil",
+      "units": {
+        "tonnes": 3226.57859,
+        "litres": 2.75541,
+        "kWh (Net CV)": 0.27288,
+        "kWh (Gross CV)": 0.25650
+      }
+    },
+    {
+      "name": "Lubricants",
+      "units": {
+        "tonnes": 3180.99992,
+        "litres": 2.74934,
+        "kWh (Net CV)": 0.28100,
+        "kWh (Gross CV)": 0.26414
+      }
+    },
+    {
+      "name": "Naphtha",
+      "units": {
+        "tonnes": 3142.37890,
+        "litres": 2.11894,
+        "kWh (Net CV)": 0.24891,
+        "kWh (Gross CV)": 0.23647
+      }
+    },
+    {
+      "name": "Petrol (average biofuel blend)",
+      "units": {
+        "tonnes": 2772.97935,
+        "litres": 2.06916,
+        "kWh (Net CV)": 0.23181,
+        "kWh (Gross CV)": 0.21956
+      }
+    },
+    {
+      "name": "Petrol (100% mineral petrol)",
+      "units": {
+        "tonnes": 3154.08213,
+        "litres": 2.33984,
+        "kWh (Net CV)": 0.25431,
+        "kWh (Gross CV)": 0.24159
+      }
+    },
+    {
+      "name": "Processed fuel oils - residual oil",
+      "units": {
+        "tonnes": 3228.89019,
+        "litres": 3.17492,
+        "kWh (Net CV)": 0.28523,
+        "kWh (Gross CV)": 0.26813
+      }
+    },
+    {
+      "name": "Processed fuel oils - distillate oil",
+      "units": {
+        "tonnes": 3226.57859,
+        "litres": 2.75541,
+        "kWh (Net CV)": 0.27288,
+        "kWh (Gross CV)": 0.25650
+      }
+    },
+    {
+      "name": "Refinery miscellaneous",
+      "units": {
+        "tonnes": 2944.32093,
+        "kWh (Net CV)": 0.25961,
+        "kWh (Gross CV)": 0.24663
+      }
+    },
+    {
+      "name": "Waste oils",
+      "units": {
+        "tonnes": 3219.37916,
+        "litres": 2.74924,
+        "kWh (Net CV)": 0.27459,
+        "kWh (Gross CV)": 0.25641
+      }
+    },
+    {
+      "name": "Marine gas oil",
+      "units": {
+        "tonnes": 3245.30441,
+        "litres": 2.77139,
+        "kWh (Net CV)": 0.27445,
+        "kWh (Gross CV)": 0.25798
+      }
+    },
+    {
+      "name": "Marine fuel oil",
+      "units": {
+        "tonnes": 3154.75334,
+        "litres": 3.10202,
+        "kWh (Net CV)": 0.27869,
+        "kWh (Gross CV)": 0.26197
+      }
+    },
+    {
+      "name": "Coal (industrial)",
+      "units": {
+        "tonnes": 2395.28994,
+        "kWh (Net CV)": 0.33944,
+        "kWh (Gross CV)": 0.32246
+      }
+    },
+    {
+      "name": "Coal (electricity generation)",
+      "units": {
+        "tonnes": 2225.22448,
+        "kWh (Net CV)": 0.33621,
+        "kWh (Gross CV)": 0.31939
+      }
+    },
+    {
+      "name": "Coal (domestic)",
+      "units": {
+        "tonnes": 2904.95234,
+        "kWh (Net CV)": 0.36549,
+        "kWh (Gross CV)": 0.34721
+      }
+    },
+    {
+      "name": "Coking coal",
+      "units": {
+        "tonnes": 3164.65002,
+        "kWh (Net CV)": 0.37675,
+        "kWh (Gross CV)": 0.35790
+      }
+    },
+    {
+      "name": "Petroleum coke",
+      "units": {
+        "tonnes": 3386.57168,
+        "kWh (Net CV)": 0.35887,
+        "kWh (Gross CV)": 0.34092
+      }
+    },
+    {
+      "name": "Coal (electricity generation - home produced coal only)",
+      "units": {
+        "tonnes": 2221.74670,
+        "kWh (Net CV)": 0.33621,
+        "kWh (Gross CV)": 0.31939
+      }
+    }
+  ]
+},
+    {
+      "category": "Mobile Emissions",
+      "description": "Mobile emissions are the gases produced by vehicles and machinery during fuel combustion. They include pollutants like CO2 and NOx. Input fields: vehicles, unit, quantity.",
+      "vehicles": {
+        "Cars": [
+          { "fuel": "Gasoline", "unit": "km", "emission_factor": 0.16272 },
+          { "fuel": "Diesel", "unit": "km", "emission_factor": 0.17304 },
+          { "fuel": "CNG", "unit": "km", "emission_factor": 0.17414 },
+          { "fuel": "LPG", "unit": "km", "emission_factor": 0.19599 },
+          { "fuel": "Hybrid", "unit": "km", "emission_factor": 0.12825 },
+          { "fuel": "Electric", "unit": "km", "emission_factor": 0.0 }
+        ],
+        "Motorbikes": [
+          { "fuel": "Gasoline", "unit": "km", "emission_factor": 0.11367 }
+        ],
+        "Delivery Vans": [
+          { "fuel": "Gasoline", "unit": "km", "emission_factor": 0.21335 },
+          { "fuel": "Diesel", "unit": "km", "emission_factor": 0.25561 },
+          { "fuel": "CNG", "unit": "km", "emission_factor": 0.25113 }
+        ],
+        "Heavy Goods Vehicles": [
+          { "fuel": "Diesel", "unit": "km", "emission_factor": 0.89121 }
+        ]
+      }
+    },
+    {
+      "category": "Fugitive Emissions",
+      "description": "Emissions from leakage of refrigerants and use of chemicals. Input fields: Chemicals, unit, amount.",
+      "chemicals": [
+        { "name": "CO2", "unit": "kg", "emission_factor": 1.0 },
+        { "name": "CH4", "unit": "kg", "emission_factor": 28.0 },
+        { "name": "N2O", "unit": "kg", "emission_factor": 265.0 },
+        { "name": "HFC-23", "unit": "kg", "emission_factor": 12400.0 },
+        { "name": "HFC-32", "unit": "kg", "emission_factor": 677.0 },
+        { "name": "HFC-125", "unit": "kg", "emission_factor": 3170.0 },
+        { "name": "HFC-134a", "unit": "kg", "emission_factor": 1300.0 },
+        { "name": "HFC-143a", "unit": "kg", "emission_factor": 4800.0 },
+        { "name": "HFC-152a", "unit": "kg", "emission_factor": 138.0 },
+        { "name": "HFC-236fa", "unit": "kg", "emission_factor": 8060.0 },
+        { "name": "R-401A", "unit": "kg", "emission_factor": 18.0 },
+        { "name": "R-401B", "unit": "kg", "emission_factor": 15.0 },
+        { "name": "R-401C", "unit": "kg", "emission_factor": 21.0 },
+        { "name": "R-402A", "unit": "kg", "emission_factor": 1902.0 },
+        { "name": "R-402B", "unit": "kg", "emission_factor": 1205.0 },
+        { "name": "R-403A", "unit": "kg", "emission_factor": 1780.0 },
+        { "name": "R-403B", "unit": "kg", "emission_factor": 3471.0 },
+        { "name": "R-404A", "unit": "kg", "emission_factor": 3943.0 },
+        { "name": "R-405A", "unit": "kg", "emission_factor": 3920.0 },
+        { "name": "R-407A", "unit": "kg", "emission_factor": 1923.0 },
+        { "name": "R-407B", "unit": "kg", "emission_factor": 2547.0 },
+        { "name": "R-407C", "unit": "kg", "emission_factor": 1624.0 },
+        { "name": "R-407D", "unit": "kg", "emission_factor": 1487.0 },
+        { "name": "R-407E", "unit": "kg", "emission_factor": 1425.0 },
+        { "name": "R-408A", "unit": "kg", "emission_factor": 2430.0 },
+        { "name": "R-410A", "unit": "kg", "emission_factor": 1924.0 },
+        { "name": "R-410B", "unit": "kg", "emission_factor": 2048.0 },
+        { "name": "R-411A", "unit": "kg", "emission_factor": 15.0 },
+        { "name": "R-411B", "unit": "kg", "emission_factor": 4.0 },
+        { "name": "R-412A", "unit": "kg", "emission_factor": 445.0 },
+        { "name": "R-413A", "unit": "kg", "emission_factor": 1945.0 },
+        { "name": "R-415A", "unit": "kg", "emission_factor": 25.0 },
+        { "name": "R-415B", "unit": "kg", "emission_factor": 104.0 },
+        { "name": "R-416A", "unit": "kg", "emission_factor": 767.0 },
+        { "name": "R-417A", "unit": "kg", "emission_factor": 2127.0 },
+        { "name": "R-418A", "unit": "kg", "emission_factor": 3.0 },
+        { "name": "R-419A", "unit": "kg", "emission_factor": 2688.0 },
+        { "name": "R-420A", "unit": "kg", "emission_factor": 1144.0 },
+        { "name": "R-500", "unit": "kg", "emission_factor": 36.0 },
+        { "name": "R-503", "unit": "kg", "emission_factor": 4972.0 },
+        { "name": "R-504", "unit": "kg", "emission_factor": 326.0 },
+        { "name": "R-507A", "unit": "kg", "emission_factor": 3985.0 },
+        { "name": "R-508A", "unit": "kg", "emission_factor": 11607.0 },
+        { "name": "R-508B", "unit": "kg", "emission_factor": 11698.0 },
+        { "name": "R-509A", "unit": "kg", "emission_factor": 4984.0 },
+        { "name": "P  FC-218 (C3F8)", "unit": "kg", "emission_factor": 7000.0 },
+        { "name": "PFC-116 (C2F6)", "unit": "kg", "emission_factor": 9200.0 },
+        { "name": "PFC-14 (CF4)", "unit": "kg", "emission_factor": 6500.0 }
+      ]
+    },
+
+    {
+      "category": "Process Emission  ",
+      "description": "Emissions from the production of cement, lime, and glass due to calcination and decomposition of carbonates.",
+      "processes": [
+        {
+          "name": "Cement Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 0.52,
+          "notes": "Calcination of limestone"
+        },
+        {
+          "name": "Lime Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 0.80,
+          "notes": "Limestone calcination"
+        },
+        {
+          "name": "Glass Manufacturing",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 0.225,
+          "notes": "Carbonate decomposition"
+        }
+     ,   {
+          "name": "Steel Manufacturing",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 2.075,
+          "notes": "Coke consumption, limestone flux"
+        },
+        {
+          "name": "Iron Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 2.3,
+          "notes": "Blast furnace process"
+        },
+        {
+          "name": "Aluminum Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 1.7,
+          "notes": "Anode consumption, PFC emissions"
+        }
+    ,    {
+          "name": "Nitric Acid Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 0.325,
+          "notes": "N2O emissions from oxidation"
+        },
+        {
+          "name": "Ammonia Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 2.15,
+          "notes": "Steam reforming, varies by feedstock"
+        },
+        {
+          "name": "Soda Ash Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 0.15,
+          "notes": "Trona calcination"
+        },
+        {
+          "name": "Carbide Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 1.2,
+          "notes": "Coke consumption"
+        },
+        {
+          "name": "Titanium Dioxide Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 1.3,
+          "notes": "Chloride or sulfate process"
+        }
+    ,    {
+          "name": "Methanol Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 0.76,
+          "notes": "Steam reforming of natural gas"
+        },
+        {
+          "name": "Ethylene Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 1.815,
+          "notes": "Steam cracking"
+        },
+        {
+          "name": "Dichloroethylene Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 0.20,
+          "notes": "Chlorination process"
+        },
+        {
+          "name": "Styrene Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 0.40,
+          "notes": "Dehydrogenation of ethylbenzene"
+        }
+     ,   {
+          "name": "Adipic Acid Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 5.75,
+          "notes": "High N2O emissions (abatement available)"
+        },
+        {
+          "name": "Carbon Black Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 2.85,
+          "notes": "Incomplete combustion process"
+        },
+        {
+          "name": "Caprolactam Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 7.35,
+          "notes": "High N2O emissions (abatement available)"
+        },
+        {
+          "name": "Glyoxal Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 1.0,
+          "notes": "Oxidation process"
+        },
+        {
+          "name": "Glyoxylic Acid Production",
+          "unit": "kg CO2e/kg",
+          "emission_factor": 1.75,
+          "notes": "Oxidation of glyoxal"
+        }
+      ]
+    }
+  ]
+}

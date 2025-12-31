@@ -1,0 +1,559 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        color: #e2e8f0;
+        min-height: 100vh;
+        padding: 2rem;
+    }
+
+    /* Card Styling */
+    .card {
+        background: rgba(30, 41, 59, 0.9);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(34, 197, 94, 0.2);
+        border-radius: 20px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        max-width: 900px;
+        margin: 0 auto;
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        border-color: rgba(34, 197, 94, 0.4);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .p-4 {
+        padding: 2.5rem;
+    }
+
+    /* Typography */
+    h2 {
+        color: #22c55e;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    h2::before {
+        content: "⚡";
+        font-size: 1.8rem;
+    }
+
+    h2::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(45deg, #22c55e, #10b981);
+        border-radius: 2px;
+    }
+
+    h4 {
+        color: #e2e8f0;
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    h4:nth-of-type(1)::before {
+        content: "📊";
+        font-size: 1.2rem;
+    }
+
+    h4:nth-of-type(2)::before {
+        content: "📈";
+        font-size: 1.2rem;
+    }
+
+    /* Form Controls */
+    label {
+        color: #cbd5e1;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .form-control {
+        background: rgba(51, 65, 85, 0.8);
+        border: 2px solid rgba(71, 85, 105, 0.5);
+        border-radius: 12px;
+        color: #ffffff;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    .form-control::-webkit-outer-spin-button,
+    .form-control::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    .form-control[type="number"] {
+        -moz-appearance: textfield;
+        color: #ffffff;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: #22c55e;
+        box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+        background: rgba(51, 65, 85, 1);
+        transform: scale(1.02);
+    }
+
+    .form-control::placeholder {
+        color: #94a3b8;
+    }
+
+    /* Selected Countries Container */
+    #selectedCountries {
+        min-height: 50px;
+        background: rgba(15, 23, 42, 0.6);
+        border: 2px dashed rgba(34, 197, 94, 0.3);
+        border-radius: 12px;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    #selectedCountries > div {
+        background: rgba(34, 197, 94, 0.1);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideIn 0.3s ease-out;
+        color: #ffffff;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 25px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-primary {
+        background: linear-gradient(45deg, #3b82f6, #2563eb);
+        color: white;
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
+        scale: 1.02;
+    }
+
+    .btn-success {
+        background: linear-gradient(45deg, #22c55e, #10b981);
+        color: white;
+        box-shadow: 0 8px 25px rgba(34, 197, 94, 0.3);
+    }
+
+    .btn-success:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 35px rgba(34, 197, 94, 0.4);
+        scale: 1.02;
+    }
+
+    .btn-outline-danger {
+        background: transparent;
+        color: #ef4444;
+        border: 2px solid #ef4444;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .btn-outline-danger:hover {
+        background: #ef4444;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    .btn-sm {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .btn-secondary {
+        background: linear-gradient(45deg, #6b7280, #4b5563);
+        color: white;
+        box-shadow: 0 8px 25px rgba(107, 114, 128, 0.3);
+        padding: 0.75rem 1.5rem;
+    }
+
+    .btn-secondary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 35px rgba(107, 114, 128, 0.4);
+        scale: 1.02;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 12px;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+    }
+
+    /* Enhanced Scope 3 Button */
+    .btn-primary[href*="scope3"] {
+        background: linear-gradient(45deg, #22c55e, #10b981);
+        box-shadow: 0 8px 25px rgba(34, 197, 94, 0.3);
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-primary[href*="scope3"]:hover {
+        box-shadow: 0 12px 35px rgba(34, 197, 94, 0.4);
+    }
+
+    .btn-primary[href*="scope3"]::before {
+        content: "🌍 ";
+        margin-right: 0.5rem;
+    }
+
+    .btn-primary[href*="scope3"]::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+    }
+
+    .btn-primary[href*="scope3"]:hover::after {
+        left: 100%;
+    }
+
+    /* Factor Row Styling */
+    .factor-row {
+        background: rgba(15, 23, 42, 0.6) !important;
+        border: 2px solid rgba(34, 197, 94, 0.2) !important;
+        border-radius: 15px !important;
+        padding: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+        transition: all 0.3s ease;
+    }
+
+    .factor-row:hover {
+        border-color: rgba(34, 197, 94, 0.4) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .factor-row strong {
+        color: #ffffff;
+        font-size: 1.1rem;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .factor-row {
+        color: #ffffff;
+    }
+
+    .factor-row .form-control {
+        margin-top: 0.5rem;
+    }
+
+    /* Table Styling */
+    .table {
+        background: rgba(15, 23, 42, 0.6);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        margin-top: 2rem;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table th {
+        background: rgba(34, 197, 94, 0.2);
+        color: #22c55e;
+        border: none;
+        padding: 1rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .table td {
+        background: rgba(30, 41, 59, 0.8);
+        color: #ffffff;
+        border: 1px solid rgba(71, 85, 105, 0.3);
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .table tbody tr:hover {
+        background: rgba(34, 197, 94, 0.1);
+        transform: scale(1.01);
+    }
+
+    .table tfoot tr {
+        background: rgba(34, 197, 94, 0.2);
+    }
+
+    .table tfoot td {
+        background: transparent;
+        color: #22c55e;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    /* Utility Classes */
+    .mb-3 { margin-bottom: 1rem; }
+    .mb-4 { margin-bottom: 1.5rem; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mt-3 { margin-top: 1rem; }
+    .mt-4 { margin-top: 1.5rem; }
+    .ms-2 { margin-left: 0.5rem; }
+    .text-end { text-align: right; }
+    .text-center { text-align: center; }
+    .fw-bold { font-weight: bold; }
+    .d-inline { display: inline; }
+    .w-50 { width: 50%; }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        body {
+            padding: 1rem;
+        }
+        
+        .p-4 {
+            padding: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+        
+        .table {
+            font-size: 0.9rem;
+        }
+        
+        .w-50 {
+            width: 100%;
+        }
+
+        .button-group {
+            flex-direction: column;
+        }
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    /* Loading Animation */
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+    }
+
+    .loading {
+        animation: pulse 2s infinite;
+    }
+
+    /* Add some visual feedback */
+    hr {
+        border: none;
+        height: 2px;
+        background: linear-gradient(45deg, #22c55e, #10b981);
+        border-radius: 1px;
+        margin: 2rem 0;
+    }
+</style>
+
+<div class="card p-4 shadow-lg">
+  <h2 class="mb-4">Scope 2 - Purchased Electricity</h2>
+
+  {% if not selected %}
+  <!-- STEP 1: Select Countries -->
+  <form method="post">
+    <label for="countrySelect">Select one or more countries:</label>
+    <input list="countryOptions" class="form-control mb-3" id="countrySelect" placeholder="Type to select countries">
+    <datalist id="countryOptions">
+      {% for country, details in countries.items() %}
+        <option value="{{ country }}">{{ country }} ({{ details.unit }})</option>
+      {% endfor %}
+    </datalist>
+
+    <!-- Container for chosen countries -->
+    <div id="selectedCountries" class="mb-3"></div>
+
+    <div class="button-group">
+      <button type="button" class="btn btn-secondary" onclick="skipScope2()">Skip Scope 2</button>
+      <button type="submit" class="btn btn-primary">Next</button>
+    </div>
+  </form>
+
+  <script>
+    const input = document.getElementById("countrySelect");
+    const container = document.getElementById("selectedCountries");
+    const selected = new Set();
+
+    input.addEventListener("change", () => {
+      const val = input.value.trim();
+      if(val && !selected.has(val)){
+        selected.add(val);
+        const div = document.createElement("div");
+        div.innerHTML = `
+          ${val} <input type="hidden" name="countries" value="${val}">
+          <button type="button" class="btn btn-sm btn-outline-danger ms-2" onclick="this.parentNode.remove();selected.delete('${val}')">Remove</button>
+        `;
+        container.appendChild(div);
+        input.value = "";
+      }
+    });
+
+    function skipScope2() {
+    window.location.href = "/skip_scope2";
+}
+
+  </script>
+{% else %}
+  {% if not results %}
+  <!-- STEP 2: Enter Quantities -->
+  <form method="post">
+    {% for c in selected %}
+      <input type="hidden" name="countries" value="{{ c }}">
+    {% endfor %}
+
+    <h4 class="mb-3">Enter Electricity Usage</h4>
+
+    {% for country in selected %}
+    <div class="factor-row mb-3 p-3 border rounded bg-light">
+      <strong>{{ country }}</strong> ({{ countries[country].unit }})
+      <div class="mt-2">
+        <input type="number" step="0.01" class="form-control d-inline w-50"
+          name="qty_{{ country }}" placeholder="Quantity">
+      </div>
+    </div>
+    {% endfor %}
+
+    <div class="text-end mt-3">
+      <button type="submit" class="btn btn-success">Calculate</button>
+    </div>
+  </form>
+  {% endif %}
+{% endif %}
+
+
+  {% if results %}
+  <hr>
+  <h4 class="mt-4">Results</h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+        <th>Factor</th>
+        <th>Emission (kg CO₂e)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in results %}
+      <tr>
+        <td>{{ r.country }}</td>
+        <td>{{ r.qty }}</td>
+        <td>{{ r.unit }}</td>
+        <td>{{ r.factor }}</td>
+        <td>{{ r.emission }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr class="fw-bold">
+        <td colspan="4" class="text-end">Total Emission</td>
+        <td>{{ total }}</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- Scope 3 Button -->
+  <div class="mt-3 text-end">
+    <a href="{{ url_for('cal_bp.scope3') }}" class="btn btn-primary">Proceed to Scope 3</a>
+  </div>
+  {% endif %}
+</div>
+
+<script>
+// Add interactive feedback
+document.querySelectorAll('.form-control').forEach(input => {
+    input.addEventListener('focus', function() {
+        this.style.transform = 'scale(1.02)';
+    });
+    
+    input.addEventListener('blur', function() {
+        this.style.transform = 'scale(1)';
+    });
+});
+
+// Form submission loading state
+document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        const button = this.querySelector('button[type="submit"]');
+        if (button.textContent.includes('Calculate')) {
+            button.innerHTML = 'Calculating...';
+        } else if (button.textContent.includes('Next')) {
+            button.innerHTML = 'Processing...';
+        }
+        button.style.background = 'linear-gradient(45deg, #6b7280, #9ca3af)';
+    });
+});
+
+// Proceed to Scope 3 button enhancement
+document.querySelector('a[href*="scope3"]')?.addEventListener('click', function(e) {
+    this.innerHTML = '⏳ Loading Scope 3...';
+    this.style.background = 'linear-gradient(45deg, #6b7280, #9ca3af)';
+});
+</script>
+{% endblock %}

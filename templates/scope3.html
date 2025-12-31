@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Scope 3 Emissions</title>
+ <style>
+            * { margin:0; padding:0; box-sizing:border-box; }
+            body { 
+                font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif; 
+                background:linear-gradient(135deg,#0f172a 0%,#1e293b 50%,#334155 100%); 
+                min-height:100vh; 
+                padding:40px 20px; 
+                color:#fff; 
+            }
+            .container { max-width:1200px; margin:0 auto; }
+            h2 { 
+                text-align:center; 
+                font-size:2.8rem; 
+                margin-bottom:50px; 
+                display:flex; 
+                align-items:center; 
+                justify-content:center; 
+                gap:15px;
+                text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+            }
+            h2::before { 
+                content:'⚡'; 
+                font-size:2.5rem; 
+                filter:drop-shadow(0 0 10px #10b981);
+            }
+            .scope-title { 
+                background:linear-gradient(90deg,#10b981 0%,#34d399 50%,#6ee7b7 100%); 
+                -webkit-background-clip:text; 
+                -webkit-text-fill-color:transparent; 
+                background-clip:text; 
+            }
+            .hidden{display:none;}
+            .form-section{
+                margin-bottom:30px;
+                padding:30px;
+                background:rgba(30,41,59,0.7);
+                border:1px solid rgba(16,185,129,0.4);
+                border-radius:20px;
+                backdrop-filter:blur(15px);
+                box-shadow:0 10px 40px rgba(0,0,0,0.4);
+                transition:all .3s ease;
+            }
+            .form-section:hover{
+                box-shadow:0 15px 50px rgba(16,185,129,0.2);
+                border-color:rgba(16,185,129,0.6);
+            }
+            .form-section h3{
+                margin:0 0 25px 0;
+                font-size:1.6rem;
+                color:#10b981;
+                display:flex;
+                align-items:center;
+                gap:12px;
+                padding-bottom:15px;
+                border-bottom:2px solid rgba(16,185,129,0.3);
+            }
+            .form-section h3::before{
+                content:'📊';
+                font-size:1.5rem;
+                filter:drop-shadow(0 0 5px #10b981);
+            }
+            .category-grid{
+                display:grid;
+                grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+                gap:18px;
+                margin-top:20px;
+            }
+            .category-option{
+                background:rgba(15,23,42,0.9);
+                border:2px solid rgba(16,185,129,0.3);
+                border-radius:16px;
+                padding:25px;
+                cursor:pointer;
+                transition:all .3s ease;
+                text-align:center;
+                font-size:1.05rem;
+                color:#94a3b8;
+                position:relative;
+                overflow:hidden;
+            }
+            .category-option::before{
+                content:'';
+                position:absolute;
+                top:0;
+                left:-100%;
+                width:100%;
+                height:100%;
+                background:linear-gradient(90deg,transparent,rgba(16,185,129,0.1),transparent);
+                transition:left .5s ease;
+            }
+            .category-option:hover::before{
+                left:100%;
+            }
+            .category-option:hover{
+                border-color:rgba(16,185,129,0.7);
+                background:rgba(15,23,42,1);
+                transform:translateY(-3px) scale(1.02);
+                box-shadow:0 8px 25px rgba(16,185,129,0.3);
+            }
+            .category-option.selected{
+                border-color:#10b981;
+                background:rgba(16,185,129,0.25);
+                color:#10b981;
+                font-weight:600;
+                box-shadow:0 5px 20px rgba(16,185,129,0.4);
+            }
+            .category-option input[type="checkbox"]{
+                display:none;
+            }
+            select,input[type="number"]{
+                width:100%;
+                padding:14px 18px;
+                margin:10px 0;
+                background:rgba(15,23,42,0.9);
+                border:2px solid rgba(16,185,129,0.3);
+                border-radius:12px;
+                color:#fff;
+                font-size:1rem;
+                transition:all .3s ease;
+                outline:none;
+            }
+            select:focus,input[type="number"]:focus{
+                border-color:#10b981;
+                box-shadow:0 0 0 4px rgba(16,185,129,0.15);
+                background:rgba(15,23,42,1);
+            }
+            select:hover,input[type="number"]:hover{
+                border-color:rgba(16,185,129,0.6);
+            }
+            select option{
+                background:#1e293b;
+                color:#fff;
+                padding:10px;
+            }
+            label{
+                display:block;
+                margin:18px 0 10px 0;
+                color:#94a3b8;
+                font-weight:600;
+                font-size:1rem;
+                letter-spacing:0.3px;
+            }
+            button,.next-button{
+                width:100%;
+                padding:18px;
+                background:linear-gradient(135deg,#10b981 0%,#059669 100%);
+                border:none;
+                border-radius:14px;
+                color:white;
+                font-size:1.15rem;
+                font-weight:700;
+                cursor:pointer;
+                transition:all .3s ease;
+                box-shadow:0 6px 20px rgba(16,185,129,0.4);
+                text-transform:uppercase;
+                letter-spacing:1px;
+            }
+            button:hover,.next-button:hover{
+                transform:translateY(-3px);
+                box-shadow:0 8px 30px rgba(16,185,129,0.6);
+                background:linear-gradient(135deg,#059669 0%,#047857 100%);
+            }
+            button:active,.next-button:active{
+                transform:translateY(-1px);
+            }
+            .input-group{
+                background:rgba(15,23,42,0.6);
+                padding:18px;
+                border-radius:12px;
+                margin:12px 0;
+                border-left:4px solid #10b981;
+                display:grid;
+                grid-template-columns:2fr 1.5fr 1.5fr auto;
+                gap:15px;
+                align-items:center;
+                transition:all .3s ease;
+                box-shadow:0 2px 10px rgba(0,0,0,0.2);
+            }
+            .input-group:hover{
+                background:rgba(15,23,42,0.8);
+                box-shadow:0 4px 15px rgba(16,185,129,0.2);
+            }
+            .input-group label{
+                margin:0;
+                color:#e2e8f0;
+                font-weight:600;
+                font-size:1rem;
+            }
+            .input-group select,
+            .input-group input[type="number"]{
+                margin:0;
+            }
+            .unit-display{
+                color:#94a3b8;
+                font-size:0.95rem;
+                padding:12px 18px;
+                background:rgba(30,41,59,0.5);
+                border-radius:8px;
+                text-align:center;
+                font-weight:500;
+            }
+            .remove-btn{
+                background:linear-gradient(135deg,#ef4444 0%,#dc2626 100%);
+                border:none;
+                border-radius:10px;
+                color:white;
+                padding:12px 24px;
+                cursor:pointer;
+                font-weight:700;
+                transition:all .3s ease;
+                box-shadow:0 3px 10px rgba(239,68,68,0.4);
+                text-transform:uppercase;
+                font-size:0.85rem;
+                letter-spacing:0.5px;
+            }
+            .remove-btn:hover{
+                transform:translateY(-2px);
+                box-shadow:0 5px 15px rgba(239,68,68,0.6);
+                background:linear-gradient(135deg,#dc2626 0%,#b91c1c 100%);
+            }
+            .remove-btn:active{
+                transform:translateY(0);
+            }
+            .results-section{
+                background:rgba(30,41,59,0.7);
+                border:1px solid rgba(16,185,129,0.4);
+                border-radius:20px;
+                padding:30px;
+                backdrop-filter:blur(15px);
+                box-shadow:0 10px 40px rgba(0,0,0,0.4);
+            }
+            .results-section h3{
+                font-size:1.8rem;
+                color:#10b981;
+                margin-bottom:25px;
+                display:flex;
+                align-items:center;
+                gap:12px;
+            }
+            .results-section h3::before{
+                content:'📈';
+                font-size:1.6rem;
+            }
+            table{
+                width:100%;
+                border-collapse:collapse;
+                margin:20px 0;
+                background:rgba(15,23,42,0.5);
+                border-radius:12px;
+                overflow:hidden;
+            }
+            thead{
+                background:linear-gradient(135deg,#10b981 0%,#059669 100%);
+            }
+            th{
+                padding:16px;
+                text-align:left;
+                font-weight:700;
+                color:#fff;
+                text-transform:uppercase;
+                font-size:0.9rem;
+                letter-spacing:0.5px;
+            }
+            td{
+                padding:14px 16px;
+                border-bottom:1px solid rgba(16,185,129,0.1);
+                color:#e2e8f0;
+            }
+            tbody tr:hover{
+                background:rgba(16,185,129,0.1);
+            }
+            .total-row{
+                background:rgba(16,185,129,0.2);
+                font-weight:700;
+                font-size:1.1rem;
+                color:#10b981;
+            }
+            .total-row td{
+                border:none;
+                padding:18px 16px;
+            }
+            .scope2-button{
+                background:linear-gradient(135deg,#3b82f6 0%,#2563eb 100%);
+                margin-top:20px;
+            }
+            .scope2-button:hover{
+                background:linear-gradient(135deg,#2563eb 0%,#1d4ed8 100%);
+                box-shadow:0 8px 30px rgba(59,130,246,0.6);
+            }
+            /* Special styles for Use of Sold Products */
+            .multi-input-group{
+                background:rgba(15,23,42,0.6);
+                padding:25px;
+                border-radius:12px;
+                margin:12px 0;
+                border-left:4px solid #10b981;
+                transition:all .3s ease;
+                box-shadow:0 2px 10px rgba(0,0,0,0.2);
+            }
+            .multi-input-group:hover{
+                background:rgba(15,23,42,0.8);
+                box-shadow:0 4px 15px rgba(16,185,129,0.2);
+            }
+            .multi-input-group .product-title{
+                font-size:1.1rem;
+                color:#10b981;
+                font-weight:700;
+                margin-bottom:20px;
+                display:flex;
+                align-items:center;
+                gap:10px;
+            }
+            .multi-input-row{
+                display:grid;
+                grid-template-columns:repeat(3, 1fr);
+                gap:15px;
+                margin-top:15px;
+            }
+            .multi-input-field{
+                display:flex;
+                flex-direction:column;
+            }
+            .multi-input-field label{
+                margin:0 0 8px 0;
+                font-size:0.9rem;
+                color:#94a3b8;
+            }
+            .multi-input-field input{
+                margin:0;
+            }
+            
+
+            .multi-input-field input[name="franchise_name[]"]{
+    background: rgba(2, 6, 23, 0.55);
+    color: #e5e7eb;
+    border: 1px solid rgba(16,185,129,0.45);
+    padding: 12px 14px;
+    border-radius: 10px;
+}
+
+            .formula-hint{
+                background:rgba(59,130,246,0.1);
+                border-left:3px solid #3b82f6;
+                padding:12px 15px;
+                margin:15px 0;
+                border-radius:8px;
+                font-size:0.9rem;
+                color:#93c5fd;
+                font-style:italic;
+            }
+        </style>
+       
+<script>
+let selectedCategories = [];
+
+function toggleCategory(checkbox, value) {
+    const label = checkbox.parentElement;
+    if (checkbox.checked) {
+        label.classList.add('selected');
+        if (!selectedCategories.includes(value)) selectedCategories.push(value);
+    } else {
+        label.classList.remove('selected');
+        selectedCategories = selectedCategories.filter(c => c !== value);
+    }
+}
+
+function goToStep2() {
+    if (selectedCategories.length === 0) {
+        alert('Please select at least one category');
+        return;
+    }
+    document.getElementById('step1').classList.add('hidden');
+    document.getElementById('step2').classList.remove('hidden');
+    selectedCategories.forEach(cat => {
+        let el = document.getElementById(cat + "_section");
+        if (el) el.classList.remove('hidden');
+    });
+}
+
+function addItem(select, sectionId) {
+    const val = select.value;
+    if (!val) return;
+    const container = document.getElementById("inputs_" + sectionId);
+    const itemKey = val.replace(/\s+/g, '_').replace(/[^\w]/g, '_');
+    const rowId = "row_" + sectionId + "_" + itemKey;
+    if (document.getElementById(rowId)) return;
+
+    const option = select.options[select.selectedIndex];
+    const factors = option.dataset.factors ? JSON.parse(option.dataset.factors) : null;
+
+    let unitSelectHTML = '';
+    
+    if (factors) {
+        unitSelectHTML = `<select name="unit_${val}" required>`;
+        unitSelectHTML += `<option value="">-- Select Unit --</option>`;
+        for (const [unit, factor] of Object.entries(factors)) {
+            unitSelectHTML += `<option value="${unit}" data-factor="${factor}">${unit}</option>`;
+        }
+        unitSelectHTML += `</select>`;
+    } else {
+        const unit = option.dataset.unit || '';
+        unitSelectHTML = `<div class="unit-display">${unit}</div>`;
+    }
+
+    let row = document.createElement("div");
+    row.className = "input-group";
+    row.id = rowId;
+    row.innerHTML = `
+        <label>${val}</label>
+        ${unitSelectHTML}
+        <input type="number" name="qty_${val}" placeholder="Enter Quantity" min="0" step="0.01" required>
+        <button type="button" class="remove-btn" onclick="removeRow('${rowId}')">Remove</button>
+    `;
+    container.appendChild(row);
+    select.value = "";
+}
+
+function addUseSoldProduct(select, sectionId) {
+    const val = select.value;
+    if (!val) return;
+    const container = document.getElementById("inputs_" + sectionId);
+    const itemKey = val.replace(/\s+/g, '_').replace(/[^\w]/g, '_');
+    const rowId = "row_" + sectionId + "_" + itemKey;
+    if (document.getElementById(rowId)) return;
+
+    let row = document.createElement("div");
+    row.className = "multi-input-group";
+    row.id = rowId;
+    row.innerHTML = `
+        <div class="product-title">🔌 ${val}</div>
+        <div class="formula-hint">
+            💡 Formula: Units Sold × Energy per Unit per Year (kWh) × Product Lifetime (years) × Emission Factor
+        </div>
+        <div class="multi-input-row">
+            <div class="multi-input-field">
+                <label>Units Sold</label>
+                <input type="number" name="units_sold_${val}" placeholder="e.g., 1000" min="0" step="0.01" required>
+            </div>
+            <div class="multi-input-field">
+                <label>Energy per Unit per Year (kWh)</label>
+                <input type="number" name="energy_per_unit_${val}" placeholder="e.g., 500" min="0" step="0.01" required>
+            </div>
+            <div class="multi-input-field">
+                <label>Product Lifetime (years)</label>
+                <input type="number" name="product_lifetime_${val}" placeholder="e.g., 10" min="0" step="0.1" required>
+            </div>
+        </div>
+        <button type="button" class="remove-btn" onclick="removeRow('${rowId}')" style="margin-top:15px;width:auto;">Remove</button>
+    `;
+    container.appendChild(row);
+    select.value = "";
+}
+
+function removeRow(rowId) {
+    const row = document.getElementById(rowId);
+    if (row) {
+        row.style.opacity = '0';
+        row.style.transform = 'translateX(-20px)';
+        setTimeout(() => row.remove(), 300);
+    }
+}
+
+function goToSummary() {
+    window.location.href = '/summary';
+}
+</script>
+</head>
+
+<body>
+<div class="container">
+    <h2><span class="scope-title">Scope 3 - Emission Calculator</span></h2>
+    <form method="POST">
+
+        <!-- STEP 1 -->
+        <div id="step1" class="page">
+            <div class="form-section">
+                <h3>Step 1: Select Categories</h3>
+                <div class="category-grid">
+                    {% for category in categories %}
+                        <label class="category-option">
+                            <input type="checkbox" name="categories"
+                                value="{{ category.Category|replace(' ', '_') }}"
+                                onchange="toggleCategory(this, '{{ category.Category|replace(' ', '_') }}')">
+                            {{ category.Category }}
+                        </label>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="form-section">
+                <button type="button" class="next-button" onclick="goToStep2()">Next</button>
+            </div>
+            <div class="form-section" style="margin-top: 15px;">
+                <button type="button" class="scope2-button" onclick="goToSummary()">Skip Scope 3 → Continue to Summary</button>
+            </div>
+        </div>
+
+<!-- STEP 2 - CORRECTED VERSION -->
+<div id="step2" class="page hidden">
+
+    {% for category in categories %}
+    {% set cat_id = category.Category|replace(' ', '_') %}
+
+    <!-- PURCHASED GOODS & SERVICES -->
+    {% if category.Category == "Purchased goods & services" %}
+
+    <div id="{{ cat_id }}_section" class="form-section hidden">
+        <h3>Purchased goods & services</h3>
+
+        <label>Select Sub-Category:</label>
+        <select id="{{ cat_id }}_subcat" onchange="showServiceProducts(this, '{{ cat_id }}')">
+            <option value="">-- Select Sub-Category --</option>
+            {% for sub in category.SubCategories %}
+            <option value="{{ sub.name|replace(' ','_') }}">{{ sub.name }}</option>
+            {% endfor %}
+        </select>
+
+        <div id="{{ cat_id }}_product_area" class="hidden">
+            <label>Select Product/Service:</label>
+            <select id="{{ cat_id }}_product_list" onchange="addItem(this, '{{ cat_id }}')">
+                <option value="">-- Select Product --</option>
+            </select>
+
+            <div id="inputs_{{ cat_id }}"></div>
+        </div>
+    </div>
+
+    <script>
+    function showServiceProducts(select, sectionId) {
+        let subcat = select.value;
+        let productArea = document.getElementById(sectionId + "_product_area");
+        let productList = document.getElementById(sectionId + "_product_list");
+
+        productArea.classList.add("hidden");
+        productList.innerHTML = '<option value="">-- Select Product --</option>';
+
+        if (!subcat) return;
+
+        const servicesData = {{ category.SubCategories | tojson | safe }};
+        let selected = servicesData.find(s => s.name.replace(/ /g, "_") === subcat);
+        if (!selected) return;
+
+        selected.items.forEach(item => {
+            let name = item["Product/Service"] || item["Product"];
+            let opt = document.createElement("option");
+
+            opt.value = name;
+            opt.textContent = name;
+            opt.dataset.unit = item.Unit || "";
+            opt.dataset.factor = item.EmissionFactor || "";
+
+            productList.appendChild(opt);
+        });
+
+        productArea.classList.remove("hidden");
+    }
+    </script>
+
+    <!-- USE OF SOLD PRODUCTS (SPECIAL HANDLING) -->
+    {% elif category.Category == "Use of Sold Products" %}
+
+    <div id="{{ cat_id }}_section" class="form-section hidden">
+        <h3>Use of Sold Products</h3>
+        <p style="color:#94a3b8;margin-bottom:20px;">Calculate emissions from energy consumption of sold products during their lifetime.</p>
+
+        <label>Select Product Type:</label>
+        <select onchange="addUseSoldProduct(this,'{{ cat_id }}')">
+            <option value="">-- Select Product Type --</option>
+            {% for key, values in category.items() %}
+                {% if key != "Category" and key != "description" and key != "input_fields" %}
+                    {% if values is iterable and values is not string %}
+                        {% for item in values %}
+                            {% if item.get("Asset Type") %}
+                                <option value="{{ item['Asset Type'] }}" 
+                                        data-unit="{{ item.get('Unit', '') }}"
+                                        data-factor="{{ item.get('EmissionFactor', '') }}">
+                                    {{ item['Asset Type'] }}
+                                </option>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </select>
+
+        <div id="inputs_{{ cat_id }}"></div>
+    </div>
+
+    <!-- FRANCHISES (Category 14) -->
+    {% elif category.Category == "Franchises" %}
+
+    <div id="{{ cat_id }}_section" class="form-section hidden">
+        <h3>Franchises</h3>
+        <p style="color:#94a3b8;margin-bottom:20px;">
+            Calculate emissions from franchised operations (restaurants, retail stores, fuel stations, etc.)
+        </p>
+        
+        <div class="formula-hint">
+            💡 Formula: Total Emissions = Average Emissions per Site × Number of Sites
+        </div>
+
+        <button type="button" class="next-button" onclick="addFranchiseEntry('{{ cat_id }}')" 
+                style="width:auto;padding:12px 30px;margin:15px 0;">
+            + Add Franchise
+        </button>
+
+        <div id="franchise_entries_{{ cat_id }}"></div>
+    </div>
+
+    <script>
+    let franchiseCounter = 0;
+
+    function addFranchiseEntry(catId) {
+        franchiseCounter++;
+        const container = document.getElementById('franchise_entries_' + catId);
+        const entryId = 'franchise_entry_' + franchiseCounter;
+        
+        const entry = document.createElement('div');
+        entry.className = 'multi-input-group';
+        entry.id = entryId;
+        entry.innerHTML = `
+            <div class="product-title">🏪 Franchise Entry #${franchiseCounter}</div>
+            <div class="multi-input-row">
+                <div class="multi-input-field">
+                    <label>Franchise Name</label>
+                    <input type="text" name="franchise_name[]" placeholder="e.g., Downtown Branch" required>
+                </div>
+                <div class="multi-input-field">
+                    <label>Avg Emissions per Site (tCO₂e)</label>
+                    <input type="number" name="avg_emissions_per_site[]" placeholder="e.g., 150" min="0" step="0.01" required>
+                </div>
+                <div class="multi-input-field">
+                    <label>Number of Sites</label>
+                    <input type="number" name="number_of_sites[]" placeholder="e.g., 5" min="1" step="1" required>
+                </div>
+            </div>
+            <button type="button" class="remove-btn" onclick="removeRow('${entryId}')" style="margin-top:15px;width:auto;">
+                Remove Entry
+            </button>
+        `;
+        
+        container.appendChild(entry);
+    }
+    </script>
+
+
+    <!-- INVESTMENTS (Category 15) -->
+    {% elif category.Category == "Investments" %}
+
+    <div id="{{ cat_id }}_section" class="form-section hidden">
+        <h3>Investments</h3>
+        <p style="color:#94a3b8;margin-bottom:20px;">
+            Calculate Scope 3 emissions from investments (equity, debt, project finance).
+        </p>
+        
+        <div class="formula-hint">
+            💡 Formula: Emissions = Investment Value (USD) × Sector Intensity × Equity Share %
+        </div>
+
+        <label>Select Investment Sector:</label>
+        <select onchange="addInvestment(this, '{{ cat_id }}')">
+            <option value="">-- Select Sector --</option>
+            {% for item in category.get("Investments", []) %}
+                <option value="{{ item.Sector }}" 
+                        data-factor="{{ item.EmissionFactor }}"
+                        data-unit="{{ item.Unit }}">
+                    {{ item.Sector }} ({{ item.EmissionFactor }} {{ item.Unit }})
+                </option>
+            {% endfor %}
+        </select>
+
+        <div id="inputs_{{ cat_id }}"></div>
+    </div>
+
+    <script>
+    function addInvestment(select, sectionId) {
+        const sector = select.value;
+        if (!sector) return;
+        
+        const container = document.getElementById("inputs_" + sectionId);
+        const itemKey = sector.replace(/\s+/g, '_').replace(/[^\w]/g, '_');
+        const rowId = "row_" + sectionId + "_" + itemKey;
+        
+        if (document.getElementById(rowId)) return;
+        
+        const option = select.options[select.selectedIndex];
+        const factor = option.dataset.factor;
+        const unit = option.dataset.unit;
+        
+        let row = document.createElement("div");
+        row.className = "multi-input-group";
+        row.id = rowId;
+        row.innerHTML = `
+            <div class="product-title">💰 ${sector}</div>
+            <div class="formula-hint">
+                Emission Factor: ${factor} ${unit}
+            </div>
+            <div class="multi-input-row">
+                <div class="multi-input-field">
+                    <label>Investment Value (USD)</label>
+                    <input type="number" name="investment_value_${sector}" 
+                           placeholder="e.g., 5000000" min="0" step="0.01" required>
+                </div>
+                <div class="multi-input-field">
+                    <label>Equity Share (%)</label>
+                    <input type="number" name="equity_share_${sector}" 
+                           placeholder="e.g., 25" min="0" max="100" step="0.01" required>
+                </div>
+            </div>
+            <button type="button" class="remove-btn" onclick="removeRow('${rowId}')" 
+                    style="margin-top:15px;width:auto;">
+                Remove
+            </button>
+        `;
+        
+        container.appendChild(row);
+        select.value = "";
+    }
+    </script>
+
+    <!-- ALL OTHER CATEGORIES -->
+    {% else %}
+
+    <div id="{{ cat_id }}_section" class="form-section hidden">
+        <h3>{{ category.Category }}</h3>
+
+        {% for key, values in category.items() %}
+            {% if values is iterable and values[0] is mapping %}
+
+                <label>Select Product/Service:</label>
+                <select onchange="addItem(this,'{{ cat_id }}')">
+                    <option value="">-- Select --</option>
+
+                    {% for item in values %}
+                        {% set item_name = item.get("Product/Service") or item.get("Product") or item.get("Fuel") %}
+                        {% if item_name %}
+
+                            {% if item.get("Fuel") %}
+                            <option value="{{ item_name }}"
+                                data-factors='{{ item["EmissionFactors"] | tojson | safe }}'>
+                                {{ item_name }}
+                            </option>
+
+                            {% else %}
+                            <option value="{{ item_name }}"
+                                data-unit="{{ item.get('Unit', '') }}"
+                                data-factor="{{ item.get('EmissionFactor', '') }}">
+                                {{ item_name }}
+                            </option>
+                            {% endif %}
+
+                        {% endif %}
+                    {% endfor %}
+                </select>
+
+                <div id="inputs_{{ cat_id }}"></div>
+
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% endif %}
+    {% endfor %}
+    <!-- ^^^ THIS ENDFOR WAS MISSING! -->
+
+    <div class="form-section">
+        <button type="submit">Calculate Emissions</button>
+    </div>
+
+</div>
+
+</form>
+
+    {% if results %}
+    <div id="resultsPage" class="page">
+        <div class="results-section">
+            <h3>Emission Results</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Item</th>
+                        <th>Unit</th>
+                        <th>Quantity</th>
+                        <th>Factor</th>
+                        <th>Emission(kg CO₂e)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for r in results %}
+                    <tr>
+                        <td>{{ r.category }}</td>
+                        <td>{{ r.item }}</td>
+                        <td>{{ r.unit }}</td>
+                        <td>{{ r.qty }}</td>
+                        <td>{{ r.factor }}</td>
+                        <td>{{ r.emission }}</td>
+                    </tr>
+                    {% endfor %}
+                    <tr class="total-row">
+                        <td colspan="5">Total Emission</td>
+                        <td>{{ total }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="form-section">
+                <button type="button" class="scope2-button" onclick="goToSummary()">Continue to Summary →</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('step1').classList.add('hidden');
+        document.getElementById('step2').classList.add('hidden');
+    </script>
+    {% endif %}
+</div>
+</body>
+</html>

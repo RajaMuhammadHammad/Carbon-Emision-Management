@@ -1,0 +1,1526 @@
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ed-Watch | Sustainability Platform</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/welcome.css') }}">
+
+
+    </head>
+    <body class="bg-gray-50 text-gray-800 flex h-screen overflow-hidden">
+
+        <aside id="sidebar" class="w-20 md:w-64 bg-white border-r border-gray-200 flex-shrink-0 transition-all duration-300 overflow-y-auto">
+            <div class="p-4 flex items-center justify-center md:justify-start">
+                <img src="{{ url_for('static', filename='img/Black logo.png') }}" class="logo-img" alt="Logo">
+            </div>
+            <nav class="mt-6 pxa-4 space-y-2">
+                <a class="nav-link active" data-view="view-home">
+                    <svg class="sidebar-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6-4a1 1 0 001-1v-1a1 1 0 10-2 0v1a1 1 0 001 1zm5 0a1 1 0 001-1v-1a1 1 0 10-2 0v1a1 1 0 001 1z"></path></svg>
+                    <span class="ml-3 hidden md:block">Home</span>
+                </a>
+
+
+                <a class="nav-link" data-view="calculate-carbon">
+                    <svg class="sidebar-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                    <span class="ml-3 hidden md:block">Calculate Emission</span>
+                </a>
+                <a class="nav-link" data-view="view-carbon">
+                    <svg class="sidebar-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                    <span class="ml-3 hidden md:block">Carbon Accounting</span>
+                </a>
+                    <a class="nav-link" data-view="view-admin">
+                        <svg class="sidebar-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span class="ml-3 hidden md:block">Company Profile</span>
+                    </a>
+                    <a class="nav-link" data-view="view-itsuppot">
+                        <svg class="sidebar-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span class="ml-3 hidden md:block">IT Support</span>
+                    </a>
+                    <a class="nav-link" data-view="view-suppot">
+                        <svg class="sidebar-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span class="ml-3 hidden md:block">Admin Support</span>
+                    </a>
+                    <a class="nav-link text-red-600 hover:bg-red-50"
+   href="javascript:void(0);"
+   onclick="handleLogout()">
+
+    <svg class="sidebar-icon flex-shrink-0 text-red-600"
+         fill="none" stroke="currentColor"
+         viewBox="0 0 24 24"
+         xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+        </path>
+    </svg>
+
+    <span class="ml-3 hidden md:block font-semibold">
+        Log Out
+    </span>
+</a>
+
+                </div>
+            </nav>
+        </aside>
+
+        <div class="flex-1 flex flex-col overflow-hidden">
+            
+
+            <header class="bg-white border-b border-gray-200 p-4 rounded-lg shadow">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4 md:mb-0"></h2>
+                
+                <!-- User Profile Section -->
+                <div class="relative">
+                    <button id="user-profile-btn" class="flex items-center space-x-3 hover:bg-gray-50 px-3 py-2 rounded-lg transition-colors">
+                        <span class="text-sm font-bold text-gray-700">
+            {{ user_name }}
+        </span>
+                        <span class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-medium text-sm">
+        {{ user_name[0] | upper }}
+    </span>
+
+                        <!-- Dropdown Arrow -->
+                        <svg id="dropdown-arrow" class="w-4 h-4 text-gray-600 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div id="profile-dropdown" class="hidden absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                        <!-- User Info Section -->
+                        <div class="px-4 py-3 border-b border-gray-200">
+                            <div class="flex items-center space-x-3">
+                                                <span class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-medium text-sm">
+        {{ user_name[0] | upper }}
+    </span>
+
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-900">{{ user_name}}</p>
+                                    <p class="text-xs text-gray-500">{{ email }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu Options -->
+                        <div class="py-2">
+                            <!-- Change Password -->
+                            <button onclick="openChangePasswordModal()" class="w-full px-4 py-2 text-left hover:bg-gray-50 transition-colors flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+                                </svg>
+                                <span class="text-sm text-gray-700 font-medium">Change Password</span>
+                            </button>
+
+                            <!-- Sign Out -->
+                            <button onclick="handleLogout()" class="w-full px-4 py-2 text-left hover:bg-red-50 transition-colors flex items-center space-x-3 border-t border-gray-100">
+                                <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+                                </svg>
+                                <span class="text-sm text-red-600 font-medium">Sign Out</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Change Password Modal -->
+        <div id="change-password-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div class="bg-white rounded-lg shadow-xl w-full max-w-md mx-4">
+                <div class="p-6">
+                    <!-- Modal Header -->
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-bold text-gray-900">Change Password</h3>
+                        <button onclick="closeChangePasswordModal()" class="text-gray-400 hover:text-gray-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Change Password Form -->
+                    <form id="change-password-form" class="space-y-4">
+                        <!-- Current Password -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Current Password</label>
+                            <input type="password" id="current-password" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                        </div>
+
+                        <!-- New Password -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">New Password</label>
+                            <input type="password" id="new-password" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                            <p class="text-xs text-gray-500 mt-1">Must be at least 8 characters long</p>
+                        </div>
+
+                        <!-- Confirm New Password -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Confirm New Password</label>
+                            <input type="password" id="confirm-password" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                        </div>
+
+                        <!-- Error Message -->
+                        <div id="password-error" class="hidden text-sm text-red-600 bg-red-50 p-3 rounded-lg"></div>
+
+                        <!-- Buttons -->
+                        <div class="flex gap-3 mt-6">
+                            <button type="button" onclick="closeChangePasswordModal()" 
+                                    class="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors">
+                                Cancel
+                            </button>
+                            <button type="submit" 
+                                    class="flex-1 px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors">
+                                Update Password
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Toast -->
+        <div id="success-toast" class="hidden fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span id="success-message"></span>
+        </div>
+
+            <main class="flex-1 overflow-y-auto p-6 md:p-8 space-y-6">
+                
+                
+                <div id="main-content-area" class="space-y-6">
+
+                <!-- HOME VIEW -->
+                <section id="view-home" class="">
+                    <div class="bg-white rounded-2xl p-8 mb-8 shadow-lg border border-gray-200">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div>
+                                <h1 class="text-4xl font-bold mb-3 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Welcome to Ed-Watch Carbon Emission Management</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="grid gap-6 md:grid-cols-1 max-w-2xl mx-auto mt-6">
+                        <!-- Carbon Accounting Module -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gray-100">
+                            <div class="bg-gradient-to-br from-cyan-500 to-cyan-600 p-6 text-white">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="bg-white bg-opacity-20 rounded-lg p-3">
+                                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-2">Carbon Accounting</h3>
+                                <p class="text-cyan-100 text-sm">Comprehensive Emissions Tracking</p>
+                            </div>
+                            
+                            <div class="p-6">
+                                <p class="text-gray-600 leading-relaxed mb-4">
+                                    Track, measure, and monitor emissions using the latest GHG Protocol (2025), IPCC AR6, EPA, DEFRA, and IEA datasets for audit-ready reporting.
+                                </p>
+                                
+                                <ul class="space-y-2 mb-6">
+                                    <li class="flex items-start text-sm text-gray-700">
+                                        <svg class="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Full Scope 1, 2, and 3 tracking
+                                    </li>
+                                    <li class="flex items-start text-sm text-gray-700">
+                                        <svg class="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        2025-compliant emission factors
+                                    </li>
+                                    <li class="flex items-start text-sm text-gray-700">
+                                        <svg class="w-5 h-5 text-cyan-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Audit and assurance readiness
+                                    </li>
+                                </ul>
+
+                                <button onclick="navigateToModule('view-carbon')" class="w-full py-3 bg-cyan-600 text-white font-semibold rounded-lg hover:bg-cyan-700 transition-colors flex items-center justify-center gap-2 group">
+                                    <span>Explore Dashboard</span>
+                                    <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats Overview -->
+                    <div class="mt-12 bg-gradient-to-r from-gray-50 to-cyan-50 rounded-xl p-6 border border-cyan-100">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                            <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            Platform Highlights
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-cyan-100">
+                                <div class="text-3xl font-bold text-cyan-600">100%</div>
+                                <div class="text-sm text-gray-600 mt-1">Audit Ready</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-cyan-100">
+                                <div class="text-3xl font-bold text-cyan-600">2025</div>
+                                <div class="text-sm text-gray-600 mt-1">Latest Standards</div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-cyan-100">
+                                <div class="text-3xl font-bold text-cyan-600">Scopes 1-3</div>
+                                <div class="text-sm text-gray-600 mt-1">Full Coverage</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+<script>
+    // Navigation function for module cards
+    function navigateToModule(viewId) {
+        // Find and trigger the corresponding nav link
+        const navLink = document.querySelector(`[data-view="${viewId}"]`);
+        if (navLink) {
+            navLink.click();
+            // Smooth scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+</script>
+
+
+            
+           <section id="view-carbon" class="hidden space-y-6">
+  <div id="module-header">
+    <h2 class="text-2xl font-semibold text-gray-900">Module 2: Carbon Accounting</h2>
+    <p class="text-gray-600 max-w-3xl mt-4">
+      This module delivers a comprehensive, audit-ready view of your carbon footprint. It enables you to track and measure emissions across all scopes, compare performance year-on-year, monitor data quality, and analyze emissions. Built on updated global standards and databases, it helps ensure accurate, compliant, and reliable carbon accounting while supporting informed sustainability decision-making.
+    </p>
+
+    <div class="flex flex-wrap gap-3 mt-4">
+      <!-- Toggle Dashboard -->
+      <button id="show-dashboard-btn"
+        class="px-6 py-2 bg-blue-600 text-white rounded-md font-medium hover:bg-blue-700 flex items-center gap-2 whitespace-nowrap shadow-lg">
+        DASHBOARD
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ✅ DASHBOARD (new, interactive) -->
+  <div id="carbon-dashboard" class="space-y-6">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="stat-card p-4">
+        <div class="text-sm text-gray-500">Total Emissions</div>
+        <div id="kpi-total" class="text-2xl font-semibold">—</div>
+        <div class="text-xs text-gray-400">tCO₂e</div>
+      </div>
+      <div class="stat-card p-4">
+        <div class="text-sm text-gray-500">Intensity</div>
+        <div id="kpi-intensity" class="text-2xl font-semibold">—</div>
+        <div id="kpi-intensity-unit" class="text-xs text-gray-400">—</div>
+      </div>
+      <div class="stat-card p-4">
+        <div class="text-sm text-gray-500">Data Quality (Proxy)</div>
+        <div id="kpi-quality" class="text-2xl font-semibold">—</div>
+        <div class="text-xs text-gray-400">Primary ratio proxy</div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="stat-card p-6">
+        <h3 class="text-lg font-semibold mb-4">Emissions (tCO₂e)</h3>
+        <div class="chart-container"><canvas id="waterfall-chart"></canvas></div>
+      </div>
+
+      <div class="stat-card p-6">
+        <h3 class="text-lg font-semibold mb-4">Data Quality: Primary Data Ratio (Proxy)</h3>
+        <div class="chart-container"><canvas id="quality-dial-chart"></canvas></div>
+        <p class="text-xs text-gray-500 mt-2" id="quality-note"></p>
+      </div>
+    </div>
+
+    <div class="stat-card p-6">
+      <h3 class="text-lg font-semibold mb-4">Intensity Panel</h3>
+      <div class="chart-container" style="height: 250px; max-height: 300px;">
+        <canvas id="intensity-chart"></canvas>
+      </div>
+    </div>
+
+    <!-- Drilldown controls -->
+    <div class="stat-card p-6">
+      <div class="flex flex-wrap gap-3 items-center justify-between mb-4">
+        <h3 class="text-lg font-semibold">Drill-down: Emission Sources</h3>
+        <div class="flex flex-wrap gap-2">
+          <select id="filter-scope" class="border rounded-md px-3 py-2 text-sm">
+            <option value="">All Scopes</option>
+            <option value="Scope1">Scope1</option>
+            <option value="Scope2">Scope2</option>
+            <option value="Scope3">Scope3</option>
+          </select>
+
+          <select id="filter-category" class="border rounded-md px-3 py-2 text-sm">
+            <option value="">All Categories</option>
+          </select>
+          <select id="filter-date" class="border rounded-md px-3 py-2 text-sm">
+  <option value="">All Dates</option>
+</select>
+
+          <input id="filter-search" class="border rounded-md px-3 py-2 text-sm" placeholder="Search item/category..." />
+        </div>
+      </div>
+
+      <div class="overflow-auto">
+        <table class="min-w-full text-sm">
+          <thead class="text-left text-gray-600">
+            <tr>
+              <th class="py-2 pr-3">Scope</th>
+              <th class="py-2 pr-3">Category</th>
+              <th class="py-2 pr-3">Item</th>
+              <th class="py-2 pr-3">Qty</th>
+              <th class="py-2 pr-3">Unit</th>
+              <th class="py-2 pr-3">Factor</th>
+              <th class="py-2 pr-3">Emission</th>
+            </tr>
+          </thead>
+          <tbody id="details-table" class="text-gray-800"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- IFRAME container (calculator) -->
+  <div id="iframe-container" class="hidden mt-8 w-full">
+    <iframe id="calculator-iframe"
+      src=""
+      style="width: 100%; height: 100vh; border: none; border-radius: 12px; overflow: hidden; background: transparent;">
+    </iframe>
+  </div>
+</section>
+
+
+
+<section id="calculate-carbon" class="hidden space-y-6">
+  <div id="module-header">
+    <h2 class="text-2xl font-semibold text-gray-900">Calculate Carbon Emission</h2>
+    <p class="text-gray-600 max-w-3xl mt-4">
+      This module delivers a comprehensive, audit-ready view of your carbon footprint. It enables you to track and measure emissions across all scopes, compare performance year-on-year, monitor data quality, and analyze emissions. Built on updated global standards and databases, it helps ensure accurate, compliant, and reliable carbon accounting while supporting informed sustainability decision-making.
+    </p>
+
+<!-- IFRAME container (calculator) - Calculate Emission -->
+<div id="iframe-container-calc" class="hidden mt-8 w-full">
+  <iframe id="calculator-iframe-calc"
+    src=""
+    style="width: 100%; height: 100vh; border: none; border-radius: 12px; overflow: hidden; background: transparent;">
+  </iframe>
+</div>
+
+</section>
+<script>
+(function () {
+  let charts = { waterfall: null, dial: null, intensity: null };
+  let raw = null;
+
+  function destroyChart(key) {
+    if (charts[key]) {
+      charts[key].destroy();
+      charts[key] = null;
+    }
+  }
+
+  function fmt(x, nd = 2) {
+    if (x === null || x === undefined || isNaN(Number(x))) return "—";
+    return Number(x).toFixed(nd);
+  }
+
+  function renderTable(rows) {
+    const tbody = document.getElementById("details-table");
+    if (!tbody) return;
+    tbody.innerHTML = "";
+
+    rows.forEach(r => {
+      const tr = document.createElement("tr");
+      tr.className = "border-t";
+      tr.innerHTML = `
+        <td class="py-2 pr-3">${r.scope || ""}</td>
+        <td class="py-2 pr-3">${r.category || ""}</td>
+        <td class="py-2 pr-3">${r.item || ""}</td>
+        <td class="py-2 pr-3">${r.qty}</td>
+        <td class="py-2 pr-3">${r.unit || ""}</td>
+        <td class="py-2 pr-3">${r.factor}</td>
+        <td class="py-2 pr-3 font-medium">${r.emission !== null && !isNaN(r.emission) ? Number(r.emission).toFixed(2) : "—"}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  function fillDateDropdown(details) {
+    const dateSelect = document.getElementById("filter-date");
+    if (!dateSelect) return;
+
+    const dates = new Set(details.map(d => d.created_at).filter(Boolean));
+    const current = dateSelect.value;
+
+    dateSelect.innerHTML = `<option value="">All Dates</option>`;
+    Array.from(dates).sort().forEach(d => {
+      const opt = document.createElement("option");
+      opt.value = d;
+      opt.textContent = d;
+      dateSelect.appendChild(opt);
+    });
+
+    if ([...dateSelect.options].some(o => o.value === current)) dateSelect.value = current;
+  }
+
+  function fillCategoryDropdown(details) {
+    const catSelect = document.getElementById("filter-category");
+    if (!catSelect) return;
+
+    const cats = new Set(details.map(d => d.category).filter(Boolean));
+    const current = catSelect.value;
+
+    catSelect.innerHTML = `<option value="">All Categories</option>`;
+    Array.from(cats).sort().forEach(c => {
+      const opt = document.createElement("option");
+      opt.value = c;
+      opt.textContent = c;
+      catSelect.appendChild(opt);
+    });
+
+    if ([...catSelect.options].some(o => o.value === current)) catSelect.value = current;
+  }
+
+  function applyFilters() {
+    if (!raw) return;
+
+    const scopeEl = document.getElementById("filter-scope");
+    const catEl = document.getElementById("filter-category");
+    const searchEl = document.getElementById("filter-search");
+    const dateEl = document.getElementById("filter-date");
+
+    if (!scopeEl || !catEl || !searchEl || !dateEl) return;
+
+    const scope = scopeEl.value;
+    const category = catEl.value;
+    const search = (searchEl.value || "").toLowerCase().trim();
+    const date = dateEl.value;
+
+    let rows = raw.details.slice();
+
+    if (scope) rows = rows.filter(r => (r.scope || "") === scope);
+    if (category) rows = rows.filter(r => (r.category || "") === category);
+    if (date) rows = rows.filter(r => (r.created_at || "") === date);
+
+    if (search) {
+      rows = rows.filter(r =>
+        ((r.item || "").toLowerCase().includes(search)) ||
+        ((r.category || "").toLowerCase().includes(search)) ||
+        ((r.scope || "").toLowerCase().includes(search))
+      );
+    }
+
+    renderTable(rows);
+  }
+
+  async function loadCarbonDashboard() {
+    const resp = await fetch("/api/carbon/dashboard?n=12", { credentials: "include" });
+    const data = await resp.json();
+
+    if (!resp.ok) {
+      console.error("Carbon dashboard error:", data);
+      return;
+    }
+
+    raw = data;
+
+    // KPIs
+    const kpiTotal = document.getElementById("kpi-total");
+    const kpiIntensity = document.getElementById("kpi-intensity");
+    const kpiIntensityUnit = document.getElementById("kpi-intensity-unit");
+    const kpiQuality = document.getElementById("kpi-quality");
+    const qualityNote = document.getElementById("quality-note");
+
+    if (kpiTotal) kpiTotal.textContent = fmt(data.waterfall.values[3], 2);
+    if (kpiIntensity) kpiIntensity.textContent = data.intensity.current === null ? "—" : fmt(data.intensity.current, 6);
+    if (kpiIntensityUnit) kpiIntensityUnit.textContent = data.intensity.unit || "—";
+    if (kpiQuality) kpiQuality.textContent = fmt(data.quality.primary_proxy_pct, 2) + "%";
+    if (qualityNote) qualityNote.textContent = data.quality.note || "";
+
+    fillCategoryDropdown(data.details);
+    fillDateDropdown(data.details);
+
+    const dateSel = document.getElementById("filter-date");
+    if (dateSel) dateSel.onchange = applyFilters;
+
+    // Waterfall Chart
+    destroyChart("waterfall");
+    const wfCanvas = document.getElementById("waterfall-chart");
+    if (wfCanvas) {
+      const wfValues = raw.waterfall.values.map(v => v === null || v === 0 ? 0.01 : Number(v));
+      charts.waterfall = new Chart(wfCanvas, {
+        type: "bar",
+        data: {
+          labels: raw.waterfall.labels,
+          datasets: [{
+            label: "tCO₂e",
+            data: wfValues,
+            backgroundColor: ["#4F46E5", "#10B981", "#F59E0B", "#EF4444"]
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  return `${context.label}: ${Number(context.raw).toFixed(2)} tCO₂e`;
+                }
+              }
+            }
+          },
+          scales: { y: { beginAtZero: true } },
+          onClick: (evt, elements) => {
+            if (!elements || !elements.length) return;
+            const idx = elements[0].index;
+            const scopeSel = document.getElementById("filter-scope");
+            if (!scopeSel) return;
+
+            if (idx === 0) scopeSel.value = "Scope1";
+            else if (idx === 1) scopeSel.value = "Scope2";
+            else if (idx === 2) scopeSel.value = "Scope3";
+            else scopeSel.value = "";
+            applyFilters();
+          }
+        }
+      });
+    }
+
+    // Quality Dial
+    destroyChart("dial");
+    const dialCanvas = document.getElementById("quality-dial-chart");
+    if (dialCanvas) {
+      const p = Number(data.quality.primary_proxy_pct || 0);
+      charts.dial = new Chart(dialCanvas, {
+        type: "doughnut",
+        data: {
+          labels: ["Primary (Proxy)", "Non-primary (Proxy)"],
+          datasets: [{ data: [p, Math.max(100 - p, 0)], borderWidth: 0 }]
+        },
+        options: {
+          responsive: true,
+          cutout: "70%",
+          plugins: { legend: { position: "bottom" } }
+        }
+      });
+    }
+
+    // Intensity Chart
+    destroyChart("intensity");
+    const inCanvas = document.getElementById("intensity-chart");
+    if (inCanvas) {
+      charts.intensity = new Chart(inCanvas, {
+        type: "line",
+        data: {
+          labels: data.intensity.series.labels,
+          datasets: [{
+            label: data.intensity.unit || "Intensity",
+            data: data.intensity.series.values,
+            tension: 0.25,
+            pointRadius: 3
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: true } },
+          scales: { y: { beginAtZero: true } }
+        }
+      });
+    }
+
+    renderTable(data.details);
+
+    const scopeSel = document.getElementById("filter-scope");
+    const catSel = document.getElementById("filter-category");
+    const searchInp = document.getElementById("filter-search");
+
+    if (scopeSel) scopeSel.onchange = applyFilters;
+    if (catSel) catSel.onchange = applyFilters;
+    if (searchInp) searchInp.oninput = applyFilters;
+  }
+
+  // ---------- Calculator Loader (reusable for both sections) ----------
+  function loadCalculator(containerId, iframeId) {
+    const container = document.getElementById(containerId);
+    const iframe = document.getElementById(iframeId);
+    if (!container || !iframe) return;
+
+    iframe.src = "{{ url_for('cal_bp.scope1') }}";
+    container.classList.remove("hidden");
+
+    const setHeight = () => iframe.style.height = window.innerHeight + "px";
+    setHeight();
+    window.addEventListener("resize", setHeight);
+
+    setTimeout(() => container.scrollIntoView({ behavior: "smooth" }), 150);
+  }
+
+  function hideCalculator(containerId, iframeId) {
+    const container = document.getElementById(containerId);
+    const iframe = document.getElementById(iframeId);
+    if (!container || !iframe) return;
+
+    container.classList.add("hidden");
+    iframe.src = "";
+  }
+
+  // Bind buttons after DOM
+  document.addEventListener("DOMContentLoaded", () => {
+    // Carbon Accounting buttons
+    const btnCalcCarbon = document.getElementById("load-calculator-btn-carbon");
+    const btnDash = document.getElementById("show-dashboard-btn");
+    const dashboard = document.getElementById("carbon-dashboard");
+
+    if (btnCalcCarbon) {
+      btnCalcCarbon.addEventListener("click", () => {
+        if (dashboard) dashboard.classList.add("hidden");
+        loadCalculator("iframe-container-carbon", "calculator-iframe-carbon");
+      });
+    }
+
+    if (btnDash) {
+      btnDash.addEventListener("click", () => {
+        hideCalculator("iframe-container-carbon", "calculator-iframe-carbon");
+        if (dashboard) dashboard.classList.remove("hidden");
+        setTimeout(() => dashboard.scrollIntoView({ behavior: "smooth" }), 150);
+        loadCarbonDashboard();
+      });
+    }
+
+    // Calculate Emission button
+    const btnCalcOnly = document.getElementById("load-calculator-btn-calc");
+    if (btnCalcOnly) {
+      btnCalcOnly.addEventListener("click", () => {
+        loadCalculator("iframe-container-calc", "calculator-iframe-calc");
+      });
+    }
+
+    // Auto-load dashboard when view-carbon becomes visible
+    const carbonSection = document.getElementById("view-carbon");
+    if (carbonSection) {
+      const observer = new MutationObserver(() => {
+        if (!carbonSection.classList.contains("hidden")) {
+          loadCarbonDashboard();
+          observer.disconnect();
+        }
+      });
+      observer.observe(carbonSection, { attributes: true, attributeFilter: ["class"] });
+    }
+
+    // Auto-open calculator when calculate-carbon becomes visible
+    const calcSection = document.getElementById("calculate-carbon");
+    if (calcSection) {
+      const calcObserver = new MutationObserver(() => {
+        if (!calcSection.classList.contains("hidden")) {
+          // open calculator immediately when user clicks sidebar
+          loadCalculator("iframe-container-calc", "calculator-iframe-calc");
+        }
+      });
+      calcObserver.observe(calcSection, { attributes: true, attributeFilter: ["class"] });
+    }
+  });
+
+  window.loadCarbonDashboard = loadCarbonDashboard;
+})();
+</script>
+
+              
+                    <section id="view-admin" class="hidden space-y-6">
+                        <h2 class="text-2xl font-semibold text-gray-900">Admin</h2>
+                        <p class="text-gray-600 max-w-3xl">This section allows you to configure the core settings of the platform. It helps manage organizational structure, user roles and permissions, data model policies, API integrations, recalculation rules, and factor libraries to ensure smooth and controlled system operations.</p>
+    <div class="stat-card p-6 bg-white shadow rounded">
+            <h3 class="text-lg font-semibold mb-2">Company Information</h3>
+            <p><strong>Name:</strong> {{ company.name }}</p>
+            <p><strong>Region:</strong> {{ company.region or 'N/A' }}</p>
+            <p><strong>Countries:</strong> {{ company.countries or 'N/A' }}</p>
+            <p><strong>Sector:</strong> {{ company.sector or 'N/A' }}</p>
+            <p><strong>Company Size:</strong> {{ company.company_size or 'N/A' }}</p>
+            <p><strong>Listing Status:</strong> {{ company.listing_status or 'N/A' }}</p>
+            <p><strong>Created At:</strong> {{ company.created_at }}</p>
+
+            <button onclick="openEditCompanyModal()" class="px-4 py-2 mt-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">Edit Company</button>
+
+        </div>
+
+        <!-- Users Table -->
+        <div class="stat-card p-6 bg-white shadow rounded">
+            <h3 class="text-lg font-semibold mb-2">Users & Roles</h3>
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="p-2 border">Name</th>
+                        <th class="p-2 border">Email</th>
+                        <th class="p-2 border">Designation</th>
+                        <th class="p-2 border">Access Start</th>
+                        <th class="p-2 border">Access End</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr class="hover:bg-gray-50">
+                        <td class="p-2 border">{{ user.name }}</td>
+                        <td class="p-2 border">{{ user.email }}</td>
+                        <td class="p-2 border">{{ user.designation }}</td>
+                        <td class="p-2 border">{{ user.access_start or 'N/A' }}</td>
+                        <td class="p-2 border">{{ user.access_end or 'N/A' }}</td>
+                        
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Edit Company Modal -->
+        <!-- Edit Company Modal -->
+        <div id="editCompanyModal" class="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center hidden overflow-y-auto z-50 p-4">
+            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-3xl my-8 transform transition-all">
+                <!-- Modal Header -->
+                <div class="bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-6 rounded-t-2xl">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Edit Company Information</h3>
+                            <p class="text-indigo-100 text-sm mt-1">Update your organization details</p>
+                        </div>
+                        <button onclick="closeEditCompanyModal()" class="text-white hover:bg-white hover:bg-opacity-20 rounded-full p-2 transition-all">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <form action="{{ url_for('edit_company') }}" method="POST" class="px-8 py-6">
+                    <div class="space-y-6">
+                        
+                        <!-- Company Name -->
+                        <div class="group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                                Company Name
+                            </label>
+                            <input type="text" name="name" value="{{ company.name }}" required
+                                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all outline-none">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Region Dropdown -->
+                            <div class="group">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Region
+                                </label>
+                                <select name="region" id="region-select" required
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all outline-none appearance-none bg-white cursor-pointer">
+                                    <option value="">Select Region</option>
+                                    <option value="North America" {% if company.region == 'North America' %}selected{% endif %}>North America</option>
+                                    <option value="Latin America" {% if company.region == 'Latin America' %}selected{% endif %}>Latin America</option>
+                                    <option value="Europe (Western)" {% if company.region == 'Europe (Western)' %}selected{% endif %}>Europe (Western)</option>
+                                    <option value="Europe (Eastern)" {% if company.region == 'Europe (Eastern)' %}selected{% endif %}>Europe (Eastern)</option>
+                                    <option value="Middle East (excl. KSA)" {% if company.region == 'Middle East (excl. KSA)' %}selected{% endif %}>Middle East (excl. KSA)</option>
+                                    <option value="KSA (Saudi Arabia)" {% if company.region == 'KSA (Saudi Arabia)' %}selected{% endif %}>KSA (Saudi Arabia)</option>
+                                    <option value="Africa (Sub-Saharan)" {% if company.region == 'Africa (Sub-Saharan)' %}selected{% endif %}>Africa (Sub-Saharan)</option>
+                                    <option value="Africa (North)" {% if company.region == 'Africa (North)' %}selected{% endif %}>Africa (North)</option>
+                                    <option value="Asia (East)" {% if company.region == 'Asia (East)' %}selected{% endif %}>Asia (East)</option>
+                                    <option value="Asia (South)" {% if company.region == 'Asia (South)' %}selected{% endif %}>Asia (South)</option>
+                                    <option value="Asia (Southeast)" {% if company.region == 'Asia (Southeast)' %}selected{% endif %}>Asia (Southeast)</option>
+                                    <option value="Central Asia" {% if company.region == 'Central Asia' %}selected{% endif %}>Central Asia</option>
+                                    <option value="Oceania" {% if company.region == 'Oceania' %}selected{% endif %}>Oceania</option>
+                                </select>
+                            </div>
+
+                            <!-- Sector -->
+                            <div class="group">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                    Sector
+                                </label>
+                                <input type="text" name="sector" value="{{ company.sector }}" required
+                                    class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all outline-none">
+                            </div>
+                        </div>
+
+                        <!-- Countries Multi-Select with Tags -->
+                        <div class="group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Operating Countries
+                            </label>
+                            
+                            <!-- Selected Countries Tags -->
+                            <div id="selected-countries-tags" class="flex flex-wrap gap-2 mb-3 min-h-[40px] p-3 border-2 border-gray-200 rounded-xl bg-gray-50">
+                                <span class="text-sm text-gray-400">Select countries from the dropdown below</span>
+                            </div>
+
+                            <!-- Hidden input to store selected countries -->
+                            <input type="hidden" name="countries" id="countries-hidden-input" value="{{ company.countries }}">
+
+                            <!-- Countries Dropdown -->
+                            <div class="relative">
+                                <button type="button" id="countries-dropdown-btn" 
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all outline-none bg-white text-left flex items-center justify-between">
+                                    <span class="text-gray-600">Click to select countries</span>
+                                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                                <div id="countries-dropdown-menu" class="hidden absolute z-10 w-full mt-2 bg-white border-2 border-gray-200 rounded-xl shadow-xl max-h-64 overflow-y-auto">
+                                    <!-- Countries will be populated here -->
+                                </div>
+                            </div>
+                            <p class="text-xs text-gray-500 mt-2 flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Select one or more countries where your company operates
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Company Size Dropdown -->
+                            <div class="group">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                    </svg>
+                                    Company Size
+                                </label>
+                                <select name="company_size" required
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all outline-none appearance-none bg-white cursor-pointer">
+                                    <option value="">Select Company Size</option>
+                                    <option value="0 - 100" {% if company.company_size == '0 - 100' %}selected{% endif %}>0 - 100 employees</option>
+                                    <option value="101 - 500" {% if company.company_size == '101 - 500' %}selected{% endif %}>101 - 500 employees</option>
+                                    <option value="501 - 1000" {% if company.company_size == '501 - 1000' %}selected{% endif %}>501 - 1,000 employees</option>
+                                    <option value="1001 - 2000" {% if company.company_size == '1001 - 2000' %}selected{% endif %}>1,001 - 2,000 employees</option>
+                                    <option value="2001 & above" {% if company.company_size == '2001 & above' %}selected{% endif %}>2,001+ employees</option>
+                                </select>
+                            </div>
+
+                            <!-- Listing Status Dropdown -->
+                            <div class="group">
+                                <label class="block text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Listing Status
+                                </label>
+                                <select name="listing_status" required
+                                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 transition-all outline-none appearance-none bg-white cursor-pointer">
+                                    <option value="">Select Listing Status</option>
+                                    <option value="Listed" {% if company.listing_status == 'Listed' %}selected{% endif %}>Listed</option>
+                                    <option value="Unlisted" {% if company.listing_status == 'Unlisted' %}selected{% endif %}>Unlisted</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex justify-end gap-3 mt-8 pt-6 border-t-2 border-gray-100">
+                        <button type="button" onclick="closeEditCompanyModal()" 
+                                class="px-8 py-3 border-2 border-gray-300 rounded-xl text-gray-700 font-semibold hover:bg-gray-50 transition-all flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            Cancel
+                        </button>
+                        <button type="submit" 
+                                class="px-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Save Changes
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+                    </section>
+
+
+                   <section id="view-itsuppot" class="hidden space-y-6">
+    <!-- Google Calendar iframe -->
+    <div class="mt-4">
+        <iframe 
+            src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2QZdcrs_E4SfWtzLs0HNEKRnggKvP8kgdZxZyk12jUBfMbuxB8wYpwcY3-1JqoundJSNDnbsdL?pli=1"
+            style="border: 0"
+            width="100%" 
+            height="2000" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe>
+    </div>
+</section>
+
+
+                   <section id="view-suppot" class="hidden space-y-6">
+    <!-- Google Calendar iframe -->
+    <div class="mt-4">
+        <iframe 
+            src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2sksYeRsOI3BF12Ye52uiyFkAlbCiaZTFsWNC8cNkHwRrDRGp103aaZLrlAwfBa_cELKuqBrwg"
+            style="border: 0"
+            width="100%" 
+            height="2000" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe>
+    </div>
+</section>
+
+    <script>
+        const allCountries = [
+            "Afghanistan","Albania","Algeria","Argentina","Australia","Austria","Bangladesh","Belgium","Brazil",
+            "Canada","China","Denmark","Egypt","Finland","France","Germany","Greece","India","Indonesia","Iran",
+            "Iraq","Ireland","Italy","Japan","Jordan","Kenya","Kuwait","Malaysia","Mexico","Morocco","Nepal",
+            "Netherlands","New Zealand","Nigeria","Norway","Oman","Pakistan","Philippines","Poland","Portugal",
+            "Qatar","Russia","Saudi Arabia","Singapore","South Africa","South Korea","Spain","Sri Lanka",
+            "Sweden","Switzerland","Thailand","Turkey","UAE","UK","USA","Vietnam"
+        ];
+
+        const dropdownBtn = document.getElementById("countries-dropdown-btn");
+        const dropdownMenu = document.getElementById("countries-dropdown-menu");
+        const tagsContainer = document.getElementById("selected-countries-tags");
+        const hiddenInput = document.getElementById("countries-hidden-input");
+
+        let selected = [];
+
+        // Load preselected countries (edit mode)
+        if (hiddenInput.value.trim() !== "") {
+            selected = hiddenInput.value.split(",").map(x => x.trim());
+            renderTags();
+        }
+
+        // Toggle dropdown visibility
+        dropdownBtn.addEventListener("click", () => {
+            dropdownMenu.classList.toggle("hidden");
+        });
+
+        // Build dropdown with search bar
+        function buildDropdown() {
+            dropdownMenu.innerHTML = `
+                <div class="p-2 border-b">
+                    <input type="text" id="countrySearch" placeholder="Search country..."
+                        class="w-full px-3 py-2 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-100 focus:border-indigo-500 outline-none">
+                </div>
+                <div id="countryList" class="max-h-56 overflow-y-auto"></div>
+            `;
+
+            filterCountries(""); // Load all countries initially
+
+            // Attach search event
+            document.getElementById("countrySearch").addEventListener("input", (e) => {
+                const text = e.target.value.toLowerCase();
+                filterCountries(text);
+            });
+        }
+
+        // Filter countries in dropdown
+        function filterCountries(searchText) {
+            const listContainer = document.getElementById("countryList");
+            listContainer.innerHTML = "";
+
+            allCountries
+                .filter(c => c.toLowerCase().includes(searchText))
+                .forEach(country => {
+                    const option = document.createElement("div");
+                    option.className =
+                        "px-4 py-2 hover:bg-indigo-50 cursor-pointer text-gray-700";
+
+                    option.textContent = country;
+
+                    option.onclick = () => toggleCountry(country);
+                    listContainer.appendChild(option);
+                });
+        }
+
+        // Add/remove country
+        function toggleCountry(country) {
+            if (selected.includes(country)) {
+                selected = selected.filter(x => x !== country);
+            } else {
+                selected.push(country);
+            }
+            renderTags();
+        }
+
+        // Display tags
+        function renderTags() {
+            tagsContainer.innerHTML = "";
+
+            if (selected.length === 0) {
+                tagsContainer.innerHTML =
+                    `<span class="text-sm text-gray-400">Select countries from the dropdown below</span>`;
+            }
+
+            selected.forEach(country => {
+                const tag = document.createElement("div");
+                tag.className =
+                    "flex items-center gap-2 bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm";
+
+                tag.innerHTML = `
+                    ${country}
+                    <button type="button" class="text-indigo-700 hover:text-red-500" onclick="removeCountry('${country}')">
+                        ×
+                    </button>
+                `;
+
+                tagsContainer.appendChild(tag);
+            });
+
+            hiddenInput.value = selected.join(",");
+        }
+
+        window.removeCountry = function(country) {
+            selected = selected.filter(x => x !== country);
+            renderTags();
+        };
+
+        // Initialize dropdown
+        buildDropdown();
+    </script>
+
+                </div>
+            </main>
+        </div>
+
+    <script>
+
+        function openEditCompanyModal() {
+        document.getElementById('editCompanyModal').classList.remove('hidden');
+    }
+    function closeEditCompanyModal() {
+        document.getElementById('editCompanyModal').classList.add('hidden');
+    }
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const chartContexts = {};
+        const chartInstances = {};
+
+        const sparklineOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            scales: {
+                x: { display: false },
+                y: { display: false }
+            },
+            plugins: {
+                legend: { display: false },
+                tooltip: { enabled: false }
+            },
+            elements: {
+                point: { radius: 0 },
+                line: {
+                    borderWidth: 2,
+                    tension: 0.4
+                }
+            }
+        };
+
+        function createOrUpdateChart(id, type, data, options) {
+            const ctx = document.getElementById(id).getContext('2d');
+            if (chartInstances[id]) {
+                chartInstances[id].destroy();
+            }
+            chartInstances[id] = new Chart(ctx, { type, data, options });
+        }
+
+        function initSparklines() {
+            createOrUpdateChart('sparkline-ghg', 'line', {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{ data: [450, 445, 430, 420, 412], borderColor: '#10b981', backgroundColor: 'transparent' }]
+            }, sparklineOptions);
+            
+            createOrUpdateChart('sparkline-intensity', 'line', {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{ data: [0.40, 0.39, 0.38, 0.37, 0.36], borderColor: '#f59e0b', backgroundColor: 'transparent' }]
+            }, sparklineOptions);
+
+            createOrUpdateChart('sparkline-cost', 'line', {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{ data: [78, 80, 81, 80, 82.5], borderColor: '#6b7280', backgroundColor: 'transparent' }]
+            }, sparklineOptions);
+
+            createOrUpdateChart('sparkline-abatement', 'line', {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{ data: [110, 115, 120, 135, 142], borderColor: '#10b981', backgroundColor: 'transparent' }]
+            }, sparklineOptions);
+
+            createOrUpdateChart('sparkline-renewables', 'line', {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{ data: [40, 42, 43, 45, 46], borderColor: '#3b82f6', backgroundColor: 'transparent' }]
+            }, sparklineOptions);
+
+            createOrUpdateChart('sparkline-readiness', 'line', {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{ data: [60, 65, 70, 75, 78], borderColor: '#ef4444', backgroundColor: 'transparent' }]
+            }, sparklineOptions);
+        }
+        
+        function initModuleCharts() {
+            createOrUpdateChart('macc-chart', 'bubble', {
+                labels: ['Project A', 'Project B', 'Project C', 'Project D'],
+                datasets: [{
+                    label: 'Abatement Projects',
+                    data: [
+                        { x: 20000, y: 120, r: 15 },
+                        { x: 45000, y: 80, r: 25 },
+                        { x: 15000, y: 210, r: 10 },
+                        { x: 60000, y: -50, r: 30 }
+                    ],
+                    backgroundColor: 'rgba(79, 70, 229, 0.7)',
+                    borderColor: 'rgba(79, 70, 229, 1)'
+                }]
+            }, {
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    x: { title: { display: true, text: 'Abatement (tCO₂e/y)' } },
+                    y: { title: { display: true, text: 'Unit Cost (SAR/t)' } }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const d = context.raw;
+                                return `Project: ${context.chart.data.labels[context.dataIndex]} | Abatement: ${d.x} t | Cost: ${d.y} SAR/t | Capex: ${d.r}m SAR`;
+                            }
+                        }
+                    }
+                }
+            });
+
+            createOrUpdateChart('waterfall-chart', 'bar', {
+                labels: ['Scope 1', 'Scope 2', 'Scope 3'],
+                datasets: [
+                    { label: 'Last FY', data: [180000, 120000, 350000], backgroundColor: '#a5b4fc' },
+                    { label: 'Current YTD', data: [172000, 110000, 310000], backgroundColor: '#4f46e5' }
+                ]
+            }, {
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    y: { title: { display: true, text: 'Emissions (tCO₂e)' }, stacked: false },
+                    x: { stacked: false }
+                },
+                plugins: {
+                    title: { display: false }
+                }
+            });
+
+            createOrUpdateChart('quality-dial-chart', 'doughnut', {
+                labels: ['Primary Data', 'Secondary/Estimated'],
+                datasets: [{
+                    data: [35, 65],
+                    backgroundColor: ['#4f46e5', '#e5e7eb'],
+                    circumference: 180,
+                    rotation: -90,
+                    borderWidth: 0
+                }]
+            }, {
+                maintainAspectRatio: false,
+                responsive: true,
+                cutout: '70%',
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: (context) => `${context.label}: ${context.raw}%`
+                        }
+                    }
+                }
+            });
+
+            createOrUpdateChart('intensity-chart', 'line', {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'tCO₂e / MWh',
+                    data: [0.45, 0.43, 0.44, 0.41, 0.40, 0.39],
+                    borderColor: '#4f46e5',
+                    tension: 0.1,
+                    fill: false
+                }]
+            }, {
+                maintainAspectRatio: false,
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                }
+            });
+
+            createOrUpdateChart('training-funnel-chart', 'bar', {
+                labels: ['Enrolled', 'In-Progress', 'Completed', 'Assessed', 'Certified'],
+                datasets: [{
+                    label: 'Participants',
+                    data: [500, 450, 400, 320, 300],
+                    backgroundColor: '#4f46e5'
+                }]
+            }, {
+                indexAxis: 'y',
+                maintainAspectRatio: false,
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                }
+            });
+
+            createOrUpdateChart('benchmark-chart', 'bar', {
+                labels: ['Real Estate (kgCO₂e/m²)', 'Power (tCO₂e/MWh)'],
+                datasets: [{
+                    label: 'P25 - P75 Range',
+                    data: [[25, 48], [0.3, 0.55]],
+                    backgroundColor: 'rgba(165, 180, 252, 0.5)',
+                    borderColor: 'rgba(165, 180, 252, 1)',
+                    borderWidth: 1
+                }, {
+                    type: 'scatter',
+                    label: 'You',
+                    data: [42, 0.36],
+                    backgroundColor: '#ef4444',
+                    pointRadius: 8,
+                    pointHoverRadius: 10
+                }]
+            }, {
+                indexAxis: 'y',
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    x: { title: { display: true, text: 'Intensity' } }
+                }
+            });
+        }
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        const moduleCards = document.querySelectorAll('.stat-card[data-view-target]');
+        const views = document.querySelectorAll('#main-content-area > section');
+        const roleSelector = document.getElementById('role-view');
+
+        function showView(viewId) {
+            views.forEach(view => {
+                view.classList.add('hidden');
+            });
+            const activeView = document.getElementById(viewId);
+            if (activeView) {
+                activeView.classList.remove('hidden');
+            }
+
+            navLinks.forEach(link => {
+                if (link.dataset.view === viewId) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const viewId = link.dataset.view;
+                showView(viewId);
+            });
+        });
+
+        moduleCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                const viewId = card.dataset.viewTarget;
+                showView(viewId);
+            });
+        });
+
+        function filterByRole(role) {
+            const allTiles = document.querySelectorAll('.role-tile');
+            allTiles.forEach(tile => {
+                if (tile.classList.contains('role-all') || tile.classList.contains(`role-${role}`)) {
+                    tile.classList.remove('hidden');
+                } else {
+                    tile.classList.add('hidden');
+                }
+            });
+        }
+
+        roleSelector.addEventListener('change', (e) => {
+            filterByRole(e.target.value);
+        });
+
+        initSparklines();
+        initModuleCharts();
+        showView('view-home');
+        filterByRole(roleSelector.value);
+
+        const langToggle = document.getElementById('lang-toggle');
+        if (langToggle) {
+            langToggle.addEventListener('click', () => {
+                const html = document.documentElement;
+                if (html.dir === 'ltr') {
+                    html.dir = 'rtl';
+                    html.lang = 'ar';
+                } else {
+                    html.dir = 'ltr';
+                    html.lang = 'en';
+                }
+            });
+        }
+
+    });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const profileBtn = document.getElementById("user-profile-btn");
+  const dropdown = document.getElementById("profile-dropdown");
+  const dropdownArrow = document.getElementById("dropdown-arrow");
+
+  // Guard (if header not on some pages)
+  if (profileBtn && dropdown && dropdownArrow) {
+    profileBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle("hidden");
+      dropdownArrow.classList.toggle("rotate-180");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!profileBtn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.add("hidden");
+        dropdownArrow.classList.remove("rotate-180");
+      }
+    });
+  }
+
+  // Make functions global for inline onclick=""
+  window.openChangePasswordModal = function () {
+    const modal = document.getElementById("change-password-modal");
+    if (modal) modal.classList.remove("hidden");
+    if (dropdown) dropdown.classList.add("hidden");
+    if (dropdownArrow) dropdownArrow.classList.remove("rotate-180");
+  };
+
+  window.closeChangePasswordModal = function () {
+    const modal = document.getElementById("change-password-modal");
+    const form = document.getElementById("change-password-form");
+    const err = document.getElementById("password-error");
+    if (modal) modal.classList.add("hidden");
+    if (form) form.reset();
+    if (err) { err.classList.add("hidden"); err.textContent = ""; }
+  };
+
+  window.handleLogout = async function () {
+    if (!confirm("Are you sure you want to sign out?")) return;
+
+    try {
+      const response = await fetch("/logout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" }
+      });
+
+      if (response.ok) {
+        window.location.href = "/";
+      } else {
+        alert("Failed to logout. Please try again.");
+      }
+    } catch (error) {
+      alert("An error occurred during logout.");
+    }
+  };
+
+  // Change password submit
+  const changeForm = document.getElementById("change-password-form");
+  if (changeForm) {
+    changeForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const currentPassword = document.getElementById("current-password")?.value || "";
+      const newPassword = document.getElementById("new-password")?.value || "";
+      const confirmPassword = document.getElementById("confirm-password")?.value || "";
+      const errorDiv = document.getElementById("password-error");
+
+      if (errorDiv) { errorDiv.classList.add("hidden"); errorDiv.textContent = ""; }
+
+      if (newPassword.length < 8) {
+        if (errorDiv) { errorDiv.textContent = "Password must be at least 8 characters long"; errorDiv.classList.remove("hidden"); }
+        return;
+      }
+
+      if (newPassword !== confirmPassword) {
+        if (errorDiv) { errorDiv.textContent = "New passwords do not match"; errorDiv.classList.remove("hidden"); }
+        return;
+      }
+
+      try {
+        const response = await fetch("/change-password", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ current_password: currentPassword, new_password: newPassword })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          window.closeChangePasswordModal();
+          showSuccess(data.message || "Password updated successfully");
+        } else {
+          if (errorDiv) { errorDiv.textContent = data.message || "Failed to change password"; errorDiv.classList.remove("hidden"); }
+        }
+      } catch (err) {
+        if (errorDiv) { errorDiv.textContent = err.message || "Unexpected error"; errorDiv.classList.remove("hidden"); }
+      }
+    });
+  }
+
+  // Toast
+  window.showSuccess = function (message) {
+    const toast = document.getElementById("success-toast");
+    const msg = document.getElementById("success-message");
+    if (!toast || !msg) return;
+
+    msg.textContent = message;
+    toast.classList.remove("hidden");
+    setTimeout(() => toast.classList.add("hidden"), 3000);
+  };
+
+  // Esc key closes modal
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") window.closeChangePasswordModal();
+  });
+});
+</script>
+
+    </body>
+    </html>
