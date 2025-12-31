@@ -1,16 +1,13 @@
 Flask==2.3.3
 Werkzeug==2.3.7
-Jinja2==3.1.5
-MarkupSafe==2.1.5
+Jinja2==3.1.4
 itsdangerous==2.1.2
-Jinja2==3.1.5
 python-dotenv==1.0.0
 requests==2.31.0
 google-generativeai==0.5.2
-google-generativeai-types==0.2.0
 
 gunicorn==23.0.0
 click==8.1.7
-
-# Updated pyodbc for Python 3.13 support
+MarkupSafe==2.1.5
 pyodbc==5.1.0
+
